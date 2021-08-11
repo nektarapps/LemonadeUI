@@ -10,6 +10,11 @@
 		0FF529E3BE7FBF1A08B4495FF986C8FC /* Pods-LemonadeUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 379D24796B7DC360D54E76BD35D942A0 /* Pods-LemonadeUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1193E30C42E0C9819F1F3C5D39734E66 /* Pods-LemonadeUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EEE6B901F87601B4D19F343C6CD0D8 /* Pods-LemonadeUI_Tests-dummy.m */; };
 		12053C8B9C274C3F1AA234B9F9C836E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D126C3C7C1001F0F47 /* ConstraintErrors.swift */; };
+		2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D326C3D864001F0F47 /* LemonadeConstraint.swift */; };
+		2E1D68D626C3D8FE001F0F47 /* LemonadeConstraint+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D526C3D8FE001F0F47 /* LemonadeConstraint+View.swift */; };
+		2E1D68D826C3D945001F0F47 /* LemonadePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D726C3D945001F0F47 /* LemonadePadding.swift */; };
+		2E1D68DA26C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D926C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift */; };
 		2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C403BBCF6CD6FAADFB5E080C91FB36 /* LemonadeUI-dummy.m */; };
 		2FA5EBB2F0E03F35470441B228A8EBD5 /* Pods-LemonadeUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B914D0F056EA15E49211022FC1389C1C /* Pods-LemonadeUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87DA8EDA6449792D610EF912F10A1E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -38,6 +43,11 @@
 /* Begin PBXFileReference section */
 		0D5B85D50BB2396556A8DE89AD1E003A /* LemonadeUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LemonadeUI.modulemap; sourceTree = "<group>"; };
 		2ACB8DF5F3D001BFE7258A38491A6516 /* Pods-LemonadeUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2E1D68D126C3C7C1001F0F47 /* ConstraintErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintErrors.swift; sourceTree = "<group>"; };
+		2E1D68D326C3D864001F0F47 /* LemonadeConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeConstraint.swift; sourceTree = "<group>"; };
+		2E1D68D526C3D8FE001F0F47 /* LemonadeConstraint+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LemonadeConstraint+View.swift"; sourceTree = "<group>"; };
+		2E1D68D726C3D945001F0F47 /* LemonadePadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadePadding.swift; sourceTree = "<group>"; };
+		2E1D68D926C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Constraint+Extensions.swift"; sourceTree = "<group>"; };
 		379D24796B7DC360D54E76BD35D942A0 /* Pods-LemonadeUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LemonadeUI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5B54BB4412AD81C41730050C6F064997 /* LemonadeUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LemonadeUI-umbrella.h"; sourceTree = "<group>"; };
 		5C4773BCF01EB863692148C5CA40C53C /* LemonadeUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LemonadeUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -127,8 +137,37 @@
 		2E1D68CF26C3BEE9001F0F47 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2E1D68DC26C422D3001F0F47 /* UIItems */,
+				2E1D68D026C3C750001F0F47 /* Constaints */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		2E1D68D026C3C750001F0F47 /* Constaints */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D68D126C3C7C1001F0F47 /* ConstraintErrors.swift */,
+				2E1D68D326C3D864001F0F47 /* LemonadeConstraint.swift */,
+				2E1D68D526C3D8FE001F0F47 /* LemonadeConstraint+View.swift */,
+				2E1D68D726C3D945001F0F47 /* LemonadePadding.swift */,
+				2E1D68D926C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift */,
+			);
+			path = Constaints;
+			sourceTree = "<group>";
+		};
+		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D68DD26C422F3001F0F47 /* Label */,
+			);
+			path = UIItems;
+			sourceTree = "<group>";
+		};
+		2E1D68DD26C422F3001F0F47 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 		3F9CE0A74A5D2F93A799A9BBBE3919F0 /* Pod */ = {
@@ -322,6 +361,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					A8F941C36BD21460E6C270100FEB4C76 = {
+						LastSwiftMigration = 1250;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -372,7 +416,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1D68D826C3D945001F0F47 /* LemonadePadding.swift in Sources */,
+				2E1D68D626C3D8FE001F0F47 /* LemonadeConstraint+View.swift in Sources */,
 				2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */,
+				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
+				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
+				2E1D68DA26C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D53FFFF5EF34697CCFD01DEEDF5D83D3 /* LemonadeUI.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -499,6 +549,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -669,6 +720,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5D7623BD308D3B4C37F19DB18F8A1B1 /* LemonadeUI.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
