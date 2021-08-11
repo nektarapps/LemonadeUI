@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		0AF120870AB91A1EB6223365 /* Pods-LemonadeUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeUI_Tests/Pods-LemonadeUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		12538FCE06F2FD56394729F7 /* LemonadeUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LemonadeUI.podspec; path = ../LemonadeUI.podspec; sourceTree = "<group>"; };
+		12538FCE06F2FD56394729F7 /* LemonadeUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LemonadeUI.podspec; path = ../LemonadeUI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29A5683C63715C1B10454CFA /* Pods_LemonadeUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B41981150A28BD83FA2431B /* Pods-LemonadeUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeUI_Tests/Pods-LemonadeUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3BC2E208BC440D4CF9E96499 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3BC2E208BC440D4CF9E96499 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45523641D9E00BAFC97E7AA6 /* Pods_LemonadeUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* LemonadeUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8C63813BE8CC48C53DE1FF49 /* Pods-LemonadeUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeUI_Example/Pods-LemonadeUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C86B16500D51528C04624E9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C86B16500D51528C04624E9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D3ED7A8B1D41761F5B3F1C09 /* Pods-LemonadeUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeUI_Example.release.xcconfig"; path = "Target Support Files/Pods-LemonadeUI_Example/Pods-LemonadeUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				0AF120870AB91A1EB6223365 /* Pods-LemonadeUI_Tests.debug.xcconfig */,
 				2B41981150A28BD83FA2431B /* Pods-LemonadeUI_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

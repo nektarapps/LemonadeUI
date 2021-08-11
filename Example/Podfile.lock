@@ -1,0 +1,16 @@
+PODS:
+  - LemonadeUI (0.1.0)
+
+DEPENDENCIES:
+  - LemonadeUI (from `../`)
+
+EXTERNAL SOURCES:
+  LemonadeUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LemonadeUI: d68b411d0233605bbfbd69217e1839dff7a68ce5
+
+PODFILE CHECKSUM: 6a1dc535cbf1af8b6719aeb0f209a49ca867e123
+
+COCOAPODS: 1.10.2

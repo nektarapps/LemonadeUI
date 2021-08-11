@@ -1,0 +1,22 @@
+{
+  "name": "LemonadeUI",
+  "version": "0.1.0",
+  "summary": "A short description of LemonadeUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Hasan Ozgur Elmasli/LemonadeUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Hasan Ozgur Elmasli": "ozgur@nektarapps.com"
+  },
+  "source": {
+    "git": "https://github.com/Hasan Ozgur Elmasli/LemonadeUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LemonadeUI/Classes/**/*"
+}
