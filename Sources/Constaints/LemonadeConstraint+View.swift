@@ -24,6 +24,16 @@ extension UIView {
         self.right(superview!, equalTo: .right , constant: -padding.right)
         self.bottom(superview!, equalTo: .bottom , constant: -padding.bottom)
     }
+    
+    public func center(to : UIView , width : CGFloat , height : CGFloat) {
+        if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
+        self.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.centerX(to, equalTo: .centerX)
+        self.centerY(to, equalTo: .centerY)
+        self.width(constant: width)
+        self.height(constant: height)
+    }
 }
 
 extension UIView {

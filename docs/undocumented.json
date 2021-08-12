@@ -1,0 +1,89 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
+      "line": 12,
+      "symbol": "CGFloat.screenWidth(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
+      "line": 15,
+      "symbol": "CGFloat.screenHeight(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 11,
+      "symbol": "LemonadeConstraint",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 12,
+      "symbol": "LemonadeConstraint.top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 13,
+      "symbol": "LemonadeConstraint.bottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 14,
+      "symbol": "LemonadeConstraint.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 15,
+      "symbol": "LemonadeConstraint.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 17,
+      "symbol": "LemonadeConstraint.centerX",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 18,
+      "symbol": "LemonadeConstraint.centerY",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 42,
+      "symbol": "LemonadeConstraintBounds",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 43,
+      "symbol": "LemonadeConstraintBounds.width",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 44,
+      "symbol": "LemonadeConstraintBounds.height",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI"
+}
