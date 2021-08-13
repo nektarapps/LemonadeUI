@@ -17,7 +17,7 @@
     <a title="UIView Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">LemonadeUI 0.1.0 Docs</a> (52% documented)</p>
+        <p><a href="../index.html">LemonadeUI 0.1.0 Docs</a> (64% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -38,6 +38,9 @@
           <li class="nav-group-name">
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeAnimation.html">LemonadeAnimation</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Enums/LemonadeConstraint.html">LemonadeConstraint</a>
               </li>
@@ -61,7 +64,28 @@
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Structs/LemonadeAnimationConfig.html">LemonadeAnimationConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeBorder.html">LemonadeBorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeColor.html">LemonadeColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeEmptyUI.html">LemonadeEmptyUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeGradient.html">LemonadeGradient</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/LemonadePadding.html">LemonadePadding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeRadius.html">LemonadeRadius</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeShadow.html">LemonadeShadow</a>
               </li>
             </ul>
           </li>
@@ -83,6 +107,122 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE7animate_6configyAC0B9AnimationO_AC0bF6ConfigVtF"></a>
+                    <a name="//apple_ref/swift/Method/animate(_:config:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE7animate_6configyAC0B9AnimationO_AC0bF6ConfigVtF">animate(_:<wbr>config:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animate start with type and config data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">animate</span><span class="p">(</span><span class="n">_</span> <span class="nv">animation</span><span class="p">:</span> <span class="kt"><a href="../Enums/LemonadeAnimation.html">LemonadeAnimation</a></span><span class="p">,</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeAnimationConfig.html">LemonadeAnimationConfig</a></span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">duration</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Animation type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>config</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>LemonadeAnimationConfig  , repeat , duration , autoreverse</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE7animate_6configySayAC0B9AnimationOG_AC0bF6ConfigVtF"></a>
+                    <a name="//apple_ref/swift/Method/animate(_:config:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE7animate_6configySayAC0B9AnimationOG_AC0bF6ConfigVtF">animate(_:<wbr>config:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animations start with type and total config data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">animate</span><span class="p">(</span><span class="n">_</span> <span class="nv">animations</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/LemonadeAnimation.html">LemonadeAnimation</a></span><span class="p">],</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeAnimationConfig.html">LemonadeAnimationConfig</a></span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">duration</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Animation type array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>config</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>LemonadeAnimationConfig  , repeat , duration , autoreverse</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -134,6 +274,33 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>None</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE6center2to5width6heightyAB_12CoreGraphics7CGFloatVAJtF"></a>
+                    <a name="//apple_ref/swift/Method/center(to:width:height:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE6center2to5width6heightyAB_12CoreGraphics7CGFloatVAJtF">center(to:<wbr>width:<wbr>height:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">center</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -904,12 +1071,342 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE5frame5colorABSo6CGRectV_AC0B5ColorVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:color:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE5frame5colorABSo6CGRectV_AC0B5ColorVtcfc">init(frame:<wbr>color:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeColor.html">LemonadeColor</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE5frame5color6radiusABSo6CGRectV_AC0B5ColorVAC0B6RadiusVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:color:radius:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE5frame5color6radiusABSo6CGRectV_AC0B5ColorVAC0B6RadiusVtcfc">init(frame:<wbr>color:<wbr>radius:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeColor.html">LemonadeColor</a></span><span class="p">,</span> <span class="nv">radius</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeRadius.html">LemonadeRadius</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE5frame5color6radius6borderABSo6CGRectV_AC0B5ColorVAC0B6RadiusVAC0B6BorderVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:color:radius:border:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE5frame5color6radius6borderABSo6CGRectV_AC0B5ColorVAC0B6RadiusVAC0B6BorderVtcfc">init(frame:<wbr>color:<wbr>radius:<wbr>border:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeColor.html">LemonadeColor</a></span><span class="p">,</span> <span class="nv">radius</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeRadius.html">LemonadeRadius</a></span><span class="p">,</span> <span class="nv">border</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeBorder.html">LemonadeBorder</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE5frame5color6radius6border6shadowABSo6CGRectV_AC0B5ColorVAC0B6RadiusVAC0B6BorderVAC0B6ShadowVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:color:radius:border:shadow:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE5frame5color6radius6border6shadowABSo6CGRectV_AC0B5ColorVAC0B6RadiusVAC0B6BorderVAC0B6ShadowVtcfc">init(frame:<wbr>color:<wbr>radius:<wbr>border:<wbr>shadow:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeColor.html">LemonadeColor</a></span><span class="p">,</span> <span class="nv">radius</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeRadius.html">LemonadeRadius</a></span><span class="p">,</span> <span class="nv">border</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeBorder.html">LemonadeBorder</a></span><span class="p">,</span> <span class="nv">shadow</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeShadow.html">LemonadeShadow</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE6radiusyyAC0B6RadiusVF"></a>
+                    <a name="//apple_ref/swift/Method/radius(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE6radiusyyAC0B6RadiusVF">radius(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Radius change</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This function avaliable above iOS 11.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">radius</span><span class="p">(</span><span class="n">_</span> <span class="nv">radius</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeRadius.html">LemonadeRadius</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radius</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>LemonadeRadius requires radius paramater (Default value = 12) , corners (Optional) .</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>None</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE8gradient_2atyAC0B8GradientV_s6UInt32VtF"></a>
+                    <a name="//apple_ref/swift/Method/gradient(_:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE8gradient_2atyAC0B8GradientV_s6UInt32VtF">gradient(_:<wbr>at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gradient painting.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    warning : Call function after constraint set
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">gradient</span><span class="p">(</span><span class="n">_</span> <span class="nv">gradient</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeGradient.html">LemonadeGradient</a></span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="kt">UInt32</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE14removeGradientyyF"></a>
+                    <a name="//apple_ref/swift/Method/removeGradient()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE14removeGradientyyF">removeGradient()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deleting gradiet layer if gradient exists</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeGradient</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE5coloryyAC0B5ColorVF"></a>
+                    <a name="//apple_ref/swift/Method/color(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE5coloryyAC0B5ColorVF">color(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Color painting including grandient colors</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">color</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeColor.html">LemonadeColor</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE6borderyyAC0B6BorderVF"></a>
+                    <a name="//apple_ref/swift/Method/border(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE6borderyyAC0B6BorderVF">border(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Border set</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">border</span><span class="p">(</span><span class="n">_</span> <span class="nv">border</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeBorder.html">LemonadeBorder</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE6shadowyyAC0B6ShadowVF"></a>
+                    <a name="//apple_ref/swift/Method/shadow(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE6shadowyyAC0B6ShadowVF">shadow(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shadow set</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">shadow</span><span class="p">(</span><span class="n">_</span> <span class="nv">shadow</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeShadow.html">LemonadeShadow</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE05emptyC0yyAC0b5EmptyC0VF"></a>
+                    <a name="//apple_ref/swift/Method/emptyUI(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE05emptyC0yyAC0b5EmptyC0VF">emptyUI(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create default empty UI include ImageView(Optional) , titlText , desscriptionText(Optional)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">emptyUI</span><span class="p">(</span><span class="n">_</span> <span class="nv">emptyConfig</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeEmptyUI.html">LemonadeEmptyUI</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://github.com/Hasan Ozgur Elmasli/LemonadeUI" target="_blank" rel="external">Hasan Ozgur Elmasli</a>. All rights reserved. (Last updated: 2021-08-11)</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/Hasan Ozgur Elmasli/LemonadeUI" target="_blank" rel="external">Hasan Ozgur Elmasli</a>. All rights reserved. (Last updated: 2021-08-12)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

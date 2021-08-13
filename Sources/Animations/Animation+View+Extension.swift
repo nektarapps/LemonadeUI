@@ -28,6 +28,17 @@ extension UIView {
         }
     }
     
+    /**
+     Animate start with type and config data
+     
+     - parameter animation: Animation type.
+     - parameter config: LemonadeAnimationConfig  , repeat , duration , autoreverse
+     */
+    public func animate( _ animation : LemonadeBasicAnimation
+                         , config : LemonadeAnimationConfig = .init(duration: 2.0) , complitionHanler : @escaping ()->Void ) {
+        animation.configureAnimation(config, view: self, complitionHandler: complitionHanler)
+    }
+    
     
     
     /**

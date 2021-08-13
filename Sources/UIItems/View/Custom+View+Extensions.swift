@@ -20,11 +20,7 @@ extension UIView {
             imageView.center(to: self, width: 150, height: 150)
         }
         
-        let label = UILabel.init()
-        label.text = emptyConfig.text
-        label.textColor = UIColor.black
-        label.font = .systemFont(ofSize: 15)
-        label.textAlignment = .center
+        let label = LemonadeLabel.init(frame: .zero, .init(text: emptyConfig.text, color: .blue, font: .systemFont(ofSize: 15), alignment: .center))
         self.addSubview(label)
         label.centerY(self, equalTo: .centerY ,constant: emptyConfig.image == nil ? 0.0 : 160)
         label.centerX(self, equalTo: .centerX)

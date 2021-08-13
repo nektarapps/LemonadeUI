@@ -1,6 +1,20 @@
 {
   "warnings": [
     {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Animations/Config+Animation.swift",
+      "line": 9,
+      "symbol": "LemonadeAnimationConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Animations/Custom+Animations.swift",
+      "line": 12,
+      "symbol": "LemonadeAnimation",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
       "line": 12,
       "symbol": "CGFloat.screenWidth(_:)",
@@ -12,6 +26,13 @@
       "line": 15,
       "symbol": "CGFloat.screenHeight(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
+      "line": 28,
+      "symbol": "UIView.center(to:width:height:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -65,23 +86,79 @@
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 42,
+      "line": 51,
       "symbol": "LemonadeConstraintBounds",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 43,
+      "line": 52,
       "symbol": "LemonadeConstraintBounds.width",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 44,
+      "line": 53,
       "symbol": "LemonadeConstraintBounds.height",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "line": 15,
+      "symbol": "UIView.init(frame:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "line": 19,
+      "symbol": "UIView.init(frame:color:radius:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "line": 24,
+      "symbol": "UIView.init(frame:color:radius:border:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "line": 30,
+      "symbol": "UIView.init(frame:color:radius:border:shadow:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "line": 13,
+      "symbol": "LemonadeBorder.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "line": 33,
+      "symbol": "LemonadeRadius.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "line": 88,
+      "symbol": "LemonadeEmptyUI",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "line": 108,
+      "symbol": "LemonadeShadow",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     }
   ],
