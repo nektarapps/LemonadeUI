@@ -65,6 +65,7 @@ extension UIView {
      */
     public func gradient( _ gradient : LemonadeGradient , at : UInt32 = 0) {
         self.layoutIfNeeded()
+        self.removeGradient()
         let layer : CAGradientLayer = CAGradientLayer()
         layer.frame = self.bounds
         layer.colors = gradient.colors

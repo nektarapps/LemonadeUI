@@ -19,6 +19,8 @@
 		2E1D68D626C3D8FE001F0F47 /* LemonadeConstraint+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D526C3D8FE001F0F47 /* LemonadeConstraint+View.swift */; };
 		2E1D68D826C3D945001F0F47 /* LemonadePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D726C3D945001F0F47 /* LemonadePadding.swift */; };
 		2E1D68DA26C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D68D926C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift */; };
+		2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E387B2C26CBC90A00C4234E /* LemonadeButton.swift */; };
+		2E387B2F26CBCB8700C4234E /* Config+Lemonade+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E387B2E26CBCB8700C4234E /* Config+Lemonade+Button.swift */; };
 		2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C403BBCF6CD6FAADFB5E080C91FB36 /* LemonadeUI-dummy.m */; };
 		2EA9B44326C5028D00CC2698 /* Common+View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44226C5028D00CC2698 /* Common+View+Extensions.swift */; };
 		2EA9B44626C5030000CC2698 /* ConfigUI+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44526C5030000CC2698 /* ConfigUI+View.swift */; };
@@ -62,6 +64,8 @@
 		2E1D68D526C3D8FE001F0F47 /* LemonadeConstraint+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LemonadeConstraint+View.swift"; sourceTree = "<group>"; };
 		2E1D68D726C3D945001F0F47 /* LemonadePadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadePadding.swift; sourceTree = "<group>"; };
 		2E1D68D926C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Constraint+Extensions.swift"; sourceTree = "<group>"; };
+		2E387B2C26CBC90A00C4234E /* LemonadeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeButton.swift; sourceTree = "<group>"; };
+		2E387B2E26CBCB8700C4234E /* Config+Lemonade+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+Lemonade+Button.swift"; sourceTree = "<group>"; };
 		2EA9B44226C5028D00CC2698 /* Common+View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+View+Extensions.swift"; sourceTree = "<group>"; };
 		2EA9B44526C5030000CC2698 /* ConfigUI+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigUI+View.swift"; sourceTree = "<group>"; };
 		2EA9B44926C5121900CC2698 /* Custom+View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+View+Extensions.swift"; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				2E387B2B26CBC8FB00C4234E /* Button */,
 				2EA9B44126C5027900CC2698 /* View */,
 				2E1D68DD26C422F3001F0F47 /* Label */,
 			);
@@ -193,6 +198,15 @@
 				2E09F45126C6853F0062C61E /* Label+Tap+Gesture+Extensions.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		2E387B2B26CBC8FB00C4234E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				2E387B2C26CBC90A00C4234E /* LemonadeButton.swift */,
+				2E387B2E26CBCB8700C4234E /* Config+Lemonade+Button.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		2EA9B44126C5027900CC2698 /* View */ = {
@@ -474,9 +488,11 @@
 				2EA9B45126C53AC000CC2698 /* Animation+View+Extension.swift in Sources */,
 				2E09F45226C6853F0062C61E /* Label+Tap+Gesture+Extensions.swift in Sources */,
 				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
+				2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
 				2E1D68DA26C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift in Sources */,
 				2E09F45426C689590062C61E /* Custom+Basic+Animations.swift in Sources */,
+				2E387B2F26CBCB8700C4234E /* Config+Lemonade+Button.swift in Sources */,
 				2EA9B44326C5028D00CC2698 /* Common+View+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,11 +28,7 @@ extension UIView {
         
         
         if let description = emptyConfig.descriptionText {
-            let descriptionlabel = UILabel.init()
-            descriptionlabel.text = description
-            descriptionlabel.textColor = UIColor.black.withAlphaComponent(0.7)
-            descriptionlabel.font = .systemFont(ofSize: 12)
-            descriptionlabel.textAlignment = .center
+            let descriptionlabel = LemonadeLabel.init(frame: .zero, .init(text: description, color: UIColor.black.withAlphaComponent(0.7), font: .systemFont(ofSize: 12), alignment: .center))
             self.addSubview(descriptionlabel)
             descriptionlabel.top(label, equalTo: .bottom , constant: 5)
             descriptionlabel.centerX(self, equalTo: .centerX)

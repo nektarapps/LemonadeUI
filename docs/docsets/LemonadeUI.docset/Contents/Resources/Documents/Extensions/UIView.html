@@ -17,7 +17,7 @@
     <a title="UIView Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">LemonadeUI 0.1.0 Docs</a> (64% documented)</p>
+        <p><a href="../index.html">LemonadeUI 0.1.0 Docs</a> (59% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -36,10 +36,21 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeLabel.html">LemonadeLabel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Enums/LemonadeAnimation.html">LemonadeAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeBasicAnimation.html">LemonadeBasicAnimation</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/LemonadeConstraint.html">LemonadeConstraint</a>
@@ -70,6 +81,9 @@
                 <a href="../Structs/LemonadeBorder.html">LemonadeBorder</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/LemonadeCollapseText.html">LemonadeCollapseText</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/LemonadeColor.html">LemonadeColor</a>
               </li>
               <li class="nav-group-task">
@@ -86,6 +100,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/LemonadeShadow.html">LemonadeShadow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeText.html">LemonadeText</a>
               </li>
             </ul>
           </li>
@@ -128,6 +145,65 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">animate</span><span class="p">(</span><span class="n">_</span> <span class="nv">animation</span><span class="p">:</span> <span class="kt"><a href="../Enums/LemonadeAnimation.html">LemonadeAnimation</a></span><span class="p">,</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeAnimationConfig.html">LemonadeAnimationConfig</a></span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">duration</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Animation type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>config</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>LemonadeAnimationConfig  , repeat , duration , autoreverse</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC10LemonadeUIE7animate_6config16complitionHanleryAC0B14BasicAnimationO_AC0bI6ConfigVyyctF"></a>
+                    <a name="//apple_ref/swift/Method/animate(_:config:complitionHanler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC10LemonadeUIE7animate_6config16complitionHanleryAC0B14BasicAnimationO_AC0bI6ConfigVyyctF">animate(_:<wbr>config:<wbr>complitionHanler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animate start with type and config data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">animate</span><span class="p">(</span> <span class="n">_</span> <span class="nv">animation</span> <span class="p">:</span> <span class="kt"><a href="../Enums/LemonadeBasicAnimation.html">LemonadeBasicAnimation</a></span>
+                     <span class="p">,</span> <span class="nv">config</span> <span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeAnimationConfig.html">LemonadeAnimationConfig</a></span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">duration</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">)</span> <span class="p">,</span> <span class="nv">complitionHanler</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span><span class="o">-&gt;</span><span class="kt">Void</span> <span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1406,7 +1482,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://github.com/Hasan Ozgur Elmasli/LemonadeUI" target="_blank" rel="external">Hasan Ozgur Elmasli</a>. All rights reserved. (Last updated: 2021-08-12)</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/Hasan Ozgur Elmasli/LemonadeUI" target="_blank" rel="external">Hasan Ozgur Elmasli</a>. All rights reserved. (Last updated: 2021-08-13)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

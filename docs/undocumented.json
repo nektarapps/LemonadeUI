@@ -15,6 +15,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Animations/Custom+Basic+Animations.swift",
+      "line": 9,
+      "symbol": "LemonadeBasicAnimation",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
       "line": 12,
       "symbol": "CGFloat.screenWidth(_:)",
@@ -103,6 +110,90 @@
       "line": 53,
       "symbol": "LemonadeConstraintBounds.height",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 9,
+      "symbol": "LemonadeText",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 26,
+      "symbol": "LemonadeText.init(text:color:font:alignment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 34,
+      "symbol": "LemonadeText.init(text:color:font:alignment:kern:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 45,
+      "symbol": "LemonadeCollapseText",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 67,
+      "symbol": "LemonadeCollapseText.init(max:text:moreText:lessText:isAnimate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 79,
+      "symbol": "LemonadeCollapseText.toggleAnimate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 80,
+      "symbol": "LemonadeCollapseText.toggleCollapse(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "line": 11,
+      "symbol": "LemonadeLabel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "line": 47,
+      "symbol": "LemonadeLabel.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "line": 59,
+      "symbol": "LemonadeLabel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "line": 75,
+      "symbol": "LemonadeLabel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "line": 120,
+      "symbol": "LemonadeLabel",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
