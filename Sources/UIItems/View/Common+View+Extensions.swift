@@ -106,4 +106,14 @@ extension UIView {
         self.layer.shadowOffset = shadow.offset
         self.layer.shadowRadius = shadow.radius
     }
+    
+    /// End editing action
+    public func addEndEditingAction(){
+        self.isUserInteractionEnabled = true
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeKeyboard)))
+    }
+    
+    @objc private func closeKeyboard(){
+        self.endEditing(true)
+    }
 }
