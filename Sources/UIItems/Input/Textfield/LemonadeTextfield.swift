@@ -11,7 +11,7 @@ import UIKit
 public protocol LemonadeTextFieldDelegate : AnyObject {
     
     /**
-    Sending valid state depends on regex
+     Sending valid state depends on regex
      
      - parameter textfield: Current textfield.
      - parameter value: Valid state depends on regex.
@@ -137,7 +137,7 @@ extension LemonadeTextfield {
     }
     /// Add password rule. If you set , use delegate's isTextValid function
     public func addPasswordValidation(minimumChar : Int , maximumChar : Int) {
-        self.validationRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d\\W]{\(String.init(describing: minimumChar)),\(String.init(describing: maximumChar))}$"
+        self.validationRegex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*()\\-_=+{}|?>.<,:;~`’]{\(String.init(describing: minimumChar)),\(String.init(describing: maximumChar))}$"
         self.isValidationEnabled = true
     }
     /// Add email rule. If you set , use delegate's isTextValid function
