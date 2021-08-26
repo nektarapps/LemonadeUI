@@ -126,3 +126,34 @@ public struct LemonadeShadow {
         self.radius = radius
     }
 }
+
+public struct LemonadeStateConfig {
+    var state : LemonadeUIState
+    var view  : UIView
+    
+    /**
+     UI State config
+     
+     - parameter state: State type
+     - parameter view: State view 
+     */
+    public init( state : LemonadeUIState , view : UIView){
+        self.state = state
+        self.view = view
+    }
+}
+
+public enum LemonadeUIState {
+    case error
+    case warning
+    case success
+    
+    
+    var color : UIColor {
+        switch self {
+        case .error:return .systemRed
+        case .warning:return .systemYellow
+        case .success:return .systemGreen
+        }
+    }
+}

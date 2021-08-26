@@ -79,7 +79,8 @@ extension UIView {
     /// Deleting gradiet layer if gradient exists
     public func removeGradient(){
         guard
-            let gradient = self.layer.sublayers!.first(where: { $0.isKind(of: CAGradientLayer.self) })
+            let sublayers = self.layer.sublayers
+            , let gradient = sublayers.first(where: { $0.isKind(of: CAGradientLayer.self) })
         else { return }
         gradient.removeFromSuperlayer()
     }

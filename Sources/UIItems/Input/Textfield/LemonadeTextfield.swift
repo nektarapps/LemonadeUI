@@ -82,6 +82,8 @@ public class LemonadeTextfield : UITextField {
     
     private(set) var lemonadeText : LemonadeText?
     
+    private var UIStates: [LemonadeStateConfig] = []
+    
     /// Lemonade Text init
     public convenience init(frame : CGRect , text : LemonadeText) {
         self.init(frame : frame)
@@ -117,8 +119,37 @@ extension LemonadeTextfield {
                                             , attributes: [
                                                 NSAttributedString.Key.foregroundColor : placeholder.color
                                                 , NSAttributedString.Key.font : placeholder.font ,
-                                                NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : placeholder.kern!])
+                                                NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : placeholder.kern ?? 0.0])
         self.attributedPlaceholder = attributes
+    }
+    
+    /**
+     Set UI state
+     
+     - parameter state: LemonadeUIState.
+     - parameter customView: Optional view , if dont want to use default state view type.
+     */
+    public func setState( _ state : LemonadeUIState , customView : UIView? = nil){
+        if UIStates.contains(where: {$0.state == state}) { return }
+        let view : UIView = customView != nil ? customView! : .init(frame: .zero, color: .init(backgroundColor: state.color.withAlphaComponent(0.5)), radius: .init(radius: 0), border: .init(borderColor: state.color, width: 2.0))
+        view.isHidden = true
+        self.addSubview(view)
+        view.fill2SuperView()
+        self.UIStates.append(.init(state: state, view: view))
+    }
+    
+    /// Open state view
+    public func openState( _ state : LemonadeUIState){
+        if let item = self.UIStates.first(where: { $0.state == state }){
+            item.view.isHidden = false
+        }
+    }
+    
+    /// Close state view
+    public func closeState( _ state : LemonadeUIState){
+        if let item = self.UIStates.first(where: { $0.state == state }){
+            item.view.isHidden = true
+        }
     }
 }
 
