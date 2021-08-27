@@ -14,18 +14,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let textField : LemonadeTextfield = .init(frame: .zero
-                                                   , text: .init(text: "", color: .red, font: .systemFont(ofSize: 12), alignment: .center)
-                                                   , placeholder: .init(text: "Özgür" ,color: .red))
-         textField.border(.init(borderColor: .red, width: 2.0))
-         textField.radius(.init(radius: 12))
-         self.view.addSubview(textField)
-         textField.center(to: self.view, width: .screenWidth(24), height: 50)
+        let scrollView : LemonadeScrollView = .init(frame: .zero, add: view)
+        let v : UIView = .init(frame: .zero, color: .init(backgroundColor: .red))
+        scrollView.contentView?.addSubview(v)
+        let height = UIScreen.main.bounds.width * (4 / 3)
         
-         let toolTipConfigs : [LemonadeToolTipConfig] = [LemonadeToolTipConfig.init(view: textField)]
-         let toolTip = LemonadeToolTip.init(frame: .zero, color: .init(backgroundColor: UIColor.black.withAlphaComponent(0.8)))
-         self.view.addSubview(toolTip)
-         toolTip.configure(toolTipConfigs)
+        v.width(constant: .screenWidth())
+        v.height(constant: height)
+        v.top(scrollView.contentView!, equalTo: .top)
+
+        let v2 : UIView = .init(frame: .zero, color: .init(backgroundColor: .orange))
+        scrollView.contentView?.addSubview(v2)
+        
+        v2.width(constant: .screenWidth())
+        v2.height(constant: height * 2)
+        v2.top(v, equalTo: .bottom)
+        scrollView.addLastItem(v2)
+        
+        
+        scrollView.addStreching(.init(height, view: v))
     }
     
 }

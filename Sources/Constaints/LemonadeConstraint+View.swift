@@ -34,6 +34,10 @@ extension UIView {
         self.width(constant: width)
         self.height(constant: height)
     }
+    
+    
+    
+    /// Ratio
 }
 
 extension UIView {
@@ -46,11 +50,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func left( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0) {
+    public func left( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constaint : LemonadeConstraint = .left
-        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant)
+        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant , safeArea: safeArea)
     }
     /**
      Right anchor settings
@@ -61,11 +65,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func right( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0) {
+    public func right( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constaint : LemonadeConstraint = .right
-        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant)
+        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant , safeArea: safeArea)
     }
     /**
      Top anchor settings
@@ -76,11 +80,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func top( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0) {
+    public func top( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constaint : LemonadeConstraint = .top
-        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant)
+        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant , safeArea: safeArea)
     }
     /**
      Bottom anchor settings
@@ -91,11 +95,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func bottom( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0) {
+    public func bottom( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constaint : LemonadeConstraint = .bottom
-        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant)
+        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant , safeArea: safeArea)
     }
     /**
      CenterX anchor settings
@@ -106,11 +110,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func centerX( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0) {
+    public func centerX( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constaint : LemonadeConstraint = .centerX
-        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant)
+        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant , safeArea: safeArea)
     }
     /**
      CenterY anchor settings
@@ -121,11 +125,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func centerY( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0) {
+    public func centerY( _ to : UIView , equalTo : LemonadeConstraint , constant : CGFloat = 0.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constaint : LemonadeConstraint = .centerY
-        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant)
+        constaint.equalToConstraint(currentView: self, to: to, equalTo: equalTo , constant: constant , safeArea: safeArea)
     }
 }
 extension UIView {
@@ -139,11 +143,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func width( _ to : UIView  , equalTo : LemonadeConstraintBounds , constant : CGFloat = 0.0 , multiplier : CGFloat = 1.0) {
+    public func width( _ to : UIView  , equalTo : LemonadeConstraintBounds , constant : CGFloat = 0.0 , multiplier : CGFloat = 1.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constraint : LemonadeConstraintBounds = .width
-        constraint.equalTo(currentView: self, to: to, equalTo: equalTo, constant: constant, multiplier: multiplier)
+        constraint.equalTo(currentView: self, to: to, equalTo: equalTo, constant: constant, multiplier: multiplier , safeArea: safeArea)
     }
     /**
      Width value
@@ -156,7 +160,7 @@ extension UIView {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constraint : LemonadeConstraintBounds = .width
-        constraint.constant(currentView: self, constant: constant)
+        constraint.constant(currentView: self, type: .width, constant: constant)
     }
     /**
      Height equal anchor settings
@@ -168,11 +172,11 @@ extension UIView {
      - returns: None
      - warning: If superView is nil , function will return fatalError
      */
-    public func height( _ to : UIView  , equalTo : LemonadeConstraintBounds , constant : CGFloat = 0.0 , multiplier : CGFloat = 1.0) {
+    public func height( _ to : UIView  , equalTo : LemonadeConstraintBounds , constant : CGFloat = 0.0 , multiplier : CGFloat = 1.0 , safeArea : Bool = false) {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constraint : LemonadeConstraintBounds = .height
-        constraint.equalTo(currentView: self, to: to, equalTo: equalTo, constant: constant, multiplier: multiplier)
+        constraint.equalTo(currentView: self, to: to, equalTo: equalTo, constant: constant, multiplier: multiplier , safeArea: safeArea ) 
     }
     /**
      Height value
@@ -185,6 +189,6 @@ extension UIView {
         if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constraint : LemonadeConstraintBounds = .height
-        constraint.constant(currentView: self, constant: constant)
+        constraint.constant(currentView: self, type: .height, constant: constant)
     }
 }

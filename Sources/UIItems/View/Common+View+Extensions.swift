@@ -11,7 +11,6 @@ import UIKit
 
 
 extension UIView {
-    
     public convenience init(frame: CGRect , color : LemonadeColor) {
         self.init(frame: frame)
         self.color(color)
@@ -35,7 +34,14 @@ extension UIView {
         self.shadow(shadow)
     }
     
-    
+    var identifier : String {
+        if self.accessibilityIdentifier == nil {
+            let uuid = UUID().uuidString
+            self.accessibilityIdentifier = uuid
+            return uuid
+        }
+        return self.accessibilityIdentifier!
+    }
 }
 
 
@@ -43,6 +49,24 @@ extension UIView {
 
 
 extension UIView {
+    
+    
+    public func getConstraint( _ anchor : LemonadeConstraint) -> NSLayoutConstraint? {
+        let identifier = self.identifier + "." + anchor.rawValue
+        guard
+            let superView = self.superview
+            , let constraint = superView.constraints.first(where: {$0.identifier == identifier } ) else {
+            return nil
+        }
+        return constraint
+    }
+    public func getConstraint( _ anchor : LemonadeConstraintBounds) -> NSLayoutConstraint? {
+        let identifier = self.identifier + "." + anchor.rawValue
+        guard let constraint = self.constraints.first(where: {$0.identifier == identifier} ) else {
+            return nil
+        }
+        return constraint
+    }
     /**
      Radius change
      
