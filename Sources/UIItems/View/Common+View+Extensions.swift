@@ -54,8 +54,7 @@ extension UIView {
     public func getConstraint( _ anchor : LemonadeConstraint) -> NSLayoutConstraint? {
         let identifier = self.identifier + "." + anchor.rawValue
         guard
-            let superView = self.superview
-            , let constraint = superView.constraints.first(where: {$0.identifier == identifier } ) else {
+            let constraint = self.constraints.first(where: {$0.identifier == identifier } ) else {
             return nil
         }
         return constraint

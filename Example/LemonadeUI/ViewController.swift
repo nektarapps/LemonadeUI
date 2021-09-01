@@ -20,8 +20,12 @@ class ViewController: UIViewController {
         let height = UIScreen.main.bounds.width * (4 / 3)
         
         v.width(constant: .screenWidth())
-        v.height(constant: height)
+        let heightAnchor = v.heightAnchor.constraint(equalToConstant: height)
+        heightAnchor.isActive = true
         v.top(scrollView.contentView!, equalTo: .top)
+        
+        let topAnchor = v.topAnchor.constraint(equalTo: scrollView.contentView!.topAnchor)
+        topAnchor.isActive = true
 
         let v2 : UIView = .init(frame: .zero, color: .init(backgroundColor: .orange))
         scrollView.contentView?.addSubview(v2)
@@ -31,8 +35,8 @@ class ViewController: UIViewController {
         v2.top(v, equalTo: .bottom)
         scrollView.addLastItem(v2)
         
-        
-        scrollView.addStreching(.init(height, view: v))
+        let streching = LemonadeStreching.init(height, topAnchor: topAnchor, heightAnchor: heightAnchor)
+        scrollView.addStreching(streching)
     }
     
 }

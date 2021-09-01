@@ -65,14 +65,10 @@ extension LemonadeScrollView {
 extension LemonadeScrollView : UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if strechingConfig != nil {
-            guard
-                let topAnchor = strechingConfig!.view.getConstraint(.top)
-                , let heightAnchor = strechingConfig!.view.getConstraint(.height)
-            else { return }
             if scrollView.contentOffset.y > 0 { return }
             if scrollView.contentOffset.y < 0 {
-                topAnchor.constant = scrollView.contentOffset.y
-                heightAnchor.constant = self.strechingConfig!.defaultHeight - scrollView.contentOffset.y
+                strechingConfig!.topAnchor.constant = scrollView.contentOffset.y
+                strechingConfig!.heightAnchor.constant = self.strechingConfig!.defaultHeight - scrollView.contentOffset.y
             }
         }
         
@@ -83,10 +79,14 @@ extension LemonadeScrollView : UIScrollViewDelegate {
 
 public struct LemonadeStreching {
     var defaultHeight : CGFloat
-    var view : UIView
+    var topAnchor : NSLayoutConstraint
+    var heightAnchor : NSLayoutConstraint
     
-    public init( _ height : CGFloat ,view : UIView) {
+    public init( _ height : CGFloat
+                 , topAnchor : NSLayoutConstraint
+                 , heightAnchor : NSLayoutConstraint) {
         self.defaultHeight = height
-        self.view = view
+        self.topAnchor = topAnchor
+        self.heightAnchor = heightAnchor
     }
 }
