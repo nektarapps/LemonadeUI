@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LemonadeUI/Sources/*.{h,m,swift}'
+  s.source_files = 'Sources/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'LemonadeUI' => ['LemonadeUI/Assets/*.png']
