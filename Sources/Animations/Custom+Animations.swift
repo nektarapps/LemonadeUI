@@ -171,7 +171,7 @@ extension LemonadeAnimation {
         animation.repeatCount = Float(config.repeatCount ?? .infinity)
         animation.isRemovedOnCompletion = false
         animation.autoreverses = config.autoReverse
-        animation.fillMode = CAMediaTimingFillMode.forwards
+      //  animation.fillMode = CAMediaTimingFillMode.forwards
         return animation
     }
 }
@@ -183,7 +183,7 @@ extension LemonadeAnimation {
         transformRotate.toValue = to
         transformRotate.duration = CFTimeInterval(config.duration)
         transformRotate.repeatCount = Float(config.repeatCount ?? .infinity)
-        transformRotate.fillMode = CAMediaTimingFillMode.forwards
+     //   transformRotate.fillMode = CAMediaTimingFillMode.forwards
         transformRotate.isRemovedOnCompletion = false
         transformRotate.autoreverses = config.autoReverse
         return transformRotate
@@ -195,7 +195,7 @@ extension LemonadeAnimation {
         movePosition.toValue = to
         movePosition.duration = CFTimeInterval(config.duration)
         movePosition.repeatCount = Float(config.repeatCount ?? .infinity)
-        movePosition.fillMode = CAMediaTimingFillMode.forwards
+  //      movePosition.fillMode = CAMediaTimingFillMode.forwards
         movePosition.isRemovedOnCompletion = false
         movePosition.autoreverses = config.autoReverse
         return movePosition

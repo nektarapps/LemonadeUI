@@ -22,7 +22,7 @@ extension LemonadeToolTip {
         self.fill2SuperView()
        // self.isHidden = true
         
-        self.drawToolTip()
+       // self.drawToolTip()
     }
 }
 extension LemonadeToolTip {
@@ -32,62 +32,4 @@ extension LemonadeToolTip {
     // Next
     // Prev
 }
-extension LemonadeToolTip {
-    private func drawToolTip(){
-        if configs.isEmpty { return }
-        let item = configs[startIndex]
-        item.view.layoutIfNeeded()
-        
-        let overlayView = UIView(frame: self.bounds)
-        let targetMaskLayer = CAShapeLayer()
 
-        let squareSide = frame.width / 1.6
-        let squareSize = CGSize(width: squareSide, height: squareSide)
-        let squareOrigin = CGPoint(x: CGFloat(center.x) - (squareSide / 2),
-                                   y: CGFloat(center.y) - (squareSide / 2))
-        let square = UIBezierPath(roundedRect: CGRect(origin: squareOrigin, size: squareSize), cornerRadius: 16)
-
-        let path = UIBezierPath(rect: self.bounds)
-        path.append(square)
-
-        targetMaskLayer.path = path.cgPath
-        // Exclude intersected paths
-        targetMaskLayer.fillRule = CAShapeLayerFillRule.evenOdd
-
-        overlayView.layer.mask = targetMaskLayer
-        overlayView.clipsToBounds = true
-        overlayView.alpha = 0.6
-        overlayView.backgroundColor = UIColor.black
-
-        addSubview(overlayView)
-        
-      //  self.isHidden = false
-    }
-}
-
-extension UIView {
-    public func addOverlayView() {
-        let overlayView = UIView(frame: self.bounds)
-        let targetMaskLayer = CAShapeLayer()
-
-        let squareSide = frame.width / 1.6
-        let squareSize = CGSize(width: squareSide, height: squareSide)
-        let squareOrigin = CGPoint(x: CGFloat(center.x) - (squareSide / 2),
-                                   y: CGFloat(center.y) - (squareSide / 2))
-        let square = UIBezierPath(roundedRect: CGRect(origin: squareOrigin, size: squareSize), cornerRadius: 16)
-
-        let path = UIBezierPath(rect: self.bounds)
-        path.append(square)
-
-        targetMaskLayer.path = path.cgPath
-        // Exclude intersected paths
-        targetMaskLayer.fillRule = CAShapeLayerFillRule.evenOdd
-
-        overlayView.layer.mask = targetMaskLayer
-        overlayView.clipsToBounds = true
-        overlayView.alpha = 0.6
-        overlayView.backgroundColor = UIColor.black
-
-        addSubview(overlayView)
-    }
-}
