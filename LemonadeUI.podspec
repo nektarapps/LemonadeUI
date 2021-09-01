@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LemonadeUI'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'LemonadeUI library provide essential function for creating UI. Library working with UIKit. Library still pre-release mode. If you find any issue or better solutions , reach us!'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Sources/*.{h,m,swift}'
+  s.source_files = '/Sources/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'LemonadeUI' => ['LemonadeUI/Assets/*.png']
