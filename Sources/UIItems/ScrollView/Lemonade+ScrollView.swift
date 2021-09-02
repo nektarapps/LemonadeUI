@@ -32,6 +32,11 @@ public class LemonadeScrollView: UIScrollView {
 }
 
 extension LemonadeScrollView {
+    
+    /**
+     ScrollView adding function
+     - parameter view: ScrollView child element.
+     */
     public func addScrollView(to view : UIView) {
         self.contentInsetAdjustmentBehavior = .never
         self.contentView = .init()
@@ -52,10 +57,15 @@ extension LemonadeScrollView {
         //contentView?.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
 
     }
+    /// Last item for contentView and dynamic contentSize
     public func addLastItem( _ view : UIView , padding : CGFloat = 0.0) {
         if contentView == nil { return }
         view.bottom(self.contentView!, equalTo: .bottom , constant: padding)
     }
+    /**
+     Function provide streching feature
+     - parameter streching: LemonadeStreching config param.
+     */
     public func addStreching( _ streching : LemonadeStreching) {
         self.strechingConfig = streching
     }
@@ -76,10 +86,13 @@ extension LemonadeScrollView : UIScrollViewDelegate {
     
 }
 
-
+/// Streching config 
 public struct LemonadeStreching {
+    /// Minumum view height
     var defaultHeight : CGFloat
+    /// Top Anchor
     var topAnchor : NSLayoutConstraint
+    /// Height Anchor
     var heightAnchor : NSLayoutConstraint
     
     public init( _ height : CGFloat

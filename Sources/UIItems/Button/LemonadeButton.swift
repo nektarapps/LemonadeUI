@@ -13,6 +13,9 @@ public class LemonadeButton : UIButton {
     ///Switch Button type delegate
     public weak var lemonadeSwitchButtonDelegate : LemonadeSwitchButtonDelegate?
     
+    /// Button Click animation
+    public var clickAnimation : LemonadeAnimation?
+    
     private weak var toggleView : UIView?
     private var toggleLeftAnchor : NSLayoutConstraint?
     private var switchButtonConfig : LemonadeSwitchButtonConfig?
@@ -26,10 +29,10 @@ public class LemonadeButton : UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     public convenience init(frame : CGRect , _ text : LemonadeText) {
         self.init(frame:frame)
-        self.text(text)
+        if text.kern != 0.0 || text.underLine != nil { self.attributedText(text) }
+        else { self.text(text) }
     }
 }
 
@@ -102,6 +105,10 @@ extension LemonadeButton {
         self.titleLabel?.font = text.font
         self.titleLabel?.textAlignment = text.alignment
     }
+    /// Atrributed Text configuration function
+    public func attributedText( _ text : LemonadeText) {
+        self.setAttributedTitle(text.attributeText(), for: .normal)
+    }
     
     /// Adding click
     public func onClick(target : Any? , _ action : Selector) {
@@ -110,5 +117,14 @@ extension LemonadeButton {
         }
         if toggleConfig != nil || switchButtonConfig != nil { return }
         self.addTarget(target , action: action, for: .touchUpInside)
+    }
+}
+
+
+extension LemonadeButton {
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let animation = self.clickAnimation else { return }
+        self.layoutIfNeeded()
+        self.animate(animation, config: .init(duration: 0.3, repeatCount: 1, autoReverse: true))
     }
 }

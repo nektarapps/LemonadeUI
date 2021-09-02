@@ -16,6 +16,9 @@ public enum LemonadeAnimation {
     /// Scaling animation Y axis
     case scaleY(scaleSize : CGFloat)
     
+    /// Scaling animation X and Y axis
+    case scaleXY(scaleSize : CGFloat)
+    
     /// Shadow opacity animation
     case shadowOpacity
     
@@ -52,6 +55,8 @@ extension LemonadeAnimation {
             return scaleX(config, width: view.bounds.width, scaleSize)
         case .scaleY(let scaleSize):
             return scaleY(config, height: view.bounds.height, scaleSize)
+        case .scaleXY(let scaleSize):
+            return scaleAnimation(config, from: 1, to: scaleSize)
         case .shadowOpacity:
             return shadowOpacity(config, from: view.layer.shadowOpacity)
         case .gradientTransition(let from, let to):

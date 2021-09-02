@@ -24,6 +24,12 @@ class ViewController: UIViewController {
         heightAnchor.isActive = true
         v.top(scrollView.contentView!, equalTo: .top)
         
+        let button : LemonadeButton = .init(frame: .zero, color: .init(backgroundColor: .white), radius: .init(radius: 12))
+        button.attributedText(.init(text: "Özgür", color: .red, font: .systemFont(ofSize: 20), alignment: .center, kern: 2.0, underline: .init(.double, color: .orange)))
+        button.clickAnimation = .scaleXY(scaleSize:1.1)
+        v.addSubview(button)
+        button.center(to: v, width: 200, height: 50)
+        
         let topAnchor = v.topAnchor.constraint(equalTo: scrollView.contentView!.topAnchor)
         topAnchor.isActive = true
 

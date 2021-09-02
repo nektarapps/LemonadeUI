@@ -21,24 +21,48 @@ public struct LemonadeText {
     var alignment : NSTextAlignment
     
     /// Spacing value between characters
-    var kern    : Double?
+    var kern    : Double
     
-    public init (text : String , color : UIColor = .white , font : UIFont = .systemFont(ofSize: 12) , alignment : NSTextAlignment = .center) {
-        self.text = text
-        self.color = color
-        self.font = font
-        self.alignment = alignment
-    }
+    var underLine : LemonadeUnderLine?
     
-    
-    public init (text : String , color : UIColor = .white , font : UIFont = .systemFont(ofSize: 12) , alignment : NSTextAlignment = .center , kern : Double) {
+    public init (text : String
+                 , color : UIColor = .white
+                 , font : UIFont = .systemFont(ofSize: 12)
+                 , alignment : NSTextAlignment = .center
+                 , kern : Double = 0.0
+                 , underline : LemonadeUnderLine? = nil) {
         self.text = text
         self.color = color
         self.font = font
         self.alignment = alignment
         self.kern = kern
+        self.underLine = underline
+    }
+    
+    
+    public func attributeText() -> NSAttributedString {
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = self.alignment
+        paragraph.lineBreakMode = .byWordWrapping
+        
+        return self.underLine == nil
+            ? NSMutableAttributedString.init(string: self.text, attributes: [NSAttributedString.Key.font : self.font  , NSAttributedString.Key.foregroundColor : self.color , NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : self.kern])
+            : NSMutableAttributedString.init(string: self.text, attributes: [NSAttributedString.Key.font : self.font  , NSAttributedString.Key.foregroundColor : self.color , NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : self.kern , .underlineStyle : self.underLine!.underLine.rawValue , .underlineColor : self.underLine!.underLineColor ])
     }
 }
+
+
+public struct LemonadeUnderLine {
+    var underLine : NSUnderlineStyle
+    var underLineColor : UIColor
+    
+    
+    public init( _ type : NSUnderlineStyle , color : UIColor) {
+        self.underLine = type
+        self.underLineColor = color
+    }
+}
+
 
 
 

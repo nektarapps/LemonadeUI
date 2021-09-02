@@ -28,7 +28,7 @@ public class LemonadeLabel : UILabel {
     /// Lemonade Text init
     public convenience init(frame : CGRect , _ text : LemonadeText) {
         self.init(frame : frame)
-        if text.kern != nil { self.attributedText([text]) }
+        if text.kern != 0.0 || text.underLine != nil { self.attributedText([text]) }
         else { self.text(text) }
     }
     /// Collapse Lemonade Text init
@@ -85,14 +85,9 @@ extension LemonadeLabel {
         let attrbsString = NSMutableAttributedString.init()
         
         for text in texts {
-            let paragraph = NSMutableParagraphStyle()
-            paragraph.alignment = text.alignment
-            paragraph.lineBreakMode = .byWordWrapping
-            let attrbText = text.kern == nil ? NSMutableAttributedString.init(string: text.text
-                                                                              , attributes: [NSAttributedString.Key.font : text.font , NSAttributedString.Key.foregroundColor : text.color , NSAttributedString.Key.paragraphStyle : paragraph]) : NSMutableAttributedString.init(string: text.text, attributes: [NSAttributedString.Key.font : text.font  , NSAttributedString.Key.foregroundColor : text.color , NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : text.kern! ])
-            attrbsString.append(attrbText)
+            let attributeText = text.attributeText()
+            attrbsString.append(attributeText)
         }
-        
         self.numberOfLines = 0
         self.attributedText = attrbsString
         self.lemonadeAttributedText = texts
