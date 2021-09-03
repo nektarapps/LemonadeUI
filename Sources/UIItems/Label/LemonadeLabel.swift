@@ -69,6 +69,7 @@ extension LemonadeLabel {
         self.textAlignment = text.alignment
         self.font = text.font
         self.numberOfLines = 0
+        if text.breakMode != nil { self.lineBreakMode = text.breakMode! }
         self.lemonadeText = text
     }
 }

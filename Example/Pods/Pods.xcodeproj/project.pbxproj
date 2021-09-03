@@ -34,6 +34,11 @@
 		2EDB04CA26D7A6BD0027C318 /* Lemonade+Labelled+Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB04C926D7A6BD0027C318 /* Lemonade+Labelled+Input.swift */; };
 		2EDB04CD26D7C7540027C318 /* Lemonade+Tooltip+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB04CC26D7C7540027C318 /* Lemonade+Tooltip+View.swift */; };
 		2EDB04CF26D7C7D40027C318 /* Lemonade+ToolTip+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDB04CE26D7C7D40027C318 /* Lemonade+ToolTip+Config.swift */; };
+		2EE69A5626E22C9B00648012 /* Lemonade+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A5526E22C9B00648012 /* Lemonade+CollectionView.swift */; };
+		2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A5726E22DBF00648012 /* WrapContent.swift */; };
+		2EE69A5E26E2347C00648012 /* Lemonade+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A5D26E2347C00648012 /* Lemonade+Cell.swift */; };
+		2EE69A6026E2397A00648012 /* Lemonade+CollectionView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A5F26E2397A00648012 /* Lemonade+CollectionView+DataSource.swift */; };
+		2EE69A6326E23BD000648012 /* Default+Lemonade+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A6226E23BD000648012 /* Default+Lemonade+Cell.swift */; };
 		2FA5EBB2F0E03F35470441B228A8EBD5 /* Pods-LemonadeUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B914D0F056EA15E49211022FC1389C1C /* Pods-LemonadeUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87DA8EDA6449792D610EF912F10A1E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		89E371B2047FA56FBB895953774F733A /* LemonadeUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B54BB4412AD81C41730050C6F064997 /* LemonadeUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -84,6 +89,11 @@
 		2EDB04C926D7A6BD0027C318 /* Lemonade+Labelled+Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Labelled+Input.swift"; sourceTree = "<group>"; };
 		2EDB04CC26D7C7540027C318 /* Lemonade+Tooltip+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Tooltip+View.swift"; sourceTree = "<group>"; };
 		2EDB04CE26D7C7D40027C318 /* Lemonade+ToolTip+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+ToolTip+Config.swift"; sourceTree = "<group>"; };
+		2EE69A5526E22C9B00648012 /* Lemonade+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+CollectionView.swift"; sourceTree = "<group>"; };
+		2EE69A5726E22DBF00648012 /* WrapContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapContent.swift; sourceTree = "<group>"; };
+		2EE69A5D26E2347C00648012 /* Lemonade+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Cell.swift"; sourceTree = "<group>"; };
+		2EE69A5F26E2397A00648012 /* Lemonade+CollectionView+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+CollectionView+DataSource.swift"; sourceTree = "<group>"; };
+		2EE69A6226E23BD000648012 /* Default+Lemonade+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Default+Lemonade+Cell.swift"; sourceTree = "<group>"; };
 		379D24796B7DC360D54E76BD35D942A0 /* Pods-LemonadeUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LemonadeUI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5B54BB4412AD81C41730050C6F064997 /* LemonadeUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LemonadeUI-umbrella.h"; sourceTree = "<group>"; };
 		5C4773BCF01EB863692148C5CA40C53C /* LemonadeUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LemonadeUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -173,6 +183,7 @@
 		2E1D68CF26C3BEE9001F0F47 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2EE69A5926E22F0E00648012 /* Helpers */,
 				2EA9B44B26C5306000CC2698 /* Animations */,
 				2E1D68DC26C422D3001F0F47 /* UIItems */,
 				2E1D68D026C3C750001F0F47 /* Constaints */,
@@ -195,6 +206,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				2EE69A5226E2278400648012 /* CollectionView */,
 				2E56A90F26D8C6BA0086113C /* ScrollView */,
 				2EDB04CB26D7C6F80027C318 /* ToolTipView */,
 				2E77ED0726CE9463004552EE /* Input */,
@@ -294,6 +306,49 @@
 				2EDB04CE26D7C7D40027C318 /* Lemonade+ToolTip+Config.swift */,
 			);
 			path = ToolTipView;
+			sourceTree = "<group>";
+		};
+		2EE69A5226E2278400648012 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2EE69A5C26E2346700648012 /* Lemonade+Cells */,
+				2EE69A5326E2295E00648012 /* FlowLayout */,
+				2EE69A5526E22C9B00648012 /* Lemonade+CollectionView.swift */,
+				2EE69A5726E22DBF00648012 /* WrapContent.swift */,
+				2EE69A5F26E2397A00648012 /* Lemonade+CollectionView+DataSource.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		2EE69A5326E2295E00648012 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		2EE69A5926E22F0E00648012 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2EE69A5C26E2346700648012 /* Lemonade+Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2EE69A6126E23BAF00648012 /* CustomCells */,
+				2EE69A5D26E2347C00648012 /* Lemonade+Cell.swift */,
+			);
+			path = "Lemonade+Cells";
+			sourceTree = "<group>";
+		};
+		2EE69A6126E23BAF00648012 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				2EE69A6226E23BD000648012 /* Default+Lemonade+Cell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		3F9CE0A74A5D2F93A799A9BBBE3919F0 /* Pod */ = {
@@ -545,6 +600,7 @@
 				2EA9B44A26C5121900CC2698 /* Custom+View+Extensions.swift in Sources */,
 				2EDB04CF26D7C7D40027C318 /* Lemonade+ToolTip+Config.swift in Sources */,
 				2E09F45026C66BC30062C61E /* Config+Lemonade+Label.swift in Sources */,
+				2EE69A6326E23BD000648012 /* Default+Lemonade+Cell.swift in Sources */,
 				2EA9B44D26C5315E00CC2698 /* Custom+Animations.swift in Sources */,
 				2EA9B44626C5030000CC2698 /* ConfigUI+View.swift in Sources */,
 				2E1D68D826C3D945001F0F47 /* LemonadePadding.swift in Sources */,
@@ -554,17 +610,21 @@
 				2E09F44E26C66B3F0062C61E /* LemonadeLabel.swift in Sources */,
 				2EA9B45126C53AC000CC2698 /* Animation+View+Extension.swift in Sources */,
 				2E09F45226C6853F0062C61E /* Label+Tap+Gesture+Extensions.swift in Sources */,
+				2EE69A6026E2397A00648012 /* Lemonade+CollectionView+DataSource.swift in Sources */,
 				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
 				2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
+				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
 				2E1D68DA26C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift in Sources */,
 				2EDB04CA26D7A6BD0027C318 /* Lemonade+Labelled+Input.swift in Sources */,
 				2E09F45426C689590062C61E /* Custom+Basic+Animations.swift in Sources */,
+				2EE69A5E26E2347C00648012 /* Lemonade+Cell.swift in Sources */,
 				2E387B2F26CBCB8700C4234E /* Config+Lemonade+Button.swift in Sources */,
 				2EA9B44326C5028D00CC2698 /* Common+View+Extensions.swift in Sources */,
 				2EDB04C626D790480027C318 /* LemonadeTextView.swift in Sources */,
 				2E77ED0A26CE947E004552EE /* LemonadeTextfield.swift in Sources */,
 				2E56A91126D8C6C70086113C /* Lemonade+ScrollView.swift in Sources */,
+				2EE69A5626E22C9B00648012 /* Lemonade+CollectionView.swift in Sources */,
 				2EDB04CD26D7C7540027C318 /* Lemonade+Tooltip+View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

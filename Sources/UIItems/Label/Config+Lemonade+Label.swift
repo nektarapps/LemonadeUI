@@ -23,20 +23,26 @@ public struct LemonadeText {
     /// Spacing value between characters
     var kern    : Double
     
+    /// UnderLine configuration
     var underLine : LemonadeUnderLine?
+    
+    /// Break Mode
+    var breakMode : NSLineBreakMode?
     
     public init (text : String
                  , color : UIColor = .white
                  , font : UIFont = .systemFont(ofSize: 12)
                  , alignment : NSTextAlignment = .center
                  , kern : Double = 0.0
-                 , underline : LemonadeUnderLine? = nil) {
+                 , underline : LemonadeUnderLine? = nil
+                 , breakMode : NSLineBreakMode? = nil ) {
         self.text = text
         self.color = color
         self.font = font
         self.alignment = alignment
         self.kern = kern
         self.underLine = underline
+        self.breakMode = breakMode
     }
     
     
@@ -48,6 +54,22 @@ public struct LemonadeText {
         return self.underLine == nil
             ? NSMutableAttributedString.init(string: self.text, attributes: [NSAttributedString.Key.font : self.font  , NSAttributedString.Key.foregroundColor : self.color , NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : self.kern])
             : NSMutableAttributedString.init(string: self.text, attributes: [NSAttributedString.Key.font : self.font  , NSAttributedString.Key.foregroundColor : self.color , NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : self.kern , .underlineStyle : self.underLine!.underLine.rawValue , .underlineColor : self.underLine!.underLineColor ])
+    }
+    
+    
+    
+    
+    public func labelHeight(width : CGFloat) -> CGFloat {
+        let label : LemonadeLabel = .init(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude), self)
+        label.sizeToFit()
+        label.layoutIfNeeded()
+        return label.frame.height
+    }
+    public func labelWidth(height : CGFloat) -> CGFloat {
+        let label : LemonadeLabel = .init(frame: CGRect(x: 0, y: 0, width: CGFloat.greatestFiniteMagnitude, height: height), self)
+        label.sizeToFit()
+        label.layoutIfNeeded()
+        return label.frame.width
     }
 }
 
