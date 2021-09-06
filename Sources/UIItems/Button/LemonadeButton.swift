@@ -76,7 +76,7 @@ extension LemonadeButton {
     /// Toggle trigger with param
     @objc public func toggle( _ value : Bool) {
         if toggleLeftAnchor == nil || toggleView == nil || switchButtonConfig == nil || toggleConfig == nil { return }
-    
+        
         toggleLeftAnchor?.constant = value ? self.bounds.width - ( toggleConfig!.width + toggleConfig!.padding ) : toggleConfig!.padding
         
         self.toggleConfig?.onChange(value)
@@ -123,8 +123,10 @@ extension LemonadeButton {
 
 extension LemonadeButton {
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let animation = self.clickAnimation else { return }
-        self.layoutIfNeeded()
-        self.animate(animation, config: .init(duration: 0.3, repeatCount: 1, autoReverse: true))
+        super.touchesBegan(touches, with: event)
+        if let animation = self.clickAnimation {
+            self.layoutIfNeeded()
+            self.animate(animation, config: .init(duration: 0.3, repeatCount: 1, autoReverse: true))
+        }
     }
 }

@@ -79,7 +79,8 @@ extension LemonadeLabelledInput {
         let label : LemonadeLabel = .init(frame: .zero, text)
         self.addSubview(label)
         
-        label.width(self, equalTo: .width ,multiplier: 0.3)
+        label.width(self, equalTo: .width)
+        label.height(constant: text.labelHeight(width: self.bounds.width))
         switch position {
             case .left:
                 label.left(self, equalTo: .left)
@@ -110,7 +111,8 @@ extension LemonadeLabelledInput {
      */
     public func textfield( _ text : LemonadeText
                            , placeholder : LemonadeText? = nil
-                           , labelPosition : LemonadeConstraint , margin : CGFloat = 0.0){
+                           , labelPosition : LemonadeConstraint
+                           , margin : CGFloat = 0.0){
         if lemonadeLabel == nil { return }
         let textfield : LemonadeTextfield = placeholder == nil
             ? .init(frame: .zero, text: text)

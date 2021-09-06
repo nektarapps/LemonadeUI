@@ -55,8 +55,8 @@ extension LemonadeConstraint {
                                     , equalTo : LemonadeConstraint
                                     , constant : CGFloat = 0.0
                                     , safeArea : Bool){
-        guard let currentViewAnchor = self.anchor(currentView, safeArea: safeArea) as? NSLayoutAnchor<AnyObject> else { return }
-        guard let equalToAnchor = equalTo.anchor(to, safeArea: false) as? NSLayoutAnchor<AnyObject> else { return }
+        guard let currentViewAnchor = self.anchor(currentView, safeArea: false) as? NSLayoutAnchor<AnyObject> else { return }
+        guard let equalToAnchor = equalTo.anchor(to, safeArea: safeArea) as? NSLayoutAnchor<AnyObject> else { return }
         let anchor = currentViewAnchor.constraint(equalTo: equalToAnchor , constant: constant)
         anchor.identifier = currentView.identifier + equalTo.rawValue
         anchor.isActive = true
