@@ -24,6 +24,9 @@
 		2E56A91126D8C6C70086113C /* Lemonade+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E56A91026D8C6C70086113C /* Lemonade+ScrollView.swift */; };
 		2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C403BBCF6CD6FAADFB5E080C91FB36 /* LemonadeUI-dummy.m */; };
 		2E77ED0A26CE947E004552EE /* LemonadeTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77ED0926CE947E004552EE /* LemonadeTextfield.swift */; };
+		2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAFF426E609BE00F3F909 /* Lemonade+Segment+Item.swift */; };
+		2E8FAFF726E60A0100F3F909 /* Lemonade+Segment+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAFF626E60A0100F3F909 /* Lemonade+Segment+Config.swift */; };
+		2E8FAFF926E60FE500F3F909 /* Lemonade+Segment+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAFF826E60FE500F3F909 /* Lemonade+Segment+Control.swift */; };
 		2EA9B44326C5028D00CC2698 /* Common+View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44226C5028D00CC2698 /* Common+View+Extensions.swift */; };
 		2EA9B44626C5030000CC2698 /* ConfigUI+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44526C5030000CC2698 /* ConfigUI+View.swift */; };
 		2EA9B44A26C5121900CC2698 /* Custom+View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44926C5121900CC2698 /* Custom+View+Extensions.swift */; };
@@ -79,6 +82,9 @@
 		2E387B2E26CBCB8700C4234E /* Config+Lemonade+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+Lemonade+Button.swift"; sourceTree = "<group>"; };
 		2E56A91026D8C6C70086113C /* Lemonade+ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+ScrollView.swift"; sourceTree = "<group>"; };
 		2E77ED0926CE947E004552EE /* LemonadeTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeTextfield.swift; sourceTree = "<group>"; };
+		2E8FAFF426E609BE00F3F909 /* Lemonade+Segment+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Item.swift"; sourceTree = "<group>"; };
+		2E8FAFF626E60A0100F3F909 /* Lemonade+Segment+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Config.swift"; sourceTree = "<group>"; };
+		2E8FAFF826E60FE500F3F909 /* Lemonade+Segment+Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Control.swift"; sourceTree = "<group>"; };
 		2EA9B44226C5028D00CC2698 /* Common+View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+View+Extensions.swift"; sourceTree = "<group>"; };
 		2EA9B44526C5030000CC2698 /* ConfigUI+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigUI+View.swift"; sourceTree = "<group>"; };
 		2EA9B44926C5121900CC2698 /* Custom+View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+View+Extensions.swift"; sourceTree = "<group>"; };
@@ -206,6 +212,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				2E8FAFF326E6090D00F3F909 /* SegmentControl */,
 				2EE69A5226E2278400648012 /* CollectionView */,
 				2E56A90F26D8C6BA0086113C /* ScrollView */,
 				2EDB04CB26D7C6F80027C318 /* ToolTipView */,
@@ -260,6 +267,16 @@
 				2E77ED0926CE947E004552EE /* LemonadeTextfield.swift */,
 			);
 			path = Textfield;
+			sourceTree = "<group>";
+		};
+		2E8FAFF326E6090D00F3F909 /* SegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				2E8FAFF426E609BE00F3F909 /* Lemonade+Segment+Item.swift */,
+				2E8FAFF626E60A0100F3F909 /* Lemonade+Segment+Config.swift */,
+				2E8FAFF826E60FE500F3F909 /* Lemonade+Segment+Control.swift */,
+			);
+			path = SegmentControl;
 			sourceTree = "<group>";
 		};
 		2EA9B44126C5027900CC2698 /* View */ = {
@@ -605,6 +622,7 @@
 				2EA9B44626C5030000CC2698 /* ConfigUI+View.swift in Sources */,
 				2E1D68D826C3D945001F0F47 /* LemonadePadding.swift in Sources */,
 				2E1D68D626C3D8FE001F0F47 /* LemonadeConstraint+View.swift in Sources */,
+				2E8FAFF926E60FE500F3F909 /* Lemonade+Segment+Control.swift in Sources */,
 				2EA9B44F26C533DD00CC2698 /* Config+Animation.swift in Sources */,
 				2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */,
 				2E09F44E26C66B3F0062C61E /* LemonadeLabel.swift in Sources */,
@@ -614,7 +632,9 @@
 				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
 				2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
+				2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
+				2E8FAFF726E60A0100F3F909 /* Lemonade+Segment+Config.swift in Sources */,
 				2E1D68DA26C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift in Sources */,
 				2EDB04CA26D7A6BD0027C318 /* Lemonade+Labelled+Input.swift in Sources */,
 				2E09F45426C689590062C61E /* Custom+Basic+Animations.swift in Sources */,
