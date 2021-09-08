@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0460CE6D26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */; };
 		0FF529E3BE7FBF1A08B4495FF986C8FC /* Pods-LemonadeUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 379D24796B7DC360D54E76BD35D942A0 /* Pods-LemonadeUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1193E30C42E0C9819F1F3C5D39734E66 /* Pods-LemonadeUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EEE6B901F87601B4D19F343C6CD0D8 /* Pods-LemonadeUI_Tests-dummy.m */; };
 		12053C8B9C274C3F1AA234B9F9C836E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Control+Protocol.swift"; sourceTree = "<group>"; };
 		0D5B85D50BB2396556A8DE89AD1E003A /* LemonadeUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LemonadeUI.modulemap; sourceTree = "<group>"; };
 		2ACB8DF5F3D001BFE7258A38491A6516 /* Pods-LemonadeUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E09F44D26C66B3F0062C61E /* LemonadeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeLabel.swift; sourceTree = "<group>"; };
@@ -189,7 +191,6 @@
 		2E1D68CF26C3BEE9001F0F47 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2EE69A5926E22F0E00648012 /* Helpers */,
 				2EA9B44B26C5306000CC2698 /* Animations */,
 				2E1D68DC26C422D3001F0F47 /* UIItems */,
 				2E1D68D026C3C750001F0F47 /* Constaints */,
@@ -275,6 +276,7 @@
 				2E8FAFF426E609BE00F3F909 /* Lemonade+Segment+Item.swift */,
 				2E8FAFF626E60A0100F3F909 /* Lemonade+Segment+Config.swift */,
 				2E8FAFF826E60FE500F3F909 /* Lemonade+Segment+Control.swift */,
+				0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */,
 			);
 			path = SegmentControl;
 			sourceTree = "<group>";
@@ -342,13 +344,6 @@
 			children = (
 			);
 			path = FlowLayout;
-			sourceTree = "<group>";
-		};
-		2EE69A5926E22F0E00648012 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2EE69A5C26E2346700648012 /* Lemonade+Cells */ = {
@@ -631,6 +626,7 @@
 				2EE69A6026E2397A00648012 /* Lemonade+CollectionView+DataSource.swift in Sources */,
 				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
 				2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */,
+				0460CE6D26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
 				2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
