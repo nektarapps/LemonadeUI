@@ -5,14 +5,43 @@
 //  Created by Mac on 15.09.2021.
 //
 
+/// Alert configuration options
 public struct LemonadeAlertConfig {
+    
+    /// Icon for alert
     var icon            : UIImage?
+    
+    /// Title
     var title           : LemonadeText
+    
+    /// Description of alert
     var message         : LemonadeText?
+    
+    /// Default Alert States
     var alertState      : LemonadeAlertState
+    
+    /// Animation Position
     var position        : LemonadeAlertPosition
+    
+    /// Auto Close Duration default value is 0.0
     var closeDuration   : Int
     
+    
+    /**
+     Configure init function
+     
+     - parameter state:Default Alert States.
+     - parameter position:Animation Position.
+     - parameter icon:Icon for alert. Default value is nil
+     - parameter title:Title
+     - parameter message:/// Description of alert. Default value is nil
+     - parameter closeDuration:Auto Close Duration default value is 0.0
+     - returns: none
+     - warning: none
+     # Notes: #
+     1. none
+     */
+
     public init( _ state : LemonadeAlertState
                  , position : LemonadeAlertPosition
                  , icon : UIImage? = nil
@@ -30,6 +59,8 @@ public struct LemonadeAlertConfig {
     }
 }
 
+
+/// Alert animation positions
 public enum LemonadeAlertPosition {
     case top
     case bottom
