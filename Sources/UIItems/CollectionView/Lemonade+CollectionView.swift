@@ -13,7 +13,7 @@ public class LemonadeCollectionView : UICollectionView {
     
     public var dynamicHeightMode : Bool = false
     
-    public func dynamicReload<W : WrapContent>( _ data : [W]){
+    public func dynamicReload<W : LemonadeWrapContent>( _ data : [W]){
         let condition = dynamicHeightMode == true && !data.isEmpty
         if condition {
             self.calculateMaxHeight(data)
@@ -22,7 +22,7 @@ public class LemonadeCollectionView : UICollectionView {
     }
 }
 extension LemonadeCollectionView {
-    private func calculateMaxHeight< W : WrapContent>( _ data : [W]) {
+    private func calculateMaxHeight< W : LemonadeWrapContent>( _ data : [W]) {
         var maxHeight : CGFloat = 0.0
         for item in data {
             let height = item.calcualation()

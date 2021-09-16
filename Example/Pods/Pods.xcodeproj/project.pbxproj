@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0460CE6D26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */; };
+		04A2156F26F2926400E16858 /* Lemonade+Alert+Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2156E26F2926400E16858 /* Lemonade+Alert+Configs.swift */; };
+		04C325FA26F3266F00E8AE6D /* Lemonade+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C325F926F3266F00E8AE6D /* Lemonade+Alert.swift */; };
+		04C325FC26F349BD00E8AE6D /* Lemonade+Alert+Diolog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C325FB26F349BD00E8AE6D /* Lemonade+Alert+Diolog.swift */; };
+		04D721A826F31E58004AB677 /* Lemonade+Bar+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D721A726F31E58004AB677 /* Lemonade+Bar+Alert.swift */; };
 		0FF529E3BE7FBF1A08B4495FF986C8FC /* Pods-LemonadeUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 379D24796B7DC360D54E76BD35D942A0 /* Pods-LemonadeUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1193E30C42E0C9819F1F3C5D39734E66 /* Pods-LemonadeUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EEE6B901F87601B4D19F343C6CD0D8 /* Pods-LemonadeUI_Tests-dummy.m */; };
 		12053C8B9C274C3F1AA234B9F9C836E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -69,6 +73,10 @@
 
 /* Begin PBXFileReference section */
 		0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Control+Protocol.swift"; sourceTree = "<group>"; };
+		04A2156E26F2926400E16858 /* Lemonade+Alert+Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Alert+Configs.swift"; sourceTree = "<group>"; };
+		04C325F926F3266F00E8AE6D /* Lemonade+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Alert.swift"; sourceTree = "<group>"; };
+		04C325FB26F349BD00E8AE6D /* Lemonade+Alert+Diolog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Alert+Diolog.swift"; sourceTree = "<group>"; };
+		04D721A726F31E58004AB677 /* Lemonade+Bar+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Bar+Alert.swift"; sourceTree = "<group>"; };
 		0D5B85D50BB2396556A8DE89AD1E003A /* LemonadeUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LemonadeUI.modulemap; sourceTree = "<group>"; };
 		2ACB8DF5F3D001BFE7258A38491A6516 /* Pods-LemonadeUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E09F44D26C66B3F0062C61E /* LemonadeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeLabel.swift; sourceTree = "<group>"; };
@@ -162,6 +170,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A69A5926F226570098699F /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				04D721A626F31E2F004AB677 /* Alerts */,
+				04A2156E26F2926400E16858 /* Lemonade+Alert+Configs.swift */,
+				04C325F926F3266F00E8AE6D /* Lemonade+Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		04D721A626F31E2F004AB677 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				04D721A726F31E58004AB677 /* Lemonade+Bar+Alert.swift */,
+				04C325FB26F349BD00E8AE6D /* Lemonade+Alert+Diolog.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
 		18EB882A18758D3CE453E228291DDC5A /* Pods-LemonadeUI_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +240,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				04A69A5926F226570098699F /* Alert */,
 				2E8FAFF326E6090D00F3F909 /* SegmentControl */,
 				2EE69A5226E2278400648012 /* CollectionView */,
 				2E56A90F26D8C6BA0086113C /* ScrollView */,
@@ -331,19 +359,11 @@
 			isa = PBXGroup;
 			children = (
 				2EE69A5C26E2346700648012 /* Lemonade+Cells */,
-				2EE69A5326E2295E00648012 /* FlowLayout */,
 				2EE69A5526E22C9B00648012 /* Lemonade+CollectionView.swift */,
 				2EE69A5726E22DBF00648012 /* WrapContent.swift */,
 				2EE69A5F26E2397A00648012 /* Lemonade+CollectionView+DataSource.swift */,
 			);
 			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		2EE69A5326E2295E00648012 /* FlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FlowLayout;
 			sourceTree = "<group>";
 		};
 		2EE69A5C26E2346700648012 /* Lemonade+Cells */ = {
@@ -618,6 +638,7 @@
 				2E1D68D826C3D945001F0F47 /* LemonadePadding.swift in Sources */,
 				2E1D68D626C3D8FE001F0F47 /* LemonadeConstraint+View.swift in Sources */,
 				2E8FAFF926E60FE500F3F909 /* Lemonade+Segment+Control.swift in Sources */,
+				04A2156F26F2926400E16858 /* Lemonade+Alert+Configs.swift in Sources */,
 				2EA9B44F26C533DD00CC2698 /* Config+Animation.swift in Sources */,
 				2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */,
 				2E09F44E26C66B3F0062C61E /* LemonadeLabel.swift in Sources */,
@@ -627,7 +648,10 @@
 				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
 				2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */,
 				0460CE6D26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift in Sources */,
+				04C325FC26F349BD00E8AE6D /* Lemonade+Alert+Diolog.swift in Sources */,
+				04C325FA26F3266F00E8AE6D /* Lemonade+Alert.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
+				04D721A826F31E58004AB677 /* Lemonade+Bar+Alert.swift in Sources */,
 				2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
 				2E8FAFF726E60A0100F3F909 /* Lemonade+Segment+Config.swift in Sources */,
