@@ -77,7 +77,7 @@ public class LemonadeAlert : UIView {
     }
     
     deinit {
-        animateAnchor = nil
+         animateAnchor = nil
         delegate = nil
     }
     
