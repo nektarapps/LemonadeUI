@@ -6,7 +6,11 @@
 //
 
 public protocol LemonadeProgressBarDelegate : AnyObject {
+    
+    /// Trigger when percentage changed
     func percantageChanged( _ bar : LemonadeProgressBar , value : CGFloat)
+    
+    /// Trigger when progress come up to 100.0
     func progressFinished( _ bar : LemonadeProgressBar)
 }
 
@@ -14,19 +18,24 @@ public class LemonadeProgressBar : UIView {
     
     public weak var delegate : LemonadeProgressBarDelegate?
     
-    private var currentPercentage : CGFloat = 0.0 {
+    /// Active percentage value (GET)
+    private(set) var currentPercentage : CGFloat = 0.0 {
         didSet {
             DispatchQueue.main.async { self.delegate?.percantageChanged(self, value: self.currentPercentage) }
         }
     }
-    
+    /// Config
     private var config : LemonadeProgressBarConfig?
+    
+    // Animation Anchor
     private var animationAnchor : NSLayoutConstraint?
     
+    /// Current progress label
     public lazy var progressLabel : LemonadeLabel = {
         return LemonadeLabel.init(frame: .zero, config!.textType.text!)
     }()
     
+    // Progress View
     private lazy var progressView : UIView = {
         return config!.progressView
     }()
@@ -37,6 +46,7 @@ public class LemonadeProgressBar : UIView {
     }
     
     deinit {
+        config = nil
         animationAnchor = nil
         delegate = nil
     }
@@ -48,12 +58,18 @@ public class LemonadeProgressBar : UIView {
 }
 
 extension LemonadeProgressBar {
+    
+    /// Manuel configure wiith bar config type
     public func configure( _ config : LemonadeProgressBarConfig) {
         self.config = config
         self.currentPercentage = config.starterPercentage
         self.configureLabel()
     }
-    
+    /**
+     If you want change current percetange with exec function , use this one
+     
+     - parameter percentage: Exec percentage.
+     */
     public func updatePercanteage( _ percentage : CGFloat? = nil ) {
         if animationAnchor == nil { return }
         if percentage != nil {
@@ -72,7 +88,11 @@ extension LemonadeProgressBar {
             }
         }
     }
-    
+    /**
+     If you want add percentage current percetange with new percetange , user this one
+     
+     - parameter percentage: addtional percentage.
+     */
     public func addPercentage( _ percentage : CGFloat ) {
         if animationAnchor == nil { return }
         currentPercentage += percentage
@@ -84,6 +104,7 @@ extension LemonadeProgressBar {
 }
 extension LemonadeProgressBar {
     
+    //Calcualting width or height value with percentage
     private func calculate()-> CGFloat{
         let value = config!.alignment == .horizontal ? bounds.width : bounds.height
         let percentage = ((currentPercentage) * value) / 100
@@ -96,6 +117,7 @@ extension LemonadeProgressBar {
         return 0.0
     }
     
+    // Label configure with type
     private func configureLabel() {
         switch config!.textType {
         case .none:
@@ -110,7 +132,7 @@ extension LemonadeProgressBar {
             }
         }
     }
-    
+    // Progress bar configure
     private func configureProgressBar(){
         self.addSubview(progressView)
         self.sendSubviewToBack(progressView)
@@ -131,7 +153,7 @@ extension LemonadeProgressBar {
         self.autoAnimate()
     }
     
-    
+    // This function animate with auto animate duration
     private func autoAnimate() {
         if config!.automaticProgressDuration == 0 { return }
         let total : Double = Double(100.0 - config!.starterPercentage)

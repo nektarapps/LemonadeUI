@@ -6,16 +6,20 @@
 //
 
 
-public enum LemonadeProgressBarAlignment {
+public enum LemonadeProgressAlignment {
     case horizontal
     case vertical
 }
 
-public enum LemonadeProgressBarText {    
+public enum LemonadeProgressBarText {
+    /// No text
     case none
+    /// Auto text , this only show percentage of value
     case auto(initialText : LemonadeText)
+    /// Custom text , If you use this option , you will have to change label manually
     case custom(text : LemonadeText)
     
+    /// Text value if exists
     var text : LemonadeText? {
         switch self {
         case .auto(let text) , .custom(let text):
@@ -27,22 +31,31 @@ public enum LemonadeProgressBarText {
 }
 
 public struct LemonadeProgressBarConfig {
-    var alignment : LemonadeProgressBarAlignment
+    /// Bar Alignment
+    var alignment : LemonadeProgressAlignment
+    
+    /// Bar text type
     var textType  : LemonadeProgressBarText
+    
+    /// Bar initial percentage , default is 0.0
     var starterPercentage : CGFloat
+    
+    /// Auto animate duration , default is 0
     var automaticProgressDuration : Int
+    
+    /// Custom Progress view
     var progressView : UIView
     
     
-    public init(alignment : LemonadeProgressBarAlignment
+    public init(alignment : LemonadeProgressAlignment
                 , textType : LemonadeProgressBarText
                 , starterPercentage : CGFloat = 0.0
                 , automaticProgressDuration : Int = 0
-                , progressColor : UIView) {
+                , progressView : UIView) {
         self.alignment = alignment
         self.textType = textType
         self.starterPercentage = starterPercentage
         self.automaticProgressDuration = automaticProgressDuration
-        self.progressView = progressColor
+        self.progressView = progressView
     }
 }

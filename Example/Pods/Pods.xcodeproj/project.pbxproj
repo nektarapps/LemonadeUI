@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0442D36026F4835400F44DD7 /* Lemonade+Progress+Chart+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442D35F26F4835400F44DD7 /* Lemonade+Progress+Chart+Config.swift */; };
+		0442D36226F4852400F44DD7 /* Lemonade+Progress+Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442D36126F4852400F44DD7 /* Lemonade+Progress+Chart.swift */; };
 		0460CE6D26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */; };
 		04A2156F26F2926400E16858 /* Lemonade+Alert+Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2156E26F2926400E16858 /* Lemonade+Alert+Configs.swift */; };
 		04C325FA26F3266F00E8AE6D /* Lemonade+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C325F926F3266F00E8AE6D /* Lemonade+Alert.swift */; };
@@ -74,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0442D35F26F4835400F44DD7 /* Lemonade+Progress+Chart+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Progress+Chart+Config.swift"; sourceTree = "<group>"; };
+		0442D36126F4852400F44DD7 /* Lemonade+Progress+Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Progress+Chart.swift"; sourceTree = "<group>"; };
 		0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Control+Protocol.swift"; sourceTree = "<group>"; };
 		04A2156E26F2926400E16858 /* Lemonade+Alert+Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Alert+Configs.swift"; sourceTree = "<group>"; };
 		04C325F926F3266F00E8AE6D /* Lemonade+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Alert.swift"; sourceTree = "<group>"; };
@@ -174,6 +178,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0442D35D26F4831700F44DD7 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				0442D35E26F4831E00F44DD7 /* ProgressChart */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		0442D35E26F4831E00F44DD7 /* ProgressChart */ = {
+			isa = PBXGroup;
+			children = (
+				0442D35F26F4835400F44DD7 /* Lemonade+Progress+Chart+Config.swift */,
+				0442D36126F4852400F44DD7 /* Lemonade+Progress+Chart.swift */,
+			);
+			path = ProgressChart;
+			sourceTree = "<group>";
+		};
 		04A69A5926F226570098699F /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +274,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				0442D35D26F4831700F44DD7 /* Charts */,
 				04C325FD26F3682300E8AE6D /* ProgressBar */,
 				04A69A5926F226570098699F /* Alert */,
 				2E8FAFF326E6090D00F3F909 /* SegmentControl */,
@@ -653,6 +675,7 @@
 				2E1D68D626C3D8FE001F0F47 /* LemonadeConstraint+View.swift in Sources */,
 				2E8FAFF926E60FE500F3F909 /* Lemonade+Segment+Control.swift in Sources */,
 				04A2156F26F2926400E16858 /* Lemonade+Alert+Configs.swift in Sources */,
+				0442D36026F4835400F44DD7 /* Lemonade+Progress+Chart+Config.swift in Sources */,
 				2EA9B44F26C533DD00CC2698 /* Config+Animation.swift in Sources */,
 				2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */,
 				2E09F44E26C66B3F0062C61E /* LemonadeLabel.swift in Sources */,
@@ -666,6 +689,7 @@
 				04C325FA26F3266F00E8AE6D /* Lemonade+Alert.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
 				04D721A826F31E58004AB677 /* Lemonade+Bar+Alert.swift in Sources */,
+				0442D36226F4852400F44DD7 /* Lemonade+Progress+Chart.swift in Sources */,
 				2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
 				04C325FF26F3687F00E8AE6D /* Lemonade+ProgressBar+Config.swift in Sources */,
