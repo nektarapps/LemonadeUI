@@ -5,15 +5,25 @@
 //  Created by Mac on 16.09.2021.
 //
 
+public protocol LemonadeProgressBarDelegate : AnyObject {
+    func percantageChanged( _ bar : LemonadeProgressBar , value : CGFloat)
+    func progressFinished( _ bar : LemonadeProgressBar)
+}
 
 public class LemonadeProgressBar : UIView {
     
-    private var currentPercentage : CGFloat = 0.0
+    public weak var delegate : LemonadeProgressBarDelegate?
+    
+    private var currentPercentage : CGFloat = 0.0 {
+        didSet {
+            DispatchQueue.main.async { self.delegate?.percantageChanged(self, value: self.currentPercentage) }
+        }
+    }
     
     private var config : LemonadeProgressBarConfig?
     private var animationAnchor : NSLayoutConstraint?
     
-    lazy var progressLabel : LemonadeLabel = {
+    public lazy var progressLabel : LemonadeLabel = {
         return LemonadeLabel.init(frame: .zero, config!.textType.text!)
     }()
     
@@ -25,6 +35,12 @@ public class LemonadeProgressBar : UIView {
         self.init(frame : frame)
         self.configure(config)
     }
+    
+    deinit {
+        animationAnchor = nil
+        delegate = nil
+    }
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         if animationAnchor == nil { self.configureProgressBar() }
@@ -74,6 +90,9 @@ extension LemonadeProgressBar {
         if currentPercentage <= 100 {
             return percentage
         }
+        DispatchQueue.main.async {
+            self.delegate?.progressFinished(self)
+        }
         return 0.0
     }
     
@@ -86,6 +105,9 @@ extension LemonadeProgressBar {
             progressLabel.center(to: self)
             progressLabel.width(self, equalTo: .width , multiplier: 0.8)
             self.bringSubviewToFront(progressLabel)
+            if config!.alignment == .vertical {
+                progressLabel.transform = CGAffineTransform.init(rotationAngle:  -CGFloat.pi / 2)
+            }
         }
     }
     
@@ -112,7 +134,8 @@ extension LemonadeProgressBar {
     
     private func autoAnimate() {
         if config!.automaticProgressDuration == 0 { return }
-        let stepByPerSecond : Double = Double(100 / config!.automaticProgressDuration)
+        let total : Double = Double(100.0 - config!.starterPercentage)
+        let stepByPerSecond : Double = total / Double(config!.automaticProgressDuration)
         var currentSecond = 0
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
             guard let self = self else { return }
@@ -120,6 +143,9 @@ extension LemonadeProgressBar {
             currentSecond += 1
             if currentSecond >= self.config!.automaticProgressDuration {
                 timer.invalidate()
+                DispatchQueue.main.async {
+                    self.delegate?.progressFinished(self)
+                }
             }
         }
     }
