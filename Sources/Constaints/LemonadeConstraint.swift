@@ -8,6 +8,22 @@
 import UIKit
 
 
+/// Alert animation positions
+public enum LemonadePosition {
+    case top
+    case bottom
+    case left
+    case right
+}
+
+public enum LemonadeAlignment {
+    case horizontal
+    case vertical
+}
+
+
+
+
 public enum LemonadeConstraint : String {
     case top = "topAnchor"
     case bottom = "bottomAnchor"

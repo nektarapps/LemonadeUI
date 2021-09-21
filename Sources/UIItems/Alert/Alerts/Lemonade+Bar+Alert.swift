@@ -17,7 +17,7 @@ public class LemonadeBarAlert: LemonadeAlert {
         return stackView
     }()
     
-    override var availablePositions: [LemonadeAlertPosition] {
+    override var availablePositions: [LemonadePosition] {
         get {
             return [.top , .bottom]
         }

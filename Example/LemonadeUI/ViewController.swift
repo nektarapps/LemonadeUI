@@ -12,18 +12,52 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let elements : [LemonadeProgressChartElement] = [
-            .init(percentage: 80, barColor: .init(backgroundColor: .orange.withAlphaComponent(0.4)) , text: .init(text: "Turkey" , font: .systemFont(ofSize: 15)), progressView: .init(frame: .zero, color: .init(backgroundColor: .systemTeal.withAlphaComponent(0.6)))),
-            .init(percentage: 60, barColor: .init(backgroundColor: .yellow.withAlphaComponent(0.4))  , text: .init(text: "England" , font: .systemFont(ofSize: 15)), progressView: .init(frame: .zero, color: .init(backgroundColor: .systemPink.withAlphaComponent(0.6)))),
-            .init(percentage: 20, barColor: .init(backgroundColor: .brown.withAlphaComponent(0.4))  , text: .init(text: "U.S.A" , font: .systemFont(ofSize: 15)), progressView: .init(frame: .zero, color: .init(backgroundColor: .systemPurple.withAlphaComponent(0.6)))),
-            .init(percentage: 40, barColor: .init(backgroundColor: .cyan.withAlphaComponent(0.4)) , text: .init(text: "Coloumbia" , font: .systemFont(ofSize: 15)), progressView: .init(frame: .zero, color: .init(backgroundColor: .red)))
-        ]
-        let config : LemonadeProgressChartConfig = .init(alignment: .vertical
-                                                         , titleText: .init(text : "Top Sales" , color: .black)
-                                                         , elements: elements)
-        let chart : LemonadeProgressChart? = LemonadeProgressChart.init(frame: .zero, config)
-        self.view.addSubview(chart!)
-        chart!.center(to: self.view, width: .screenWidth(24), height: .screenWidth(24))
+        
+        let filterButton = LemonadeButton.init(frame: .zero, .init(text: "Filter" , color: .white))
+        filterButton.color(.init(backgroundColor: .systemYellow.withAlphaComponent(0.3)))
+        filterButton.radius(.init(radius: 8))
+        filterButton.border(.init(borderColor: .brown.withAlphaComponent(0.3), width: 1.0))
+        
+        let otherfilterButton = LemonadeButton.init(frame: .zero, .init(text: "Other Filter" , color: .white))
+        otherfilterButton.color(.init(backgroundColor: .systemYellow.withAlphaComponent(0.3)))
+        otherfilterButton.radius(.init(radius: 8))
+        otherfilterButton.border(.init(borderColor: .brown.withAlphaComponent(0.3), width: 1.0))
+        
+        let config = LemonadeSearchBarConfig.init(leftImage: nil, rigthImage: nil , buttons: [
+            filterButton , otherfilterButton
+        ] , position: .right)
+        let searchBar : LemonadeSearchBar = .init(frame: .zero
+                                                  , text: .init(text: "" , color: .black , alignment: .left)
+                                                  , placeholder: .init(text: "Aramaya başla" , color: .black)
+                                                  , config: config)
+        searchBar.spaceBetweenButtons = 20
+        view.addSubview(searchBar)
+        searchBar.center(to: view, width: .screenWidth(24), height: 75)
+        searchBar.color(.init(backgroundColor: .systemBlue.withAlphaComponent(0.5)))
+        searchBar.radius(.init(radius: 12))
+        searchBar.border(.init(borderColor: .red.withAlphaComponent(0.3), width: 2.0))
+        searchBar.searchBarTextfield.color(.init(backgroundColor: .red.withAlphaComponent(0.2)))
+        searchBar.lemonadeSearchBarDelegate = self
+        
     }
+    
+}
+extension ViewController : LemonadeSearchBarDelegate {
+    func searchBarDidChange(_ searchBar: LemonadeSearchBar, text: String) {
+        print(text)
+    }
+    
+    func searchButtonTapped(_ searchBar: LemonadeSearchBar, text: String) {
+        print(text)
+    }
+    
+    func searchingStateChanged(_ searchBar: LemonadeSearchBar, state: LemonadeSearchState) {
+        print(state)
+    }
+    
+    func buttonsTapped(_ searchBar: LemonadeSearchBar, button: LemonadeButton) {
+        print(button)
+    }
+    
+    
 }

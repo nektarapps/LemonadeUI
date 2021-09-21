@@ -8,7 +8,7 @@
 
 public struct LemonadeProgressChartConfig {
     /// Bar Alignment
-    var alignment : LemonadeProgressAlignment
+    var alignment : LemonadeAlignment
     
     /// X and Y axis border color , default is .black
     var borderColor : LemonadeColor
@@ -23,7 +23,7 @@ public struct LemonadeProgressChartConfig {
     var titleText : LemonadeText?
     
     
-    public init(alignment : LemonadeProgressAlignment
+    public init(alignment : LemonadeAlignment
                 , borderColor : LemonadeColor = .init(backgroundColor: .black)
                 , titleText : LemonadeText? = nil
                 , isLinePercentageShow : Bool = true

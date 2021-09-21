@@ -119,7 +119,7 @@ extension LemonadeTextfield {
                                             , attributes: [
                                                 NSAttributedString.Key.foregroundColor : placeholder.color
                                                 , NSAttributedString.Key.font : placeholder.font ,
-                                                NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : placeholder.kern ?? 0.0])
+                                                NSAttributedString.Key.paragraphStyle : paragraph , NSAttributedString.Key.kern : placeholder.kern])
         self.attributedPlaceholder = attributes
     }
     

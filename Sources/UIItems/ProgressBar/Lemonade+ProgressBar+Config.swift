@@ -5,12 +5,6 @@
 //  Created by Mac on 16.09.2021.
 //
 
-
-public enum LemonadeProgressAlignment {
-    case horizontal
-    case vertical
-}
-
 public enum LemonadeProgressBarText {
     /// No text
     case none
@@ -32,7 +26,7 @@ public enum LemonadeProgressBarText {
 
 public struct LemonadeProgressBarConfig {
     /// Bar Alignment
-    var alignment : LemonadeProgressAlignment
+    var alignment : LemonadeAlignment
     
     /// Bar text type
     var textType  : LemonadeProgressBarText
@@ -47,7 +41,7 @@ public struct LemonadeProgressBarConfig {
     var progressView : UIView
     
     
-    public init(alignment : LemonadeProgressAlignment
+    public init(alignment : LemonadeAlignment
                 , textType : LemonadeProgressBarText
                 , starterPercentage : CGFloat = 0.0
                 , automaticProgressDuration : Int = 0

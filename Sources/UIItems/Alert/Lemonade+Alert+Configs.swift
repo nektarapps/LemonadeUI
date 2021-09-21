@@ -21,7 +21,7 @@ public struct LemonadeAlertConfig {
     var alertState      : LemonadeAlertState
     
     /// Animation Position
-    var position        : LemonadeAlertPosition
+    var position        : LemonadePosition
     
     /// Auto Close Duration default value is 0.0
     var closeDuration   : Int
@@ -43,7 +43,7 @@ public struct LemonadeAlertConfig {
      */
 
     public init( _ state : LemonadeAlertState
-                 , position : LemonadeAlertPosition
+                 , position : LemonadePosition
                  , icon : UIImage? = nil
                  , title : LemonadeText
                  , message : LemonadeText? = nil
@@ -58,19 +58,6 @@ public struct LemonadeAlertConfig {
         self.closeDuration          = closeDuration
     }
 }
-
-
-/// Alert animation positions
-public enum LemonadeAlertPosition {
-    case top
-    case bottom
-    case left
-    case right
-}
-
-
-
-
 
 public enum LemonadeAlertState {
     case Warning

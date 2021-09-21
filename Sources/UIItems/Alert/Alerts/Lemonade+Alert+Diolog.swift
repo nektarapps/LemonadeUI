@@ -17,7 +17,7 @@ public class LemonadeAlertDialog : LemonadeAlert {
     }()
     
     
-    override var availablePositions: [LemonadeAlertPosition] {
+    override var availablePositions: [LemonadePosition] {
         get {
             return [ .left , .right , .top , .bottom]
         }

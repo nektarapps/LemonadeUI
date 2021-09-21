@@ -28,7 +28,7 @@ public class LemonadeAlert : UIView {
     var config : LemonadeAlertConfig?
     
     /// Animation availablePositions
-    var availablePositions : [LemonadeAlertPosition] = []
+    var availablePositions : [LemonadePosition] = []
     
     /// Animation anchor
     var animateAnchor : NSLayoutConstraint?
