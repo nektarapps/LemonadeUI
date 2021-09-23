@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LemonadeProgressChart Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/LemonadeProgressChart" class="dashAnchor"></a>
+    <a title="LemonadeProgressChart Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LemonadeUI 0.1.12 Docs</a> (44% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LemonadeUI Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        LemonadeProgressChart Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultLemonadeCell.html">DefaultLemonadeCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeAlert.html">LemonadeAlert</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeAlertDialog.html">LemonadeAlertDialog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeBarAlert.html">LemonadeBarAlert</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeButton.html">LemonadeButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@LemonadeUI@objc(cs)LemonadeCell">LemonadeCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeCollectionView.html">LemonadeCollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeLabel.html">LemonadeLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeLabelledInput.html">LemonadeLabelledInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeProgressBar.html">LemonadeProgressBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeProgressChart.html">LemonadeProgressChart</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeScrollView.html">LemonadeScrollView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeSearchBar.html">LemonadeSearchBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeSegmentControl.html">LemonadeSegmentControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeSegmentItem.html">LemonadeSegmentItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeTextView.html">LemonadeTextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeTextfield.html">LemonadeTextfield</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LemonadeToolTip.html">LemonadeToolTip</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeAlertState.html">LemonadeAlertState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeAlignment.html">LemonadeAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeAnimation.html">LemonadeAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeBasicAnimation.html">LemonadeBasicAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeConstraint.html">LemonadeConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeConstraintBounds.html">LemonadeConstraintBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadePosition.html">LemonadePosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeProgressBarText.html">LemonadeProgressBarText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeSearchState.html">LemonadeSearchState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LemonadeUIState.html">LemonadeUIState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CGFloat.html">CGFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeAlertDelegate.html">LemonadeAlertDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeCollectionViewDelegate.html">LemonadeCollectionViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeProgressBarDelegate.html">LemonadeProgressBarDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeSearchBarDelegate.html">LemonadeSearchBarDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeSegmentControlDelegate.html">LemonadeSegmentControlDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeSwitchButtonDelegate.html">LemonadeSwitchButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeTextFieldDelegate.html">LemonadeTextFieldDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeTextViewDelegate.html">LemonadeTextViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LemonadeWrapContent.html">LemonadeWrapContent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeAlertConfig.html">LemonadeAlertConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeAnimationConfig.html">LemonadeAnimationConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeBorder.html">LemonadeBorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeCollapseText.html">LemonadeCollapseText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeColor.html">LemonadeColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeEmptyUI.html">LemonadeEmptyUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeGradient.html">LemonadeGradient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadePadding.html">LemonadePadding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeProgressBarConfig.html">LemonadeProgressBarConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeProgressChartConfig.html">LemonadeProgressChartConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeProgressChartElement.html">LemonadeProgressChartElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeRadius.html">LemonadeRadius</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeSearchBarConfig.html">LemonadeSearchBarConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeSegmentItemConfig.html">LemonadeSegmentItemConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeShadow.html">LemonadeShadow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeStateConfig.html">LemonadeStateConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeStreching.html">LemonadeStreching</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeSwitchButtonConfig.html">LemonadeSwitchButtonConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeSwitchToggleConfig.html">LemonadeSwitchToggleConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeText.html">LemonadeText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeToolTipConfig.html">LemonadeToolTipConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LemonadeUnderLine.html">LemonadeUnderLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Test.html">Test</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LemonadeProgressChart</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LemonadeProgressChart</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LemonadeUI0A13ProgressChartC5frame_ACSo6CGRectV_AA0acD6ConfigVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LemonadeUI0A13ProgressChartC5frame_ACSo6CGRectV_AA0acD6ConfigVtcfc">init(frame:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="n">_</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeProgressChartConfig.html">LemonadeProgressChartConfig</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LemonadeUI@objc(cs)LemonadeProgressChart(im)layoutSubviews"></a>
+                    <a name="//apple_ref/swift/Method/layoutSubviews()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LemonadeUI@objc(cs)LemonadeProgressChart(im)layoutSubviews">layoutSubviews()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">layoutSubviews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LemonadeUI0A13ProgressChartC9configureyyAA0acD6ConfigVF"></a>
+                    <a name="//apple_ref/swift/Method/configure(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LemonadeUI0A13ProgressChartC9configureyyAA0acD6ConfigVF">configure(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configure of bars</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">_</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Structs/LemonadeProgressChartConfig.html">LemonadeProgressChartConfig</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LemonadeUI0A13ProgressChartC13addPercentage5index_ySi_12CoreGraphics7CGFloatVtF"></a>
+                    <a name="//apple_ref/swift/Method/addPercentage(index:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LemonadeUI0A13ProgressChartC13addPercentage5index_ySi_12CoreGraphics7CGFloatVtF">addPercentage(index:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add Percentage to current percantege of bar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addPercentage</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">percentage</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>bar index.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>percentage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>bar percentage.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LemonadeUI0A13ProgressChartC16changePercentage5index_ySi_12CoreGraphics7CGFloatVtF"></a>
+                    <a name="//apple_ref/swift/Method/changePercentage(index:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LemonadeUI0A13ProgressChartC16changePercentage5index_ySi_12CoreGraphics7CGFloatVtF">changePercentage(index:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change percetange with exec param</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">changePercentage</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">percentage</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>bar index.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>percentage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>bar percentage.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://github.com/nektarapps/LemonadeUI" target="_blank" rel="external">Hasan Ozgur Elmasli</a>. All rights reserved. (Last updated: 2021-09-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
