@@ -6,14 +6,22 @@
 //
 
 public protocol LemonadeSearchBarDelegate : AnyObject {
+    /// SearchBar text did change
     func searchBarDidChange( _ searchBar : LemonadeSearchBar , text : String )
+    
+    /// Keyboard search button tapped
     func searchButtonTapped( _ searchBar : LemonadeSearchBar , text : String )
+    
+    /// Triggered When Searching state change
     func searchingStateChanged( _ searchBar : LemonadeSearchBar , state : LemonadeSearchState)
+    
+    /// Triggered when buttnos tapped (if exists)
     func buttonsTapped( _ searchBar : LemonadeSearchBar , button : LemonadeButton)
 }
 
 public class LemonadeSearchBar : UIView {
     
+    /// Searching change state
     public var searchingState : LemonadeSearchState = .NotFocuessed {
         didSet {
             DispatchQueue.main.async {
@@ -21,13 +29,18 @@ public class LemonadeSearchBar : UIView {
             }
         }
     }
-    public var spaceBetweenButtons : CGFloat = 5.0
+    /// Padding betwe
+    public var paddingBetweenItems : CGFloat = 5.0
     
+    /// Addtional buttons
     private(set) var buttons : [LemonadeButton] = []
     
+    /// SearchBar Delegate
     public weak var lemonadeSearchBarDelegate : LemonadeSearchBarDelegate?
     
+    /// Config
     private var config : LemonadeSearchBarConfig?
+    
     
     public lazy var searchBarTextfield : LemonadeTextfield = {
         return placeholder == nil ? .init(frame: .zero, text: text!) : .init(frame: .zero, text: text!, placeholder: placeholder!)
@@ -78,6 +91,15 @@ public class LemonadeSearchBar : UIView {
 }
 
 extension LemonadeSearchBar {
+    
+    
+    /**
+     Configure function with params
+     
+     - parameter Text: Active text.
+     - parameter Placeholder: Placeholder text.
+     - parameter Config: SearchBar config.
+     */
     public func configure( text : LemonadeText , placeholder :LemonadeText? = nil , _ config : LemonadeSearchBarConfig) {
         self.config = config
         self.text = text
@@ -88,13 +110,13 @@ extension LemonadeSearchBar {
         searchBarTextfield.autocorrectionType = .no
         searchBarTextfield.returnKeyType = .search
         searchBarTextfield.delegate = self
-        if config!.leftImage != nil {
-            searchBarTextfield.leftView = leftView
+        if config!.leftImage != nil || config!.leftView != nil {
+            searchBarTextfield.leftView = config!.leftView == nil ? leftView : config!.leftView!
             searchBarTextfield.leftViewMode = .always
         }
         
-        if config!.rigthImage != nil {
-            searchBarTextfield.rightView = rigthView
+        if config!.rigthImage != nil || config!.rigthView != nil {
+            searchBarTextfield.rightView = config!.rigthView == nil ? rigthView : config!.rigthView!
             searchBarTextfield.rightViewMode = .always
         }
         
@@ -116,12 +138,12 @@ extension LemonadeSearchBar {
                 button.height(searchBarTextfield, equalTo: .height)
                 if index == 0 {
                     config.buttonPositions == .left
-                        ? button.left(self, equalTo: .left , constant: spaceBetweenButtons)
-                        : button.right(self, equalTo: .right , constant: -spaceBetweenButtons)
+                        ? button.left(self, equalTo: .left , constant: paddingBetweenItems)
+                        : button.right(self, equalTo: .right , constant: -paddingBetweenItems)
                 }else {
                     config.buttonPositions == .left
-                        ? button.left(self.buttons[index - 1], equalTo: .right , constant: spaceBetweenButtons)
-                        : button.right(self.buttons[index - 1], equalTo: .left , constant: -spaceBetweenButtons)
+                        ? button.left(self.buttons[index - 1], equalTo: .right , constant: paddingBetweenItems)
+                        : button.right(self.buttons[index - 1], equalTo: .left , constant: -paddingBetweenItems)
                 }
                 
                 self.buttons.append(button)
@@ -129,14 +151,14 @@ extension LemonadeSearchBar {
                 button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
             }
             if config.buttonPositions == .left {
-                searchBarTextfield.left(config.buttons[config.buttons.count - 1], equalTo: .right , constant: spaceBetweenButtons)
-                searchBarTextfield.right(self, equalTo: .right , constant: -spaceBetweenButtons)
+                searchBarTextfield.left(config.buttons[config.buttons.count - 1], equalTo: .right , constant: paddingBetweenItems)
+                searchBarTextfield.right(self, equalTo: .right , constant: -paddingBetweenItems)
             }else {
-                searchBarTextfield.left(self, equalTo: .left , constant: spaceBetweenButtons)
-                searchBarTextfield.right(config.buttons[config.buttons.count - 1], equalTo: .left , constant: -spaceBetweenButtons)
+                searchBarTextfield.left(self, equalTo: .left , constant: paddingBetweenItems)
+                searchBarTextfield.right(config.buttons[config.buttons.count - 1], equalTo: .left , constant: -paddingBetweenItems)
             }
         }else {
-            searchBarTextfield.leftAndRight(self , constant: spaceBetweenButtons)
+            searchBarTextfield.leftAndRight(self , constant: paddingBetweenItems)
         }
     }
 }

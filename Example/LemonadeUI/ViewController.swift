@@ -23,41 +23,22 @@ class ViewController: UIViewController {
         otherfilterButton.radius(.init(radius: 8))
         otherfilterButton.border(.init(borderColor: .brown.withAlphaComponent(0.3), width: 1.0))
         
-        let config = LemonadeSearchBarConfig.init(leftImage: nil, rigthImage: nil , buttons: [
+        let config = LemonadeSearchBarConfig.init(leftView: .init(frame: .zero, color: .init(backgroundColor: .red), radius: .init(radius: 12)) , leftImage: nil, rigthView: .init(frame: .zero, color: .init(backgroundColor: .brown), radius: .init(radius: 12)) , rigthImage: nil , buttons: [
             filterButton , otherfilterButton
-        ] , position: .right)
+        ], position: .right)
+    
         let searchBar : LemonadeSearchBar = .init(frame: .zero
                                                   , text: .init(text: "" , color: .black , alignment: .left)
                                                   , placeholder: .init(text: "Aramaya başla" , color: .black)
                                                   , config: config)
-        searchBar.spaceBetweenButtons = 20
+        searchBar.paddingBetweenItems = 5
         view.addSubview(searchBar)
         searchBar.center(to: view, width: .screenWidth(24), height: 75)
         searchBar.color(.init(backgroundColor: .systemBlue.withAlphaComponent(0.5)))
         searchBar.radius(.init(radius: 12))
         searchBar.border(.init(borderColor: .red.withAlphaComponent(0.3), width: 2.0))
         searchBar.searchBarTextfield.color(.init(backgroundColor: .red.withAlphaComponent(0.2)))
-        searchBar.lemonadeSearchBarDelegate = self
         
     }
-    
-}
-extension ViewController : LemonadeSearchBarDelegate {
-    func searchBarDidChange(_ searchBar: LemonadeSearchBar, text: String) {
-        print(text)
-    }
-    
-    func searchButtonTapped(_ searchBar: LemonadeSearchBar, text: String) {
-        print(text)
-    }
-    
-    func searchingStateChanged(_ searchBar: LemonadeSearchBar, state: LemonadeSearchState) {
-        print(state)
-    }
-    
-    func buttonsTapped(_ searchBar: LemonadeSearchBar, button: LemonadeButton) {
-        print(button)
-    }
-    
     
 }
