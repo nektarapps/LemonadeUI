@@ -17,7 +17,7 @@ public enum LemonadeAnimation {
     case scaleY(scaleSize : CGFloat)
     
     /// Scaling animation X and Y axis
-    case scaleXY(scaleSize : CGFloat)
+    case scaleXY(from : CGFloat , to : CGFloat)
     
     /// Shadow opacity animation
     case shadowOpacity
@@ -55,8 +55,8 @@ extension LemonadeAnimation {
             return scaleX(config, width: view.bounds.width, scaleSize)
         case .scaleY(let scaleSize):
             return scaleY(config, height: view.bounds.height, scaleSize)
-        case .scaleXY(let scaleSize):
-            return scaleAnimation(config, from: 1, to: scaleSize)
+        case .scaleXY(let from , let to):
+            return scaleAnimation(config, from: from, to: to)
         case .shadowOpacity:
             return shadowOpacity(config, from: view.layer.shadowOpacity)
         case .gradientTransition(let from, let to):
@@ -68,6 +68,20 @@ extension LemonadeAnimation {
         default:return nil
         }
     }
+    
+    internal func configureAnimation( _ config : LemonadeAnimationConfig) -> CABasicAnimation? {
+        switch self {
+        case .rotate(let from, let to):
+            return self.rotate(config, from: from, to: to)
+        case .move(let from, let to):
+            return self.move(config, from: from, to: to)
+        case .scaleXY(let from , let to):
+            return self.scaleAnimation(config, from: from, to: to)
+        default:
+            return nil
+        }
+    }
+    
     /**
      Configure animation for keyframe animation
      
@@ -176,7 +190,7 @@ extension LemonadeAnimation {
         animation.repeatCount = Float(config.repeatCount ?? .infinity)
         animation.isRemovedOnCompletion = false
         animation.autoreverses = config.autoReverse
-      //  animation.fillMode = CAMediaTimingFillMode.forwards
+        animation.fillMode = CAMediaTimingFillMode.forwards
         return animation
     }
 }
@@ -188,7 +202,7 @@ extension LemonadeAnimation {
         transformRotate.toValue = to
         transformRotate.duration = CFTimeInterval(config.duration)
         transformRotate.repeatCount = Float(config.repeatCount ?? .infinity)
-     //   transformRotate.fillMode = CAMediaTimingFillMode.forwards
+        transformRotate.fillMode = CAMediaTimingFillMode.forwards
         transformRotate.isRemovedOnCompletion = false
         transformRotate.autoreverses = config.autoReverse
         return transformRotate
@@ -200,7 +214,7 @@ extension LemonadeAnimation {
         movePosition.toValue = to
         movePosition.duration = CFTimeInterval(config.duration)
         movePosition.repeatCount = Float(config.repeatCount ?? .infinity)
-  //      movePosition.fillMode = CAMediaTimingFillMode.forwards
+        movePosition.fillMode = CAMediaTimingFillMode.forwards
         movePosition.isRemovedOnCompletion = false
         movePosition.autoreverses = config.autoReverse
         return movePosition

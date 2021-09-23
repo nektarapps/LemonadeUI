@@ -12,33 +12,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let filterButton = LemonadeButton.init(frame: .zero, .init(text: "Filter" , color: .white))
-        filterButton.color(.init(backgroundColor: .systemYellow.withAlphaComponent(0.3)))
-        filterButton.radius(.init(radius: 8))
-        filterButton.border(.init(borderColor: .brown.withAlphaComponent(0.3), width: 1.0))
-        
-        let otherfilterButton = LemonadeButton.init(frame: .zero, .init(text: "Other Filter" , color: .white))
-        otherfilterButton.color(.init(backgroundColor: .systemYellow.withAlphaComponent(0.3)))
-        otherfilterButton.radius(.init(radius: 8))
-        otherfilterButton.border(.init(borderColor: .brown.withAlphaComponent(0.3), width: 1.0))
-        
-        let config = LemonadeSearchBarConfig.init(leftView: .init(frame: .zero, color: .init(backgroundColor: .red), radius: .init(radius: 12)) , leftImage: nil, rigthView: .init(frame: .zero, color: .init(backgroundColor: .brown), radius: .init(radius: 12)) , rigthImage: nil , buttons: [
-            filterButton , otherfilterButton
-        ], position: .right)
-    
-        let searchBar : LemonadeSearchBar = .init(frame: .zero
-                                                  , text: .init(text: "" , color: .black , alignment: .left)
-                                                  , placeholder: .init(text: "Aramaya başla" , color: .black)
-                                                  , config: config)
-        searchBar.paddingBetweenItems = 5
-        view.addSubview(searchBar)
-        searchBar.center(to: view, width: .screenWidth(24), height: 75)
-        searchBar.color(.init(backgroundColor: .systemBlue.withAlphaComponent(0.5)))
-        searchBar.radius(.init(radius: 12))
-        searchBar.border(.init(borderColor: .red.withAlphaComponent(0.3), width: 2.0))
-        searchBar.searchBarTextfield.color(.init(backgroundColor: .red.withAlphaComponent(0.2)))
-        
+        let lotusConfig = LemonadeLotusConfig.init(petal: .red.withAlphaComponent(0.3), numberOfItems: 4, pattern: [
+            .init(duration: 2, position: .sleep),
+            .init(duration: 5, position: .awake),
+            .init(duration: 2, position: .awake),
+            .init(duration: 3, position: .sleep)
+        ])
+        let lotus = LemonadeLotus.init(frame: .zero, lotusConfig)
+        view.addSubview(lotus)
+        lotus.center(to: view, width: .screenWidth(10), height: 400)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            lotus.startAnimation()
+        })
     }
     
 }

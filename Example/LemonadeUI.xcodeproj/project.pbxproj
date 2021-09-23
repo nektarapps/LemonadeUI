@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DLT766KKZH;
 						LastSwiftMigration = 1250;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DLT766KKZH;
 						LastSwiftMigration = 1250;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -483,6 +485,7 @@
 			baseConfigurationReference = 8C63813BE8CC48C53DE1FF49 /* Pods-LemonadeUI_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DLT766KKZH;
 				INFOPLIST_FILE = LemonadeUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -498,6 +501,7 @@
 			baseConfigurationReference = D3ED7A8B1D41761F5B3F1C09 /* Pods-LemonadeUI_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DLT766KKZH;
 				INFOPLIST_FILE = LemonadeUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -512,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AF120870AB91A1EB6223365 /* Pods-LemonadeUI_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = DLT766KKZH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -534,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B41981150A28BD83FA2431B /* Pods-LemonadeUI_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = DLT766KKZH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

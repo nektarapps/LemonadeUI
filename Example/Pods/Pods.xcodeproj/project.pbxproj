@@ -38,6 +38,8 @@
 		2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAFF426E609BE00F3F909 /* Lemonade+Segment+Item.swift */; };
 		2E8FAFF726E60A0100F3F909 /* Lemonade+Segment+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAFF626E60A0100F3F909 /* Lemonade+Segment+Config.swift */; };
 		2E8FAFF926E60FE500F3F909 /* Lemonade+Segment+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAFF826E60FE500F3F909 /* Lemonade+Segment+Control.swift */; };
+		2EA25E8126FC741900B6E783 /* Lemonade+Lotus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA25E8026FC741900B6E783 /* Lemonade+Lotus.swift */; };
+		2EA25E8326FC742800B6E783 /* Lemonade+Lotus+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA25E8226FC742800B6E783 /* Lemonade+Lotus+Config.swift */; };
 		2EA9B44326C5028D00CC2698 /* Common+View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44226C5028D00CC2698 /* Common+View+Extensions.swift */; };
 		2EA9B44626C5030000CC2698 /* ConfigUI+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44526C5030000CC2698 /* ConfigUI+View.swift */; };
 		2EA9B44A26C5121900CC2698 /* Custom+View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44926C5121900CC2698 /* Custom+View+Extensions.swift */; };
@@ -107,6 +109,8 @@
 		2E8FAFF426E609BE00F3F909 /* Lemonade+Segment+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Item.swift"; sourceTree = "<group>"; };
 		2E8FAFF626E60A0100F3F909 /* Lemonade+Segment+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Config.swift"; sourceTree = "<group>"; };
 		2E8FAFF826E60FE500F3F909 /* Lemonade+Segment+Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Segment+Control.swift"; sourceTree = "<group>"; };
+		2EA25E8026FC741900B6E783 /* Lemonade+Lotus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Lotus.swift"; sourceTree = "<group>"; };
+		2EA25E8226FC742800B6E783 /* Lemonade+Lotus+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Lotus+Config.swift"; sourceTree = "<group>"; };
 		2EA9B44226C5028D00CC2698 /* Common+View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+View+Extensions.swift"; sourceTree = "<group>"; };
 		2EA9B44526C5030000CC2698 /* ConfigUI+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigUI+View.swift"; sourceTree = "<group>"; };
 		2EA9B44926C5121900CC2698 /* Custom+View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+View+Extensions.swift"; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				2EA25E7F26FC72FB00B6E783 /* Lotus */,
 				047195B726FA07D7003B9269 /* SearchBar */,
 				0442D35D26F4831700F44DD7 /* Charts */,
 				04C325FD26F3682300E8AE6D /* ProgressBar */,
@@ -357,6 +362,15 @@
 				0460CE6C26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift */,
 			);
 			path = SegmentControl;
+			sourceTree = "<group>";
+		};
+		2EA25E7F26FC72FB00B6E783 /* Lotus */ = {
+			isa = PBXGroup;
+			children = (
+				2EA25E8026FC741900B6E783 /* Lemonade+Lotus.swift */,
+				2EA25E8226FC742800B6E783 /* Lemonade+Lotus+Config.swift */,
+			);
+			path = Lotus;
 			sourceTree = "<group>";
 		};
 		2EA9B44126C5027900CC2698 /* View */ = {
@@ -705,7 +719,9 @@
 				04C325FA26F3266F00E8AE6D /* Lemonade+Alert.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
 				04D721A826F31E58004AB677 /* Lemonade+Bar+Alert.swift in Sources */,
+				2EA25E8126FC741900B6E783 /* Lemonade+Lotus.swift in Sources */,
 				0442D36226F4852400F44DD7 /* Lemonade+Progress+Chart.swift in Sources */,
+				2EA25E8326FC742800B6E783 /* Lemonade+Lotus+Config.swift in Sources */,
 				2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
 				04C325FF26F3687F00E8AE6D /* Lemonade+ProgressBar+Config.swift in Sources */,
