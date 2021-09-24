@@ -20,18 +20,26 @@ public class LemonadeFlower : UIView {
     /// Flower Config
     private var config : LemonadeFlowerConfig?
     
+    private var tapGesture : UITapGestureRecognizer?
+    
     public convenience init(frame : CGRect , _ config : LemonadeFlowerConfig){
         self.init(frame:frame)
-        self.isUserInteractionEnabled = true
-        self.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(sliceTapped(gesture:))))
-        self.config = config
+        self.configure(config)
     }
+    
     deinit {
         config = nil
         flowerdelegate = nil
+        if tapGesture != nil {
+            self.removeGestureRecognizer(tapGesture!)
+        }
     }
+    /// Configure function
     public func configure( _ config : LemonadeFlowerConfig) {
         self.config = config
+        self.isUserInteractionEnabled = true
+        self.tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(sliceTapped(gesture:)))
+        self.addGestureRecognizer(tapGesture!)
     }
     
     /// CenterY
@@ -46,6 +54,7 @@ public class LemonadeFlower : UIView {
     private lazy var _R : CGFloat = {
         return (self.bounds.width / 2.0) - 24
     }()
+    /// SlicePerAngle
     private lazy var slicePerAngle : Float = {
         return 360.0 / Float(config!.numberOfItems)
     }()
@@ -67,19 +76,34 @@ public class LemonadeFlower : UIView {
 
 extension LemonadeFlower {
     private func createSlice( _ index : Int){
+        guard
+            let config = config
+                , !config.flowerItems.isEmpty
+        else { return }
+        
+        let item = config.flowerItems[index]
         let center = CGPoint(x: centerX, y: centerY)
         let startAngle = (((slicePerAngle / 180) * Float(index - 3)) * .pi)
         let endAngle = (((slicePerAngle / 180) * Float(index - 2)) * .pi)
-        let breakAngle = endAngle - ((config!.spacing / 180) * .pi)
+        let breakAngle = endAngle - ((config.spacing / 180) * .pi)
         
         let bezierPath = UIBezierPath.init()
         bezierPath.move(to: center)
         bezierPath.addArc(withCenter: center,  radius: _R, startAngle: CGFloat(startAngle), endAngle: CGFloat(breakAngle), clockwise: true)
         bezierPath.close()
-        config!.sliceColor.setFill()
+        item.slideColor.backgroundColor?.setFill()
         bezierPath.fill()
-        
         bezierPaths.append(bezierPath)
+        
+        if item.sliceBorder != nil  {
+            let layer = CAShapeLayer.init()
+            layer.lineWidth = item.sliceBorder!.borderWidth
+            layer.path = bezierPath.cgPath
+            layer.strokeColor = item.sliceBorder!.borderColor
+            layer.fillColor = item.slideColor.backgroundColor?.cgColor
+            self.layer.addSublayer(layer)
+        }
+        
         
         //Spacing
         let spacing = UIBezierPath()
@@ -92,16 +116,17 @@ extension LemonadeFlower {
         createView(startAngle: startAngle, endAngle: breakAngle, index: index)
     }
     private func createView(startAngle : Float , endAngle : Float , index : Int) {
-        if config!.views.isEmpty { return }
-        if index > config!.views.count - 1 { return }
+        guard let config = config else { return }
+        if config.flowerItems.isEmpty { return }
+        if index > config.flowerItems.count - 1 { return }
+        guard let view = config.flowerItems[index].view else { return }
         let normalEnd = endAngle < startAngle ? endAngle + 2 * .pi : endAngle
         let centerAngle = startAngle + (normalEnd - startAngle) / 2
         let center = CGPoint(x: centerX, y: centerY)
         let arcCenterX = Float(center.x) + cos(centerAngle) * Float((_R / 5) * 3)
         let arcCenterY = Float(center.y) + sin(centerAngle) * Float((_R / 5) * 3)
-        let view = config!.views[index]
         view.isUserInteractionEnabled = false
-        let radius = _R * 1.7 / Double(config!.numberOfItems)
+        let radius = _R * 1.7 / Double(config.numberOfItems)
         view.frame = CGRect(x: CGFloat(arcCenterX) - (radius / 2), y: CGFloat(arcCenterY) - (radius / 2), width: radius, height: radius)
         self.addSubview(view)
     }

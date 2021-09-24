@@ -13,26 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let views : [UIView] = [
-            .init(frame: .zero, color: .init(backgroundColor: .red)),
-            .init(frame: .zero, color: .init(backgroundColor: .blue)),
-            .init(frame: .zero, color: .init(backgroundColor: .brown)),
-            .init(frame: .zero, color: .init(backgroundColor: .cyan)),
-            .init(frame: .zero, color: .init(backgroundColor: .systemPink)),
-            .init(frame: .zero, color: .init(backgroundColor: .magenta)),
-            .init(frame: .zero, color: .init(backgroundColor: .purple)),
-            .init(frame: .zero, color: .init(backgroundColor: .systemYellow)),
-            .init(frame: .zero, color: .init(backgroundColor: .yellow))
+        let items : [LemonadePieChartItem] = [
+            .init(text: .init(text: "Ankara", color: .white, font: .systemFont(ofSize: 20), alignment: .center) ,value: 60, color: .red),
+            .init(text:.init(text: "İstanbul", color: .black, font: .systemFont(ofSize: 20), alignment: .center),value: 500, color: .orange , border: .init(borderColor: .white, width: 1.0)),
+            .init(text : .init(text: "Adana"),value: 120, color: .purple),
+            .init(text: .init(text: "İzmir", color: .white, font: .systemFont(ofSize: 20), alignment: .center), value: 120, color: .systemPink , border: .init(borderColor: .white, width: 3.0))
         ]
-        let flower = LemonadeFlower.init(frame: .zero, .init( views : views , numberOfItems: 9, spacing: 3 , sliceColor: .orange))
-        view.addSubview(flower)
-        flower.center(to: view, width: .screenWidth(24), height: 400)
-        flower.flowerdelegate = self
-    }
-}
-
-extension ViewController : LemonadeFlowerDelegate {
-    func sliceTapped(_ flower: LemonadeFlower, index: Int) {
-        print(index)
+        let pieChart : LemonadePieChart = LemonadePieChart.init(frame: .zero, .init(items: items, isAnimate: true))
+       // pieChart.configure(.init(items: items, isAnimate: true))
+        view.addSubview(pieChart)
+        pieChart.center(to: view, width: 300, height: 300)
+        
     }
 }

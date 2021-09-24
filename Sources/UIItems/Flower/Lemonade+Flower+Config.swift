@@ -10,28 +10,39 @@ import Foundation
 
 public struct LemonadeFlowerConfig {
     
-    /// Custom Views for per slice
-    var views         : [UIView]
-    /// Slice count
-    var numberOfItems : Int
+    var flowerItems : [LemonadeFlowerItem]
     /// Space between slice
     var spacing       : Float
+
+    public init(items : [LemonadeFlowerItem] , spacing : Float) {
+        self.spacing = spacing
+        self.flowerItems = items
+    }
+    
+    internal var numberOfItems : Int {
+        return flowerItems.count
+    }
+}
+
+public struct LemonadeFlowerItem  {
     /// Slice color
-    var sliceColor    : UIColor
+    var slideColor : LemonadeColor
+    /// Slice Border
+    var sliceBorder: LemonadeBorder?
+    /// Custom Views for per slice
+    var view       : UIView?
     
     /**
      Config init
      
-     - parameter views: Custom Views for per slice.
-     - parameter numberOfItems: Slice count.
-     - parameter spacing: Space between slice.
+     - parameter view: Custom View for per slice.
      - parameter sliceColor: Slice color.
+     - parameter sliceBorder: Slice border.
 
      */
-    public init(views : [UIView] = [] , numberOfItems : Int , spacing : Float , sliceColor : UIColor) {
-        self.views = views
-        self.numberOfItems = numberOfItems
-        self.spacing = spacing
-        self.sliceColor = sliceColor
+    public init(sliceColor : LemonadeColor , sliceBorder : LemonadeBorder? = nil , customView : UIView? = nil) {
+        self.slideColor = sliceColor
+        self.sliceBorder = sliceBorder
+        self.view = customView
     }
 }
