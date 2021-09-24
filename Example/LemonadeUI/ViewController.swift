@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let lotusConfig = LemonadeLotusConfig.init(petal: .red.withAlphaComponent(0.3), numberOfItems: 4, pattern: [
             .init(duration: 2, position: .sleep),
-            .init(duration: 5, position: .awake),
+            .init(duration: 5, position: .sleep),
             .init(duration: 2, position: .awake),
             .init(duration: 3, position: .sleep)
         ])
@@ -22,8 +22,7 @@ class ViewController: UIViewController {
         view.addSubview(lotus)
         lotus.center(to: view, width: .screenWidth(10), height: 400)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-            lotus.startAnimation()
+            lotus.startPattern()
         })
     }
-    
 }

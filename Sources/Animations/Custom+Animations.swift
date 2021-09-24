@@ -69,6 +69,13 @@ extension LemonadeAnimation {
         }
     }
     
+    
+    /**
+     Configure animation without view
+     
+     - parameter config: LemonadeAnimationConfig.
+     - warning: Function only send animation , wont add any view
+     */
     internal func configureAnimation( _ config : LemonadeAnimationConfig) -> CABasicAnimation? {
         switch self {
         case .rotate(let from, let to):

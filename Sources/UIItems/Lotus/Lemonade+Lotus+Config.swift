@@ -5,20 +5,28 @@
 //  Created by Hasan Özgür Elmaslı on 23.09.2021.
 //
 
-import CoreGraphics
-
-
-
 public struct LemonadeLotusConfig {
+    /// Circle color
     var petalColor : UIColor
+    /// Number of circle
     var numberOfItems : Int
+    /// Circle replicate rotation angle , default is -pi
     var rotateAngle : CGFloat
-    var pattern : [LemonadeLotusAnimationPattern]
+    /// Animation Pattern
+    var pattern : [LemonadeLotusAnimationPatternItem]
     
     
+    /**
+     Config init function
+     
+     - parameter petal: Circle color.
+     - parameter numberOfItems: Number of circle.
+     - parameter pattern: Animation Pattern.Default is empty
+     - parameter angle: Circle replicate rotation angle , default is -pi.
+     */
     public init(petal : UIColor
                 , numberOfItems : Int
-                , pattern : [LemonadeLotusAnimationPattern] = []
+                , pattern : [LemonadeLotusAnimationPatternItem] = []
                 , angle : CGFloat = -CGFloat.pi) {
         self.petalColor = petal
         self.numberOfItems = numberOfItems
@@ -29,12 +37,16 @@ public struct LemonadeLotusConfig {
 
 
 public enum LemonadeLotusAnimationPosition : Equatable {
+    /// Open position
     case sleep
+    /// Close position
     case awake
 }
-public struct LemonadeLotusAnimationPattern {
-    var duration : CGFloat
-    var position : LemonadeLotusAnimationPosition
+public struct LemonadeLotusAnimationPatternItem {
+    /// Animation duration
+    public var duration : CGFloat
+    /// Animation Position
+    public var position : LemonadeLotusAnimationPosition
     
     
     public init(duration : CGFloat , position : LemonadeLotusAnimationPosition) {

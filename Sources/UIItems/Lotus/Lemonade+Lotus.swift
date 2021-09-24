@@ -5,23 +5,32 @@
 //  Created by Hasan Özgür Elmaslı on 23.09.2021.
 //
 
+public protocol LemonadeLotusDelegate : AnyObject {
+    /// Action changed ( awake , sleep)
+    func actionChanged( _ lotus : LemonadeLotus , action : LemonadeLotusAnimationPatternItem)
+    /// Animation start
+    func animationStart( _ lotus : LemonadeLotus)
+    /// Animation stop
+    func animationEnd( _ lotus : LemonadeLotus)
+}
+
 public class LemonadeLotus : UIView {
     
+    /// Lotus delegate
+    public weak var lotusDelegate : LemonadeLotusDelegate?
+    
+    /// Config
     private var config : LemonadeLotusConfig?
     
+    /// Current posiition
     public var position : LemonadeLotusAnimationPosition = .awake
-    
-    private var timer : Timer?
-    
+
+    /// Animation start or not
     private var isAnimationStart : Bool = false
     
-    private var patternCurrentIndex : Int = 0 {
-        didSet {
-            if patternCurrentIndex == config!.pattern.count {
-                patternCurrentIndex = 0
-            }
-        }
-    }
+    /// Pattern current index
+    private var patternCurrentIndex : Int = 0
+    
     
     public convenience init(frame : CGRect , _ config : LemonadeLotusConfig){
         self.init(frame:frame)
@@ -30,20 +39,31 @@ public class LemonadeLotus : UIView {
         self.config = config
     }
     
+    deinit {
+        self.config = nil
+        self.lotusDelegate = nil
+    }
     
-    //MARK:-> Center positions
+    /// Create transform depends on numberOfItems
+    private var nodeAngleTransform : CATransform3D {
+        let angle = -CGFloat.pi * 2.0   / CGFloat(config?.numberOfItems ?? 0)
+        return CATransform3DMakeRotation(angle, 0, 0 , 1)
+    }
+    
+    /// CenterY
     private lazy var centerY : CGFloat = {
         return self.bounds.width / 2.0
     }()
-    
+    /// CenterX
     private lazy var centerX : CGFloat = {
         return self.bounds.height / 2.0
     }()
-    
+    /// Radius
     private lazy var radius: CGFloat = {
         return min(bounds.width, bounds.height)/2
     }()
     
+    /// Create one Circle
     private lazy var Circle : CALayer = {
         let circle = CALayer()
         circle.compositingFilter = "screenBlendMode"
@@ -53,6 +73,7 @@ public class LemonadeLotus : UIView {
         return circle
     }()
     
+    /// Replicate Circle with nodeAngleTransform
     private lazy var replicatorLayer : CAReplicatorLayer = {
         let replicatorLayer = CAReplicatorLayer()
         replicatorLayer.addSublayer(Circle)
@@ -69,37 +90,14 @@ public class LemonadeLotus : UIView {
     }
 }
 extension LemonadeLotus {
-    private var nodeAngleTransform : CATransform3D {
-        let angle = -CGFloat.pi * 2.0   / CGFloat(config?.numberOfItems ?? 0)
-        return CATransform3DMakeRotation(angle, 0, 0 , 1)
-    }
-}
-
-extension LemonadeLotus {
+    /// Configure
     public func configure( _ config : LemonadeLotusConfig) {
         self.config = config
     }
 }
-//MARK:-> Animation setup
 extension LemonadeLotus {
-  // public func closeAnimation(){
-  //     Circle.removeAllAnimations()
-  //     replicatorLayer.removeAllAnimations()
-  // }
-    
-  // public func resumeAnimation(){
-  //     let pausedTime = layer.timeOffset
-  //     layer.speed = 1.0
-  //     layer.timeOffset = 0.0
-  //     layer.beginTime = 0.0
-  //     let timeSincePause = layer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
-  //     layer.beginTime = timeSincePause
-  // }
-}
-
-extension LemonadeLotus {
-    // animation start
-    public func startAnimation(){
+    /// Start pattern animation. If exists
+    public func startPattern(){
         guard
             let pattern = config?.pattern
             , !pattern.isEmpty
@@ -109,8 +107,10 @@ extension LemonadeLotus {
         pattern.first!.position == .sleep
         ? closeLotus(duration)
         : openLotus(duration)
+        lotusDelegate?.actionChanged(self, action: pattern.first!)
+        lotusDelegate?.animationStart(self)
     }
-    
+    /// Open lotus animation with duration
     public func openLotus( _ duration : CGFloat) {
         self.position = .awake
         let config = LemonadeAnimationConfig.init(duration: duration
@@ -120,6 +120,7 @@ extension LemonadeLotus {
         self.move(config)
         self.scale(config)
     }
+    /// Close lotus animation with duration
     public func closeLotus( _ duration : CGFloat) {
         self.position = .sleep
         let config = LemonadeAnimationConfig.init(duration: duration
@@ -159,28 +160,27 @@ extension LemonadeLotus : CAAnimationDelegate {
         self.action()
     }
     
+    /// Pattern control
     private func action() {
-        if patternCurrentIndex + 1 > config!.pattern.count - 1  { return }
+        if patternCurrentIndex + 1 > config!.pattern.count - 1  {
+            patternCurrentIndex = 0
+            isAnimationStart = false
+            lotusDelegate?.animationEnd(self)
+            return
+        }
         let prev = config!.pattern[patternCurrentIndex]
         let next = config!.pattern[patternCurrentIndex + 1]
-        print(prev.position)
-        print(next.position)
         if prev.position == next.position {
-            var pause_time : CGFloat = 0.0
-            self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] (timer) in
-                pause_time += 1
-                guard let self = self else { return }
-                if pause_time == next.duration {
-                    self.patternCurrentIndex += 1
-                    self.timer?.invalidate()
-                    self.timer = nil
-                }
+            DispatchQueue.main.asyncAfter(deadline: .now() + next.duration) {
+                self.patternCurrentIndex += 1
                 self.action()
             }
         }else {
             next.position == .sleep ? closeLotus(next.duration) : openLotus(next.duration)
             self.patternCurrentIndex += 1
         }
+        
+        lotusDelegate?.actionChanged(self, action: next)
     }
 }
 
