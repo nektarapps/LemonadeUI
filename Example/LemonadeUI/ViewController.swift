@@ -12,17 +12,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let lotusConfig = LemonadeLotusConfig.init(petal: .red.withAlphaComponent(0.3), numberOfItems: 4, pattern: [
-            .init(duration: 2, position: .sleep),
-            .init(duration: 5, position: .sleep),
-            .init(duration: 2, position: .awake),
-            .init(duration: 3, position: .sleep)
-        ])
-        let lotus = LemonadeLotus.init(frame: .zero, lotusConfig)
-        view.addSubview(lotus)
-        lotus.center(to: view, width: .screenWidth(10), height: 400)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-            lotus.startPattern()
-        })
+        
+        let views : [UIView] = [
+            .init(frame: .zero, color: .init(backgroundColor: .red)),
+            .init(frame: .zero, color: .init(backgroundColor: .blue)),
+            .init(frame: .zero, color: .init(backgroundColor: .brown)),
+            .init(frame: .zero, color: .init(backgroundColor: .cyan)),
+            .init(frame: .zero, color: .init(backgroundColor: .systemPink)),
+            .init(frame: .zero, color: .init(backgroundColor: .magenta)),
+            .init(frame: .zero, color: .init(backgroundColor: .purple)),
+            .init(frame: .zero, color: .init(backgroundColor: .systemYellow)),
+            .init(frame: .zero, color: .init(backgroundColor: .yellow))
+        ]
+        let flower = LemonadeFlower.init(frame: .zero, .init( views : views , numberOfItems: 9, spacing: 3 , sliceColor: .orange))
+        view.addSubview(flower)
+        flower.center(to: view, width: .screenWidth(24), height: 400)
+        flower.flowerdelegate = self
+    }
+}
+
+extension ViewController : LemonadeFlowerDelegate {
+    func sliceTapped(_ flower: LemonadeFlower, index: Int) {
+        print(index)
     }
 }
