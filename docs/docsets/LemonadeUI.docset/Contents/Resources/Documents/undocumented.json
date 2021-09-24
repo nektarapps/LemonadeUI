@@ -43,73 +43,206 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 11,
-      "symbol": "LemonadeConstraint",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
+      "line": 35,
+      "symbol": "UIView.center(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 12,
-      "symbol": "LemonadeConstraint.top",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
+      "line": 70,
+      "symbol": "UIView.leftAndRight(_:constant:safeArea:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 13,
-      "symbol": "LemonadeConstraint.bottom",
+      "symbol": "LemonadePosition.top",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 14,
-      "symbol": "LemonadeConstraint.left",
+      "symbol": "LemonadePosition.bottom",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 15,
+      "symbol": "LemonadePosition.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 16,
+      "symbol": "LemonadePosition.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 19,
+      "symbol": "LemonadeAlignment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 20,
+      "symbol": "LemonadeAlignment.horizontal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 21,
+      "symbol": "LemonadeAlignment.vertical",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 27,
+      "symbol": "LemonadeConstraint",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 28,
+      "symbol": "LemonadeConstraint.top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 29,
+      "symbol": "LemonadeConstraint.bottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 30,
+      "symbol": "LemonadeConstraint.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "line": 31,
       "symbol": "LemonadeConstraint.right",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 17,
+      "line": 33,
       "symbol": "LemonadeConstraint.centerX",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 18,
+      "line": 34,
       "symbol": "LemonadeConstraint.centerY",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 67,
+      "line": 83,
       "symbol": "LemonadeConstraintBounds",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 68,
+      "line": 84,
       "symbol": "LemonadeConstraintBounds.width",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
-      "line": 69,
+      "line": 85,
       "symbol": "LemonadeConstraintBounds.height",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Alerts/Lemonade+Alert+Diolog.swift",
+      "line": 8,
+      "symbol": "LemonadeAlertDialog",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Alerts/Lemonade+Bar+Alert.swift",
+      "line": 8,
+      "symbol": "LemonadeBarAlert",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "line": 62,
+      "symbol": "LemonadeAlertState",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "line": 63,
+      "symbol": "LemonadeAlertState.Warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "line": 64,
+      "symbol": "LemonadeAlertState.Error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "line": 65,
+      "symbol": "LemonadeAlertState.Success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "line": 66,
+      "symbol": "LemonadeAlertState.Custom(color:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
+      "line": 9,
+      "symbol": "LemonadeAlertDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
+      "line": 22,
+      "symbol": "LemonadeAlert",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
+      "line": 117,
+      "symbol": "LemonadeAlert.onButtonTapped(button:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -193,6 +326,160 @@
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
       "line": 125,
       "symbol": "LemonadeButton.touchesBegan(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "line": 9,
+      "symbol": "LemonadeProgressChartConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "line": 26,
+      "symbol": "LemonadeProgressChartConfig.init(alignment:borderColor:titleText:isLinePercentageShow:elements:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "line": 39,
+      "symbol": "LemonadeProgressChartElement",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "line": 49,
+      "symbol": "LemonadeProgressChartElement.init(percentage:barColor:text:progressView:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "line": 9,
+      "symbol": "LemonadeProgressChart",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "line": 26,
+      "symbol": "LemonadeProgressChart.init(frame:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "line": 57,
+      "symbol": "LemonadeProgressChart.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "line": 65,
+      "symbol": "LemonadeProgressChart",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/CustomCells/Default+Lemonade+Cell.swift",
+      "line": 9,
+      "symbol": "DefaultLemonadeCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/CustomCells/Default+Lemonade+Cell.swift",
+      "line": 19,
+      "symbol": "DefaultLemonadeCell.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/Lemonade+Cell.swift",
+      "line": 8,
+      "symbol": "LemonadeCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "line": 10,
+      "symbol": "LemonadeCollectionView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "line": 14,
+      "symbol": "LemonadeCollectionView.dynamicHeightMode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "line": 16,
+      "symbol": "LemonadeCollectionView.dynamicReload(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "line": 38,
+      "symbol": "LemonadeCollectionView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "line": 48,
+      "symbol": "LemonadeCollectionViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "line": 49,
+      "symbol": "LemonadeCollectionViewDelegate.cell(_:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "line": 50,
+      "symbol": "LemonadeCollectionViewDelegate.maximumCellHeight(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "line": 8,
+      "symbol": "LemonadeWrapContent",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "line": 9,
+      "symbol": "LemonadeWrapContent.calcualation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "line": 13,
+      "symbol": "Test",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "line": 14,
+      "symbol": "Test.calcualation()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -380,56 +667,70 @@
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 28,
-      "symbol": "LemonadeText.init(text:color:font:alignment:kern:underline:)",
+      "line": 32,
+      "symbol": "LemonadeText.init(text:color:font:alignment:kern:underline:breakMode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 43,
+      "line": 49,
       "symbol": "LemonadeText.attributeText()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 55,
+      "line": 62,
+      "symbol": "LemonadeText.labelHeight(width:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 68,
+      "symbol": "LemonadeText.labelWidth(height:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "line": 77,
       "symbol": "LemonadeUnderLine",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 60,
+      "line": 82,
       "symbol": "LemonadeUnderLine.init(_:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 69,
+      "line": 91,
       "symbol": "LemonadeCollapseText",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 91,
+      "line": 113,
       "symbol": "LemonadeCollapseText.init(max:text:moreText:lessText:isAnimate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 103,
+      "line": 125,
       "symbol": "LemonadeCollapseText.toggleAnimate(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
-      "line": 104,
+      "line": 126,
       "symbol": "LemonadeCollapseText.toggleCollapse(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -457,15 +758,78 @@
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
-      "line": 75,
+      "line": 76,
       "symbol": "LemonadeLabel",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
-      "line": 115,
+      "line": 116,
       "symbol": "LemonadeLabel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar+Config.swift",
+      "line": 8,
+      "symbol": "LemonadeProgressBarText",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar+Config.swift",
+      "line": 27,
+      "symbol": "LemonadeProgressBarConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar+Config.swift",
+      "line": 44,
+      "symbol": "LemonadeProgressBarConfig.init(alignment:textType:starterPercentage:automaticProgressDuration:progressView:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "line": 8,
+      "symbol": "LemonadeProgressBarDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "line": 17,
+      "symbol": "LemonadeProgressBar",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "line": 19,
+      "symbol": "LemonadeProgressBar.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "line": 43,
+      "symbol": "LemonadeProgressBar.init(frame:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "line": 54,
+      "symbol": "LemonadeProgressBar.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "line": 60,
+      "symbol": "LemonadeProgressBar",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
@@ -515,6 +879,188 @@
       "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 98,
       "symbol": "LemonadeStreching.init(_:topAnchor:heightAnchor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar+Config.swift",
+      "line": 8,
+      "symbol": "LemonadeSearchState",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar+Config.swift",
+      "line": 18,
+      "symbol": "LemonadeSearchBarConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 8,
+      "symbol": "LemonadeSearchBarDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 22,
+      "symbol": "LemonadeSearchBar",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 45,
+      "symbol": "LemonadeSearchBar.searchBarTextfield",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 73,
+      "symbol": "LemonadeSearchBar.init(frame:text:placeholder:config:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 86,
+      "symbol": "LemonadeSearchBar.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 93,
+      "symbol": "LemonadeSearchBar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 165,
+      "symbol": "LemonadeSearchBar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "line": 175,
+      "symbol": "LemonadeSearchBar.textFieldDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
+      "line": 8,
+      "symbol": "LemonadeSegmentItemConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
+      "line": 14,
+      "symbol": "LemonadeSegmentItemConfig.init(segmentText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
+      "line": 19,
+      "symbol": "LemonadeSegmentItemConfig.init(segmentText:badgeView:badgeText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control+Protocol.swift",
+      "line": 11,
+      "symbol": "LemonadeSegmentControlDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control+Protocol.swift",
+      "line": 12,
+      "symbol": "LemonadeSegmentControlDelegate.segmentChange(_:_:index:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 8,
+      "symbol": "LemonadeSegmentControl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 10,
+      "symbol": "LemonadeSegmentControl.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 24,
+      "symbol": "LemonadeSegmentControl.init(frame:items:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 29,
+      "symbol": "LemonadeSegmentControl.init(frame:selectorView:items:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 35,
+      "symbol": "LemonadeSegmentControl.init(frame:selectorView:firstIndex:items:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 114,
+      "symbol": "LemonadeSegmentControl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 115,
+      "symbol": "LemonadeSegmentControl.change(index:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "line": 119,
+      "symbol": "LemonadeSegmentControl.badge(index:text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
+      "line": 12,
+      "symbol": "LemonadeSegmentItem",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
+      "line": 24,
+      "symbol": "LemonadeSegmentItem.init(frame:config:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
+      "line": 53,
+      "symbol": "LemonadeSegmentItem.badgeText(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
