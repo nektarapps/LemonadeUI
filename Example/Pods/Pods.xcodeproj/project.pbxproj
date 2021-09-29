@@ -59,6 +59,8 @@
 		2EE69A5E26E2347C00648012 /* Lemonade+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A5D26E2347C00648012 /* Lemonade+Cell.swift */; };
 		2EE69A6026E2397A00648012 /* Lemonade+CollectionView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A5F26E2397A00648012 /* Lemonade+CollectionView+DataSource.swift */; };
 		2EE69A6326E23BD000648012 /* Default+Lemonade+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE69A6226E23BD000648012 /* Default+Lemonade+Cell.swift */; };
+		2EEAAB0A2704AAA7008196F3 /* Lemonade+Line+Chart+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEAAB092704AAA7008196F3 /* Lemonade+Line+Chart+Config.swift */; };
+		2EEAAB0C2704AE3B008196F3 /* Lemonade+Line+Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEAAB0B2704AE3B008196F3 /* Lemonade+Line+Chart.swift */; };
 		2FA5EBB2F0E03F35470441B228A8EBD5 /* Pods-LemonadeUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B914D0F056EA15E49211022FC1389C1C /* Pods-LemonadeUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87DA8EDA6449792D610EF912F10A1E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		89E371B2047FA56FBB895953774F733A /* LemonadeUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B54BB4412AD81C41730050C6F064997 /* LemonadeUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -134,6 +136,8 @@
 		2EE69A5D26E2347C00648012 /* Lemonade+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Cell.swift"; sourceTree = "<group>"; };
 		2EE69A5F26E2397A00648012 /* Lemonade+CollectionView+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+CollectionView+DataSource.swift"; sourceTree = "<group>"; };
 		2EE69A6226E23BD000648012 /* Default+Lemonade+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Default+Lemonade+Cell.swift"; sourceTree = "<group>"; };
+		2EEAAB092704AAA7008196F3 /* Lemonade+Line+Chart+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Line+Chart+Config.swift"; sourceTree = "<group>"; };
+		2EEAAB0B2704AE3B008196F3 /* Lemonade+Line+Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Line+Chart.swift"; sourceTree = "<group>"; };
 		379D24796B7DC360D54E76BD35D942A0 /* Pods-LemonadeUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LemonadeUI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5B54BB4412AD81C41730050C6F064997 /* LemonadeUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LemonadeUI-umbrella.h"; sourceTree = "<group>"; };
 		5C4773BCF01EB863692148C5CA40C53C /* LemonadeUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LemonadeUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -197,6 +201,7 @@
 		0442D35D26F4831700F44DD7 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
+				2EEAAB082704AA60008196F3 /* LineChart */,
 				2ED662C126FDE366002B9E5C /* PieChart */,
 				0442D35E26F4831E00F44DD7 /* ProgressChart */,
 			);
@@ -475,6 +480,15 @@
 			path = CustomCells;
 			sourceTree = "<group>";
 		};
+		2EEAAB082704AA60008196F3 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				2EEAAB092704AAA7008196F3 /* Lemonade+Line+Chart+Config.swift */,
+				2EEAAB0B2704AE3B008196F3 /* Lemonade+Line+Chart.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
 		3F9CE0A74A5D2F93A799A9BBBE3919F0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +739,7 @@
 				2EDB04CF26D7C7D40027C318 /* Lemonade+ToolTip+Config.swift in Sources */,
 				2E09F45026C66BC30062C61E /* Config+Lemonade+Label.swift in Sources */,
 				2EE69A6326E23BD000648012 /* Default+Lemonade+Cell.swift in Sources */,
+				2EEAAB0A2704AAA7008196F3 /* Lemonade+Line+Chart+Config.swift in Sources */,
 				2EA9B44D26C5315E00CC2698 /* Custom+Animations.swift in Sources */,
 				047195BB26FA0C31003B9269 /* Lemonade+SearchBar+Config.swift in Sources */,
 				2EA9B44626C5030000CC2698 /* ConfigUI+View.swift in Sources */,
@@ -750,6 +765,7 @@
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
 				04D721A826F31E58004AB677 /* Lemonade+Bar+Alert.swift in Sources */,
 				2ED662BF26FDB094002B9E5C /* Lemonade+Flower.swift in Sources */,
+				2EEAAB0C2704AE3B008196F3 /* Lemonade+Line+Chart.swift in Sources */,
 				2EA25E8126FC741900B6E783 /* Lemonade+Lotus.swift in Sources */,
 				0442D36226F4852400F44DD7 /* Lemonade+Progress+Chart.swift in Sources */,
 				2EA25E8326FC742800B6E783 /* Lemonade+Lotus+Config.swift in Sources */,

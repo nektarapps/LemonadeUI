@@ -13,16 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let items : [LemonadePieChartItem] = [
-            .init(text: .init(text: "Ankara", color: .white, font: .systemFont(ofSize: 20), alignment: .center) ,value: 60, color: .red),
-            .init(text:.init(text: "İstanbul", color: .black, font: .systemFont(ofSize: 20), alignment: .center),value: 500, color: .orange , border: .init(borderColor: .white, width: 1.0)),
-            .init(text : .init(text: "Adana"),value: 120, color: .purple),
-            .init(text: .init(text: "İzmir", color: .white, font: .systemFont(ofSize: 20), alignment: .center), value: 120, color: .systemPink , border: .init(borderColor: .white, width: 3.0))
-        ]
-        let pieChart : LemonadePieChart = LemonadePieChart.init(frame: .zero, .init(items: items, isAnimate: true))
-       // pieChart.configure(.init(items: items, isAnimate: true))
-        view.addSubview(pieChart)
-        pieChart.center(to: view, width: 300, height: 300)
+        let lineChart = LemonadeLineChart(frame: .zero, .init(items: [
+            .init(xAxisText: .init(text: "Pazt"), yAxisText: .init(text: "300"), value: 300),
+            .init(xAxisText: .init(text: "Salı"), yAxisText: .init(text: "100"), value: 100),
+            .init(xAxisText: .init(text: "Çarş"), yAxisText: .init(text: "500"), value: 500),
+            .init(xAxisText: .init(text: "Perş"), yAxisText: .init(text: "400"), value: 400),
+            .init(xAxisText: .init(text: "Cum"), yAxisText: .init(text: "700"), value: 700),
+        ], color: .black))
+        
+        view.addSubview(lineChart)
+        lineChart.center(to: view, width: 300, height: 300)
         
     }
 }
