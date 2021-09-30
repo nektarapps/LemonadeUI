@@ -15,8 +15,8 @@ public class LemonadeLineChart : UIView {
     
     private var isDraw : Bool = false
     
-    private var marginX : CGFloat = 0.0
-    private var marginY : CGFloat = 0.0
+    //private var marginX : CGFloat = 0.0
+    //private var marginY : CGFloat = 0.0
     
     public convenience init(frame : CGRect , _ config : LemonadeLineChartConfig) {
         self.init(frame: frame)
@@ -27,11 +27,33 @@ public class LemonadeLineChart : UIView {
         if !isDraw {
             drawXandYAxis()
             drawChart()
+            drawLabelXAxis()
+            drawLabelYAxis()
             
             isDraw = true
         }
         
     }
+    
+    internal var max : CGFloat {
+        return config?.items.map{$0.value}.max() ?? 0.0
+    }
+    internal var min : CGFloat {
+        return config?.items.map{$0.value}.min() ?? 0.0
+    }
+    internal lazy var orderedItems : [LemonadeChartItem] = {
+        return config!.items.sorted(by: { $0.value < $1.value })
+    }()
+    internal var marginX : CGFloat {
+        if config == nil { return 0.0 }
+        return bounds.width / CGFloat(config!.items.count)
+    }
+    internal var marginY : CGFloat {
+        if config == nil { return 0.0 }
+        return bounds.height / CGFloat(config!.items.count)
+    }
+    
+    
     
     deinit {
         config = nil
@@ -44,8 +66,8 @@ extension LemonadeLineChart {
     private func drawXandYAxis(){
         guard let config = config else { return }
         let xPath = UIBezierPath()
-        xPath.move(to: .init(x: 5, y: bounds.height - 10))
-        xPath.addLine(to: .init(x: bounds.width - 10, y: bounds.height - 10))
+        xPath.move(to: .init(x: 30, y: bounds.height - 30))
+        xPath.addLine(to: .init(x: bounds.width, y: bounds.height - 30))
         
         let xAxisLayer = CAShapeLayer()
         xAxisLayer.path = xPath.cgPath
@@ -56,8 +78,8 @@ extension LemonadeLineChart {
         
         
         let yPath = UIBezierPath()
-        yPath.move(to: .init(x: 5, y: bounds.height - 10))
-        yPath.addLine(to: .init(x: 5, y: 5))
+        yPath.move(to: .init(x: 30, y: bounds.height - 30))
+        yPath.addLine(to: .init(x: 30, y: 0))
         
         let yAxisLayer = CAShapeLayer()
         yAxisLayer.path = yPath.cgPath
@@ -65,32 +87,61 @@ extension LemonadeLineChart {
         yAxisLayer.lineWidth = 3.0
         
         self.layer.addSublayer(yAxisLayer)
-        
-        
-        marginX = bounds.width / CGFloat(config.items.count - 1)
-        marginY = bounds.height / CGFloat(config.items.count - 1)
     }
     
     private func drawChart(){
         guard let config = config else { return }
-        let line = UIBezierPath()
-        line.move(to: .init(x: calculateXPoint(1), y: calculateYPoint(1)))
-        line.addLine(to: .init(x: calculateXPoint(2), y: calculateYPoint(2)))
         
-        let lineLayer = CAShapeLayer()
-        lineLayer.path = line.cgPath
-        lineLayer.strokeColor = config.color.cgColor
-        lineLayer.lineWidth = 3.0
-        
-        self.layer.addSublayer(lineLayer)
+        for (index , item) in config.items.enumerated() {
+            let line = UIBezierPath()
+            let prevValue = config.items[index].value
+            
+            let nextIndex = index + 1 > config.items.count - 1 ? index : index + 1
+            let nextValue = config.items[nextIndex].value
+            
+            let movePoint = CGPoint.init(x: calculateXPoint(index), y: calculateYPoint(prevValue))
+            let lineLastPoint = CGPoint.init(x: calculateXPoint( nextIndex), y: calculateYPoint(nextValue))
+            line.move(to: movePoint)
+            line.addLine(to: lineLastPoint)
+            
+            let lineLayer = CAShapeLayer()
+            lineLayer.path = line.cgPath
+            lineLayer.strokeColor = item.color.cgColor
+            lineLayer.lineWidth = item.lineWidth
+            self.layer.addSublayer(lineLayer)
+        }
+    }
+    private func drawLabelXAxis(){
+        guard let config = config else { return }
+        for (index , item ) in config.items.enumerated() {
+            let label : LemonadeLabel = .init(frame: .zero, item.XAxisText ?? LemonadeText(text: "\(item.value)" , color: .black))
+            addSubview(label)
+            label.frame = .init(x: marginX * CGFloat(index) , y: bounds.height - 15, width: 40, height: 20)
+        }
+    }
+    private func drawLabelYAxis(){
+        guard let config = config else { return }
+        for (index , item ) in config.items.enumerated() {
+            let label : LemonadeLabel = .init(frame: .zero, item.YAxisText ?? LemonadeText(text: "\(item.value)" , color: .black))
+            addSubview(label)
+            label.frame = .init(x: 0 , y: calculateYPoint(config.items[index].value) - 20, width: 30, height: 40)
+        }
     }
 }
 
 extension LemonadeLineChart {
     private func calculateXPoint( _ index : Int) -> CGFloat {
-        return (marginX * CGFloat(index)) + 5.0
+        return (marginX * CGFloat(index)) + 30
     }
-    private func calculateYPoint( _ index : Int) -> CGFloat {
-        return (bounds.height - 10) - ( marginY * CGFloat(index))
+    private func calculateYPoint( _ value : CGFloat) -> CGFloat {
+        guard let currentIndex = orderedItems.firstIndex(where: {$0.value == value }) else {
+            return 0.0
+        }
+        guard let maxIndex = orderedItems.firstIndex(where: {$0.value == max }) else {
+            return 0.0
+        }
+        let diffIndex = maxIndex - currentIndex
+        let diff = (bounds.height - 30) - ( marginY * CGFloat(abs(diffIndex)))
+        return (bounds.height - 30) - diff
     }
 }
