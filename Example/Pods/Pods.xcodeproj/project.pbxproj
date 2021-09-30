@@ -46,6 +46,8 @@
 		2EA9B44D26C5315E00CC2698 /* Custom+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44C26C5315E00CC2698 /* Custom+Animations.swift */; };
 		2EA9B44F26C533DD00CC2698 /* Config+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B44E26C533DD00CC2698 /* Config+Animation.swift */; };
 		2EA9B45126C53AC000CC2698 /* Animation+View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9B45026C53AC000CC2698 /* Animation+View+Extension.swift */; };
+		2EB869F02705F9120043B2DC /* Lemonade+Slider+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB869EF2705F9120043B2DC /* Lemonade+Slider+Config.swift */; };
+		2EB869F22705FCAD0043B2DC /* Lemonade+Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB869F12705FCAD0043B2DC /* Lemonade+Slider.swift */; };
 		2ED662BD26FDAECE002B9E5C /* Lemonade+Flower+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED662BC26FDAECE002B9E5C /* Lemonade+Flower+Config.swift */; };
 		2ED662BF26FDB094002B9E5C /* Lemonade+Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED662BE26FDB094002B9E5C /* Lemonade+Flower.swift */; };
 		2ED662C326FDE3B7002B9E5C /* Lemonade+Pie+Chart+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED662C226FDE3B7002B9E5C /* Lemonade+Pie+Chart+Config.swift */; };
@@ -123,6 +125,8 @@
 		2EA9B44C26C5315E00CC2698 /* Custom+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Animations.swift"; sourceTree = "<group>"; };
 		2EA9B44E26C533DD00CC2698 /* Config+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+Animation.swift"; sourceTree = "<group>"; };
 		2EA9B45026C53AC000CC2698 /* Animation+View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+View+Extension.swift"; sourceTree = "<group>"; };
+		2EB869EF2705F9120043B2DC /* Lemonade+Slider+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Slider+Config.swift"; sourceTree = "<group>"; };
+		2EB869F12705FCAD0043B2DC /* Lemonade+Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Slider.swift"; sourceTree = "<group>"; };
 		2ED662BC26FDAECE002B9E5C /* Lemonade+Flower+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Flower+Config.swift"; sourceTree = "<group>"; };
 		2ED662BE26FDB094002B9E5C /* Lemonade+Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Flower.swift"; sourceTree = "<group>"; };
 		2ED662C226FDE3B7002B9E5C /* Lemonade+Pie+Chart+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Pie+Chart+Config.swift"; sourceTree = "<group>"; };
@@ -305,6 +309,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				2EB869EE2705F8FC0043B2DC /* Slider */,
 				2ED662BB26FDADE2002B9E5C /* Flower */,
 				2EA25E7F26FC72FB00B6E783 /* Lotus */,
 				047195B726FA07D7003B9269 /* SearchBar */,
@@ -407,6 +412,15 @@
 				2E09F45326C689590062C61E /* Custom+Basic+Animations.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		2EB869EE2705F8FC0043B2DC /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				2EB869EF2705F9120043B2DC /* Lemonade+Slider+Config.swift */,
+				2EB869F12705FCAD0043B2DC /* Lemonade+Slider.swift */,
+			);
+			path = Slider;
 			sourceTree = "<group>";
 		};
 		2ED662BB26FDADE2002B9E5C /* Flower */ = {
@@ -749,6 +763,7 @@
 				04A2156F26F2926400E16858 /* Lemonade+Alert+Configs.swift in Sources */,
 				0442D36026F4835400F44DD7 /* Lemonade+Progress+Chart+Config.swift in Sources */,
 				2EA9B44F26C533DD00CC2698 /* Config+Animation.swift in Sources */,
+				2EB869F22705FCAD0043B2DC /* Lemonade+Slider.swift in Sources */,
 				2E5D44EBB8D79AFB3E77CF819D413A5E /* LemonadeUI-dummy.m in Sources */,
 				2E09F44E26C66B3F0062C61E /* LemonadeLabel.swift in Sources */,
 				2EA9B45126C53AC000CC2698 /* Animation+View+Extension.swift in Sources */,
@@ -770,6 +785,7 @@
 				0442D36226F4852400F44DD7 /* Lemonade+Progress+Chart.swift in Sources */,
 				2EA25E8326FC742800B6E783 /* Lemonade+Lotus+Config.swift in Sources */,
 				2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */,
+				2EB869F02705F9120043B2DC /* Lemonade+Slider+Config.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
 				04C325FF26F3687F00E8AE6D /* Lemonade+ProgressBar+Config.swift in Sources */,
 				2E8FAFF726E60A0100F3F909 /* Lemonade+Segment+Config.swift in Sources */,

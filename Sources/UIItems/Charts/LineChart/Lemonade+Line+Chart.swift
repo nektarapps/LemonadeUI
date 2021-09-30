@@ -15,9 +15,6 @@ public class LemonadeLineChart : UIView {
     
     private var isDraw : Bool = false
     
-    //private var marginX : CGFloat = 0.0
-    //private var marginY : CGFloat = 0.0
-    
     public convenience init(frame : CGRect , _ config : LemonadeLineChartConfig) {
         self.init(frame: frame)
         self.config = config
