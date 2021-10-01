@@ -10,24 +10,34 @@ import Foundation
 
 
 public struct LemonadeSliderConfig {
+    var sliderColor : UIColor
     var startValue : CGFloat
     var endValue   : CGFloat
     var height     : CGFloat
     var thumbConfig : LemonadeThumbConfig
+    var thumbLabelText  : LemonadeText?
     var secondThumbConfig : LemonadeThumbConfig?
+    var secondLabelText : LemonadeText?
     var minDistaceBetweenThumbs : Int
     
     
-    public init(startValue : CGFloat = 0.0
+    public init(sliderColor : UIColor = .black
+                , startValue : CGFloat = 0.0
                 , endValue : CGFloat = 100.0
                 , sliderHeight : CGFloat = 3.0
                 , thumbConfig : LemonadeThumbConfig
-                , secondThumbConfig : LemonadeThumbConfig? = nil , minimumDistanceBetweenThumns : Int = 0) {
+                , thumbLabelText : LemonadeText? = nil
+                , secondThumbConfig : LemonadeThumbConfig? = nil
+                , secondLabelText : LemonadeText? = nil
+                , minimumDistanceBetweenThumns : Int = 0) {
+        self.sliderColor = sliderColor
         self.startValue = startValue
         self.endValue = endValue
         self.height = sliderHeight
         self.thumbConfig = thumbConfig
+        self.thumbLabelText = thumbLabelText
         self.secondThumbConfig = secondThumbConfig
+        self.secondLabelText = secondLabelText
         self.minDistaceBetweenThumbs = minimumDistanceBetweenThumns
     }
     
