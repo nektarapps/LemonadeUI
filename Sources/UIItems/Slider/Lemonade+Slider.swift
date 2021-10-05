@@ -56,11 +56,11 @@ public class LemonadeSlider : UIView {
                      , border: config!.secondThumbConfig!.border )
     }()
     
-    private lazy var firstThumbLabel : LemonadeLabel = {
-        return .init(frame: .zero, config!.thumbLabelText!)
+    public lazy var firstThumbLabel : LemonadeLabel = {
+        return .init(frame: .zero, config!.thumbLabelText ?? .init(text: "\(Int(firstThumbValue))" , color:.black ,font : .systemFont(ofSize: 12)))
     }()
-    private lazy var secondThumbLabel : LemonadeLabel = {
-        return .init(frame: .zero, config!.secondLabelText!)
+    public lazy var secondThumbLabel : LemonadeLabel = {
+        return .init(frame: .zero, config!.secondLabelText ?? .init(text: "\(Int(secondThumbValue))" , color:.black ,font : .systemFont(ofSize: 12)))
     }()
     
     private var isDraw = false
@@ -80,6 +80,8 @@ public class LemonadeSlider : UIView {
                 }
                 createSecondThumb()
             }
+            
+            createMaskedView()
             isDraw = true
         }
     }
@@ -115,12 +117,10 @@ extension LemonadeSlider {
         firstThumb.addGestureRecognizer(firstThumbPanGesture!)
         firstThumbValue = config!.thumbConfig.value
         
-        if config!.thumbLabelText != nil {
-            addSubview(firstThumbLabel)
-            firstThumbLabel.centerX(firstThumb, equalTo: .centerX)
-            firstThumbLabel.top(firstThumb, equalTo: .bottom , constant: 5)
-            firstThumbLabel.width(constant: 30)
-        }
+        addSubview(firstThumbLabel)
+        firstThumbLabel.centerX(firstThumb, equalTo: .centerX)
+        firstThumbLabel.top(firstThumb, equalTo: .bottom , constant: 5)
+        firstThumbLabel.width(constant: 30)
         
     }
     
@@ -143,11 +143,25 @@ extension LemonadeSlider {
         secondThumbPanGesture?.maximumNumberOfTouches = 1
         secondThumb.addGestureRecognizer(secondThumbPanGesture!)
         secondThumbValue = config!.secondThumbConfig!.value
-        if config!.secondLabelText != nil {
-            addSubview(secondThumbLabel)
-            secondThumbLabel.centerX(secondThumb, equalTo: .centerX)
-            secondThumbLabel.top(secondThumb, equalTo: .bottom , constant: 5)
-            secondThumbLabel.width(constant: 30)
+        addSubview(secondThumbLabel)
+        secondThumbLabel.centerX(secondThumb, equalTo: .centerX)
+        secondThumbLabel.top(secondThumb, equalTo: .bottom , constant: 5)
+        secondThumbLabel.width(constant: 30)
+    }
+    
+    private func createMaskedView(){
+        let maskedView = config!.maskeedViewBetweenThumbs
+        addSubview(maskedView)
+        maskedView.height(constant: config!.height)
+        maskedView.centerY(slider, equalTo: .centerY)
+        if config!.secondThumbConfig == nil {
+            maskedView.left(slider, equalTo: .left)
+            maskedView.right(firstThumb, equalTo: .left)
+        }else {
+            let smallThumb = firstThumbValue > secondThumbValue ? secondThumb : firstThumb
+            let bigThumb   = firstThumbValue > secondThumbValue ? firstThumb : secondThumb
+            maskedView.left(smallThumb, equalTo: .right)
+            maskedView.right(bigThumb, equalTo: .left)
         }
     }
 }
@@ -155,20 +169,19 @@ extension LemonadeSlider {
 extension LemonadeSlider {
     private func distanceIsValid(view:  UIView, newValue : CGFloat) -> Bool {
         if config!.minDistaceBetweenThumbs == nil { return true }
-        let minDistance : CGFloat = CGFloat(config!.minDistaceBetweenThumbs!)
-        var bigger : CGFloat = 0.0
-        var smaller : CGFloat = 0.0
+        let biggerValue  : CGFloat
+        let smallerValue : CGFloat
+        let biggerView   : UIView
         if firstThumbValue > secondThumbValue {
-            bigger = firstThumbValue
-            smaller = secondThumbValue
+            biggerView = firstThumb
+            biggerValue = firstThumbValue
+            smallerValue = secondThumbValue
         }else {
-            bigger = secondThumbValue
-            smaller = firstThumbValue
+            biggerView = secondThumb
+            biggerValue = secondThumbValue
+            smallerValue = firstThumbValue
         }
-        let biggerView = firstThumbValue > secondThumbValue ? firstThumb : secondThumb
-        let min = biggerView == view ? smaller + minDistance : bigger - minDistance
-        
-        return biggerView == view ? newValue >= min : newValue <= min
+        return biggerView == view ? newValue >= (smallerValue + config!.minDistaceBetweenThumbs!) : newValue <= (biggerValue - config!.minDistaceBetweenThumbs!)
     }
     @objc private func thumbGesture(gesture : UIPanGestureRecognizer){
         guard gesture.view != nil else { return }
@@ -185,6 +198,7 @@ extension LemonadeSlider {
             self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 0)
             self.firstThumbLabel.text = String.init(describing: Int(value))
         }
+        if config!.secondThumbConfig == nil {return}
         if gesture.view == self.secondThumb {
             self.secondThumbCenterX?.constant = pin.x
             secondThumbValue = CGFloat.init(value)

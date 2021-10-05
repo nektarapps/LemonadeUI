@@ -18,7 +18,8 @@ public struct LemonadeSliderConfig {
     var thumbLabelText  : LemonadeText?
     var secondThumbConfig : LemonadeThumbConfig?
     var secondLabelText : LemonadeText?
-    var minDistaceBetweenThumbs : Int?
+    var minDistaceBetweenThumbs : CGFloat?
+    var maskeedViewBetweenThumbs : UIView
     
     
     public init(sliderColor : UIColor = .black
@@ -29,7 +30,8 @@ public struct LemonadeSliderConfig {
                 , thumbLabelText : LemonadeText? = nil
                 , secondThumbConfig : LemonadeThumbConfig? = nil
                 , secondLabelText : LemonadeText? = nil
-                , minimumDistanceBetweenThumns : Int? = nil) {
+                , minimumDistanceBetweenThumns : CGFloat? = nil
+                , maskedViewThumbsBetweenThumbs : UIView = .init(frame: .zero , color:.init(backgroundColor: .blue))) {
         self.sliderColor = sliderColor
         self.startValue = startValue
         self.endValue = endValue
@@ -39,6 +41,7 @@ public struct LemonadeSliderConfig {
         self.secondThumbConfig = secondThumbConfig
         self.secondLabelText = secondLabelText
         self.minDistaceBetweenThumbs = minimumDistanceBetweenThumns
+        self.maskeedViewBetweenThumbs = maskedViewThumbsBetweenThumbs
     }
     
 }

@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         let sliderconfig = LemonadeSliderConfig.init(sliderColor: .red
                                                      , thumbConfig: .init(color: .red, value: 50, height: 30)
                                                      , thumbLabelText: .init(text: "Start", color: .black)
-                                                     , secondThumbConfig: .init(color: .orange, value: 10, height: 30)
-                                                     , secondLabelText: .init(text: "End", color: .black) , minimumDistanceBetweenThumns: 10)
+                                                     //, secondThumbConfig: .init(color: .orange, value: 10, height: 30)
+                                                     //, secondLabelText: .init(text: "End", color: .black)
+                                                     , maskedViewThumbsBetweenThumbs: .init(frame: .zero, color: .init(backgroundColor:.blue)))
         let slider = LemonadeSlider.init(frame: .zero, sliderconfig)
         view.addSubview(slider)
         slider.center(to: view, width: 300, height: 50)
-        
     }
 }
