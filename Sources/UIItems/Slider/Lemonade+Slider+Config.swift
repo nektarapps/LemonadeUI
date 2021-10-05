@@ -18,7 +18,7 @@ public struct LemonadeSliderConfig {
     var thumbLabelText  : LemonadeText?
     var secondThumbConfig : LemonadeThumbConfig?
     var secondLabelText : LemonadeText?
-    var minDistaceBetweenThumbs : Int
+    var minDistaceBetweenThumbs : Int?
     
     
     public init(sliderColor : UIColor = .black
@@ -29,7 +29,7 @@ public struct LemonadeSliderConfig {
                 , thumbLabelText : LemonadeText? = nil
                 , secondThumbConfig : LemonadeThumbConfig? = nil
                 , secondLabelText : LemonadeText? = nil
-                , minimumDistanceBetweenThumns : Int = 0) {
+                , minimumDistanceBetweenThumns : Int? = nil) {
         self.sliderColor = sliderColor
         self.startValue = startValue
         self.endValue = endValue

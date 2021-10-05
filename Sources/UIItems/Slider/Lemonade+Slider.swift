@@ -31,16 +31,25 @@ public class LemonadeSlider : UIView {
     private var centerY : CGFloat {
         return bounds.height / 2.0
     }
+    private var centerX : CGFloat {
+        return bounds.width / 2.0
+    }
+    
+    private var firstThumbValue : CGFloat = 0.0
+    private var secondThumbValue : CGFloat = 0.0
+    
     
     private lazy var slider : UIView = {
         return .init(frame: .zero, color: .init(backgroundColor: config!.sliderColor))
     }()
     
+    private var firstThumbCenterX :NSLayoutConstraint?
     private lazy var firstThumb : UIView = {
         return .init(frame: .zero, color: .init(backgroundColor: config!.thumbConfig.color)
                      ,radius: .init(radius: (config!.thumbConfig.height / 2))
                      , border: config!.thumbConfig.border )
     }()
+    private var secondThumbCenterX :NSLayoutConstraint?
     private lazy var secondThumb : UIView = {
         return .init(frame: .zero, color: .init(backgroundColor: config!.secondThumbConfig!.color)
                      ,radius: .init(radius: (config!.secondThumbConfig!.height / 2))
@@ -94,13 +103,17 @@ extension LemonadeSlider {
             fatalError("Thumb Starter Value need to be bigger than slider starter point")
         }
         addSubview(firstThumb)
-        let point = (config!.thumbConfig.value * spacing) - (config!.thumbConfig.height / 2)
-        firstThumb.frame = .init(x: point, y: centerY - (config!.thumbConfig.height / 2), width: config!.thumbConfig.height, height: config!.thumbConfig.height)
-        
+        let point = centerX - (config!.thumbConfig.value * spacing)
+    
+        firstThumb.widthAndHeight(constant: config!.thumbConfig.height)
+        firstThumbCenterX = firstThumb.centerXAnchor.constraint(equalTo: slider.centerXAnchor, constant: -point)
+        firstThumbCenterX?.isActive = true
+        firstThumb.centerY(slider, equalTo: .centerY)
         firstThumbPanGesture = .init(target: self, action: #selector(thumbGesture(gesture:)))
         firstThumbPanGesture?.minimumNumberOfTouches = 1
         firstThumbPanGesture?.maximumNumberOfTouches = 1
         firstThumb.addGestureRecognizer(firstThumbPanGesture!)
+        firstThumbValue = config!.thumbConfig.value
         
         if config!.thumbLabelText != nil {
             addSubview(firstThumbLabel)
@@ -117,14 +130,19 @@ extension LemonadeSlider {
             fatalError("Thumb Starter Value need to be bigger than slider starter point")
         }
         addSubview(secondThumb)
-        let point = (config!.secondThumbConfig!.value * spacing) - (config!.secondThumbConfig!.height / 2)
-        secondThumb.frame = .init(x: point, y: centerY - (config!.thumbConfig.height / 2), width: config!.thumbConfig.height, height: config!.thumbConfig.height)
+        let point = centerX - (config!.secondThumbConfig!.value * spacing)
+        secondThumb.widthAndHeight(constant: config!.secondThumbConfig!.height)
+        
+        secondThumbCenterX = secondThumb.centerXAnchor.constraint(equalTo: slider.centerXAnchor, constant: -point)
+        secondThumbCenterX?.isActive = true
+        secondThumb.centerY(slider, equalTo: .centerY)
+        
         
         secondThumbPanGesture = .init(target: self, action: #selector(thumbGesture(gesture:)))
         secondThumbPanGesture?.minimumNumberOfTouches = 1
         secondThumbPanGesture?.maximumNumberOfTouches = 1
         secondThumb.addGestureRecognizer(secondThumbPanGesture!)
-        
+        secondThumbValue = config!.secondThumbConfig!.value
         if config!.secondLabelText != nil {
             addSubview(secondThumbLabel)
             secondThumbLabel.centerX(secondThumb, equalTo: .centerX)
@@ -135,31 +153,43 @@ extension LemonadeSlider {
 }
 
 extension LemonadeSlider {
+    private func distanceIsValid(view:  UIView, newValue : CGFloat) -> Bool {
+        if config!.minDistaceBetweenThumbs == nil { return true }
+        let minDistance : CGFloat = CGFloat(config!.minDistaceBetweenThumbs!)
+        var bigger : CGFloat = 0.0
+        var smaller : CGFloat = 0.0
+        if firstThumbValue > secondThumbValue {
+            bigger = firstThumbValue
+            smaller = secondThumbValue
+        }else {
+            bigger = secondThumbValue
+            smaller = firstThumbValue
+        }
+        let biggerView = firstThumbValue > secondThumbValue ? firstThumb : secondThumb
+        let min = biggerView == view ? smaller + minDistance : bigger - minDistance
+        
+        return biggerView == view ? newValue >= min : newValue <= min
+    }
     @objc private func thumbGesture(gesture : UIPanGestureRecognizer){
+        guard gesture.view != nil else { return }
         let pin = gesture.translation(in: gesture.view!)
-        if pin.x < 0 || pin.x > bounds.width - (config!.thumbConfig.height / 2) {
+        if pin.x > centerX || pin.x < (-centerX) {
             return
         }
+        let point = pin.x / spacing
+        let value = Int((self.config!.endValue / 2) + point)
+        if !distanceIsValid(view:gesture.view! ,newValue: CGFloat(value)) { return }
         if gesture.view == self.firstThumb {
-            let point = (pin.x * spacing) - (config!.thumbConfig.height / 2)
-            let value = point / spacing
-            
-            self.firstThumb.frame = .init(x: pin.x, y: self.centerY - (self.config!.thumbConfig.height / 2), width: self.config!.thumbConfig.height, height: self.config!.thumbConfig.height)
-            if self.config!.thumbLabelText != nil {
-                self.firstThumbLabel.text = "\(Int(value))"
-            }
-            self.delegate?.thumbChanged(point, self, thumbIndex: 0)
+            self.firstThumbCenterX?.constant = pin.x
+            firstThumbValue = CGFloat.init(value)
+            self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 0)
+            self.firstThumbLabel.text = String.init(describing: Int(value))
         }
         if gesture.view == self.secondThumb {
-            let point = (pin.x * spacing) - (config!.secondThumbConfig!.height / 2)
-            let value = point / spacing
-            
-            self.secondThumb.frame = .init(x: pin.x, y: self.centerY - (self.config!.secondThumbConfig!.height / 2), width: self.config!.secondThumbConfig!.height, height: self.config!.secondThumbConfig!.height)
-            if self.config!.secondLabelText != nil {
-                self.secondThumbLabel.text = "\(Int(value))"
-            }
-            self.delegate?.thumbChanged(point, self, thumbIndex: 1)
-            
+            self.secondThumbCenterX?.constant = pin.x
+            secondThumbValue = CGFloat.init(value)
+            self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 1)
+            self.secondThumbLabel.text = String.init(describing: Int(value))
         }
     }
 }

@@ -17,7 +17,7 @@ class ViewController: UIViewController {
                                                      , thumbConfig: .init(color: .red, value: 50, height: 30)
                                                      , thumbLabelText: .init(text: "Start", color: .black)
                                                      , secondThumbConfig: .init(color: .orange, value: 10, height: 30)
-                                                     , secondLabelText: .init(text: "End", color: .black))
+                                                     , secondLabelText: .init(text: "End", color: .black) , minimumDistanceBetweenThumns: 10)
         let slider = LemonadeSlider.init(frame: .zero, sliderconfig)
         view.addSubview(slider)
         slider.center(to: view, width: 300, height: 50)
