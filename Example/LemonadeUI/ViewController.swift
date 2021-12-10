@@ -22,5 +22,9 @@ class ViewController: UIViewController {
         let slider = LemonadeSlider.init(frame: .zero, sliderconfig)
         view.addSubview(slider)
         slider.center(to: view, width: 300, height: 50)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            slider.moveFirstThumb(value: 10)
+        }
     }
 }

@@ -91,6 +91,22 @@ extension LemonadeSlider {
         self.isUserInteractionEnabled = true
         self.config = config
     }
+    public func moveFirstThumb(value: CGFloat) {
+        guard let config = config else { return }
+        let condition = value > config.endValue || value < 0
+        if condition {
+            fatalError("Thumb Value need to be less than endValue")
+        }
+        moveThumb(point: convertSliderPoint(value: value), view: firstThumb)
+    }
+    public func moveSecondThumb(value: CGFloat) {
+        guard let config = config , config.secondThumbConfig != nil else { return }
+        let condition = value > config.endValue || value < 0
+        if condition {
+            fatalError("Thumb Value need to be less than endValue")
+        }
+        moveThumb(point: convertSliderPoint(value: value), view: secondThumb)
+    }
 }
 
 extension LemonadeSlider {
@@ -190,20 +206,33 @@ extension LemonadeSlider {
             return
         }
         let point = pin.x / spacing
-        let value = Int((self.config!.endValue / 2) + point)
-        if !distanceIsValid(view:gesture.view! ,newValue: CGFloat(value)) { return }
-        if gesture.view == self.firstThumb {
-            self.firstThumbCenterX?.constant = pin.x
+        moveThumb(point: point, view: gesture.view!)
+    }
+    
+    private func moveThumb(point: CGFloat , view: UIView) {
+        let pinX = point * spacing
+        let value = convertValue(sliderPoint: point)
+        if !distanceIsValid(view: view, newValue: CGFloat(value)) { return }
+        if view == self.firstThumb {
+            self.firstThumbCenterX?.constant = pinX
             firstThumbValue = CGFloat.init(value)
             self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 0)
             self.firstThumbLabel.text = String.init(describing: Int(value))
         }
         if config!.secondThumbConfig == nil {return}
-        if gesture.view == self.secondThumb {
-            self.secondThumbCenterX?.constant = pin.x
+        if view == self.secondThumb {
+            self.secondThumbCenterX?.constant = pinX
             secondThumbValue = CGFloat.init(value)
             self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 1)
             self.secondThumbLabel.text = String.init(describing: Int(value))
         }
     }
+    private func convertValue(sliderPoint: CGFloat) -> Int {
+        return Int((self.config!.endValue / 2) + sliderPoint)
+    }
+    private func convertSliderPoint(value: CGFloat) -> CGFloat {
+        return -1 * ((config!.endValue / 2.0) - value)
+    }
 }
+
+
