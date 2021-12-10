@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let sliderconfig = LemonadeSliderConfig.init(sliderColor: .red
-                                                     , thumbConfig: .init(color: .red, value: 50, height: 30)
+                                                     , thumbConfig: .init(color: .red, value: 0, height: 30)
                                                      , thumbLabelText: .init(text: "Start", color: .black)
                                                      //, secondThumbConfig: .init(color: .orange, value: 10, height: 30)
                                                      //, secondLabelText: .init(text: "End", color: .black)

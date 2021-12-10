@@ -26,13 +26,13 @@ public class LemonadeSlider : UIView {
         return (config?.endValue ?? 0) - (config?.startValue ?? 0)
     }()
     private lazy var spacing : CGFloat = {
-        return bounds.width / totalDistance
+        return (bounds.width - ((config?.thumbConfig.height ?? 0.0) * 2)) / totalDistance
     }()
     private var centerY : CGFloat {
         return bounds.height / 2.0
     }
     private var centerX : CGFloat {
-        return bounds.width / 2.0
+        return (bounds.width - ((config?.thumbConfig.height ?? 0.0) * 2)) / 2.0
     }
     
     private var firstThumbValue : CGFloat = 0.0
@@ -96,7 +96,7 @@ extension LemonadeSlider {
 extension LemonadeSlider {
     private func createSlider(){
         addSubview(slider)
-        slider.frame = .init(x: 0, y: centerY - (config!.height / 2 ) , width: bounds.width, height: config!.height)
+        slider.frame = .init(x: config?.thumbConfig.height ?? 0.0, y: centerY - (config!.height / 2 ) , width: bounds.width - (config?.thumbConfig.height ?? 0.0), height: config!.height)
     }
     
     private func createFirstThumb(){
