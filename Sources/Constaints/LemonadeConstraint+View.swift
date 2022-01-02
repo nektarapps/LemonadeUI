@@ -197,7 +197,7 @@ extension UIView {
      - warning: If superView is nil , function will return fatalError
      */
     public func width(constant : CGFloat) {
-        if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
+    //    if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constraint : LemonadeConstraintBounds = .width
         constraint.constant(currentView: self, type: .width, constant: constant)
@@ -226,7 +226,7 @@ extension UIView {
      - warning: If superView is nil , function will return fatalError
      */
     public func height(constant : CGFloat) {
-        if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
+       // if superview == nil { fatalError( LemonadeConstraintError.superViewError.rawValue )}
         self.translatesAutoresizingMaskIntoConstraints = false
         let constraint : LemonadeConstraintBounds = .height
         constraint.constant(currentView: self, type: .height, constant: constant)

@@ -7,6 +7,25 @@
 
 import UIKit
 
+@objc class ClosureSleeve: NSObject {
+    let closure: ()->()
+    
+    init( _ closure: @escaping ()->()) {
+        self.closure = closure
+    }
+    @objc func invoke(){
+        closure()
+    }
+}
+
+extension UIControl {
+    public func addAction(for controlEvents: UIControl.Event = .touchUpInside, _ closure: @escaping ()->()) {
+        let sleeve = ClosureSleeve(closure)
+        addTarget(sleeve, action: #selector(ClosureSleeve.invoke), for: controlEvents)
+        objc_setAssociatedObject(self, "[\(arc4random())]", sleeve, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+    }
+}
+
 
 public class LemonadeButton : UIButton {
     
@@ -34,6 +53,12 @@ public class LemonadeButton : UIButton {
         if text.kern != 0.0 || text.underLine != nil { self.attributedText(text) }
         else { self.text(text) }
     }
+    public convenience init(frame : CGRect , _ text : LemonadeText, handler: @escaping (()->Void)) {
+        self.init(frame: frame, text)
+        self.onClick {
+            handler()
+        }
+    }
 }
 
 extension LemonadeButton {
@@ -51,8 +76,9 @@ extension LemonadeButton {
         self.layoutIfNeeded()
         color(toggleConfig.isOn ? config.activeColor : config.deActiveColor)
         createToggledView(toggleConfig)
-        self.onClick(target: self, #selector(self.toggleClick))
-        
+        self.onClick { [weak self] in
+            self?.toggleClick()
+        }
         self.switchButtonConfig = config
         self.toggleConfig = toggleConfig
     }
@@ -115,8 +141,12 @@ extension LemonadeButton {
         if target == nil && superview == nil {
             fatalError("SuperView can't be empty. That's illegal.")
         }
-        if toggleConfig != nil || switchButtonConfig != nil { return }
-        self.addTarget(target , action: action, for: .touchUpInside)
+    }
+    // Adding click
+    public func onClick( _ handler: @escaping (()->())) {
+        self.addAction {
+            handler()
+        }
     }
 }
 

@@ -67,6 +67,11 @@
 		87DA8EDA6449792D610EF912F10A1E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		89E371B2047FA56FBB895953774F733A /* LemonadeUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B54BB4412AD81C41730050C6F064997 /* LemonadeUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97764F11A30CF657204CF16A0A38419B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EEB75419277DBC8900656B8A /* Popup+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75418277DBC8900656B8A /* Popup+Controller.swift */; };
+		EEB7541B2781BFF200656B8A /* Popup+Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7541A2781BFF200656B8A /* Popup+Manager.swift */; };
+		EEB7541D2781EFA000656B8A /* Popup+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7541C2781EFA000656B8A /* Popup+Animation.swift */; };
+		EEB7541F2781EFB400656B8A /* Popup+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7541E2781EFB400656B8A /* Popup+Components.swift */; };
+		EEB754212781EFD600656B8A /* Popup+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB754202781EFD600656B8A /* Popup+Configuration.swift */; };
 		FE2E28346CE746C5BC0B2A55E78C6CB2 /* Pods-LemonadeUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DE8B84D68E83F16245D51810986271 /* Pods-LemonadeUI_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +175,11 @@
 		E0DDCF3A7CB8AF8ECF8567E14595E870 /* Pods-LemonadeUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LemonadeUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E28ACBC1982FA13B81CB96FB89E1FD35 /* Pods-LemonadeUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E9E3123639BDB64403E1BE4108A06999 /* Pods-LemonadeUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEB75418277DBC8900656B8A /* Popup+Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Popup+Controller.swift"; sourceTree = "<group>"; };
+		EEB7541A2781BFF200656B8A /* Popup+Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Popup+Manager.swift"; sourceTree = "<group>"; };
+		EEB7541C2781EFA000656B8A /* Popup+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Popup+Animation.swift"; sourceTree = "<group>"; };
+		EEB7541E2781EFB400656B8A /* Popup+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Popup+Components.swift"; sourceTree = "<group>"; };
+		EEB754202781EFD600656B8A /* Popup+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Popup+Configuration.swift"; sourceTree = "<group>"; };
 		F0847C12E16D8441603CC1099A8C24FE /* Pods-LemonadeUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LemonadeUI_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F94A1D7263E325964C69EDCCC6FE96AC /* Pods-LemonadeUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LemonadeUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -309,6 +319,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				EEB75417277DBC1200656B8A /* Popup */,
 				2EB869EE2705F8FC0043B2DC /* Slider */,
 				2ED662BB26FDADE2002B9E5C /* Flower */,
 				2EA25E7F26FC72FB00B6E783 /* Lotus */,
@@ -592,6 +603,18 @@
 			path = "Example/Pods/Target Support Files/LemonadeUI";
 			sourceTree = "<group>";
 		};
+		EEB75417277DBC1200656B8A /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				EEB75418277DBC8900656B8A /* Popup+Controller.swift */,
+				EEB7541A2781BFF200656B8A /* Popup+Manager.swift */,
+				EEB7541C2781EFA000656B8A /* Popup+Animation.swift */,
+				EEB7541E2781EFB400656B8A /* Popup+Components.swift */,
+				EEB754202781EFD600656B8A /* Popup+Configuration.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 		FFA57BDB6660A0F6C51196324139DEAE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -756,9 +779,12 @@
 				2EEAAB0A2704AAA7008196F3 /* Lemonade+Line+Chart+Config.swift in Sources */,
 				2EA9B44D26C5315E00CC2698 /* Custom+Animations.swift in Sources */,
 				047195BB26FA0C31003B9269 /* Lemonade+SearchBar+Config.swift in Sources */,
+				EEB7541D2781EFA000656B8A /* Popup+Animation.swift in Sources */,
 				2EA9B44626C5030000CC2698 /* ConfigUI+View.swift in Sources */,
 				2E1D68D826C3D945001F0F47 /* LemonadePadding.swift in Sources */,
 				2E1D68D626C3D8FE001F0F47 /* LemonadeConstraint+View.swift in Sources */,
+				EEB75419277DBC8900656B8A /* Popup+Controller.swift in Sources */,
+				EEB7541B2781BFF200656B8A /* Popup+Manager.swift in Sources */,
 				2E8FAFF926E60FE500F3F909 /* Lemonade+Segment+Control.swift in Sources */,
 				04A2156F26F2926400E16858 /* Lemonade+Alert+Configs.swift in Sources */,
 				0442D36026F4835400F44DD7 /* Lemonade+Progress+Chart+Config.swift in Sources */,
@@ -771,6 +797,7 @@
 				047195B926FA0B03003B9269 /* Lemonade+SearchBar.swift in Sources */,
 				2ED662C526FDE4C6002B9E5C /* Lemonade+Pie+Chart.swift in Sources */,
 				2EE69A6026E2397A00648012 /* Lemonade+CollectionView+DataSource.swift in Sources */,
+				EEB754212781EFD600656B8A /* Popup+Configuration.swift in Sources */,
 				2ED662BD26FDAECE002B9E5C /* Lemonade+Flower+Config.swift in Sources */,
 				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
 				2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */,
@@ -784,6 +811,7 @@
 				2EA25E8126FC741900B6E783 /* Lemonade+Lotus.swift in Sources */,
 				0442D36226F4852400F44DD7 /* Lemonade+Progress+Chart.swift in Sources */,
 				2EA25E8326FC742800B6E783 /* Lemonade+Lotus+Config.swift in Sources */,
+				EEB7541F2781EFB400656B8A /* Popup+Components.swift in Sources */,
 				2E8FAFF526E609BE00F3F909 /* Lemonade+Segment+Item.swift in Sources */,
 				2EB869F02705F9120043B2DC /* Lemonade+Slider+Config.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,

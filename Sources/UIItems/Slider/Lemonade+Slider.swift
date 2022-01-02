@@ -57,10 +57,12 @@ public class LemonadeSlider : UIView {
     }()
     
     public lazy var firstThumbLabel : LemonadeLabel = {
-        return .init(frame: .zero, config!.thumbLabelText ?? .init(text: "\(Int(firstThumbValue))" , color:.black ,font : .systemFont(ofSize: 12)))
+        let text: LemonadeText = config!.thumbLabelText ?? .init(text: config!.isThumbsLabelsTrackProgress ? "\(Int(firstThumbValue))" : "",color:.black ,font : .systemFont(ofSize: 12))
+        return .init(frame: .zero, text)
     }()
     public lazy var secondThumbLabel : LemonadeLabel = {
-        return .init(frame: .zero, config!.secondLabelText ?? .init(text: "\(Int(secondThumbValue))" , color:.black ,font : .systemFont(ofSize: 12)))
+        let text: LemonadeText = config!.secondLabelText ?? .init(text: config!.isThumbsLabelsTrackProgress ? "\(Int(secondThumbValue))" : "",color:.black ,font : .systemFont(ofSize: 12))
+        return .init(frame: .zero, text)
     }()
     
     private var isDraw = false
@@ -217,14 +219,18 @@ extension LemonadeSlider {
             self.firstThumbCenterX?.constant = pinX
             firstThumbValue = CGFloat.init(value)
             self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 0)
-            self.firstThumbLabel.text = String.init(describing: Int(value))
+            if config!.isThumbsLabelsTrackProgress {
+                self.firstThumbLabel.text = String.init(describing: Int(value))
+            }
         }
         if config!.secondThumbConfig == nil {return}
         if view == self.secondThumb {
             self.secondThumbCenterX?.constant = pinX
             secondThumbValue = CGFloat.init(value)
             self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 1)
-            self.secondThumbLabel.text = String.init(describing: Int(value))
+            if config!.isThumbsLabelsTrackProgress {
+                self.secondThumbLabel.text = String.init(describing: Int(value))
+            }
         }
     }
     private func convertValue(sliderPoint: CGFloat) -> Int {

@@ -20,6 +20,7 @@ public struct LemonadeSliderConfig {
     var secondLabelText : LemonadeText?
     var minDistaceBetweenThumbs : CGFloat?
     var maskeedViewBetweenThumbs : UIView
+    var isThumbsLabelsTrackProgress: Bool
     
     
     public init(sliderColor : UIColor = .black
@@ -31,7 +32,8 @@ public struct LemonadeSliderConfig {
                 , secondThumbConfig : LemonadeThumbConfig? = nil
                 , secondLabelText : LemonadeText? = nil
                 , minimumDistanceBetweenThumns : CGFloat? = nil
-                , maskedViewThumbsBetweenThumbs : UIView = .init(frame: .zero , color:.init(backgroundColor: .blue))) {
+                , maskedViewThumbsBetweenThumbs : UIView = .init(frame: .zero , color:.init(backgroundColor: .blue))
+                , isThumbsLabelsTrackProgress: Bool = true) {
         self.sliderColor = sliderColor
         self.startValue = startValue
         self.endValue = endValue
@@ -42,6 +44,7 @@ public struct LemonadeSliderConfig {
         self.secondLabelText = secondLabelText
         self.minDistaceBetweenThumbs = minimumDistanceBetweenThumns
         self.maskeedViewBetweenThumbs = maskedViewThumbsBetweenThumbs
+        self.isThumbsLabelsTrackProgress = isThumbsLabelsTrackProgress
     }
     
 }
