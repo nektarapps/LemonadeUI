@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LemonadeUI'
-  s.version          = '0.1.17'
+  s.version          = '0.1.18'
   s.summary          = 'LemonadeUI library provide essential function for creating UI. Library working with UIKit. Library still pre-release mode. If you find any issue or better solutions , reach us!'
   s.swift_version    = '5.0'
 
@@ -25,9 +25,9 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/nektarapps/LemonadeUI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Hasan Ozgur Elmasli' => 'ozgur@nektarapps.com' }
+  s.author           = { 'Hasan Ozgur Elmasli' => 'ozgur_elmasli@hotmail.com' }
   s.source           = { :git => 'https://github.com/nektarapps/LemonadeUI.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/ElmasliOzgur'
 
   s.ios.deployment_target = '12.0'
 
