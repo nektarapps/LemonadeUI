@@ -44,11 +44,11 @@ public class LemonadeFlower : UIView {
     
     /// CenterY
     private lazy var centerY : CGFloat = {
-        return self.bounds.width / 2.0
+        return self.bounds.height / 2.0
     }()
     /// CenterX
     private lazy var centerX : CGFloat = {
-        return self.bounds.height / 2.0
+        return self.bounds.width / 2.0
     }()
     /// R
     private lazy var _R : CGFloat = {

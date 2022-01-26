@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		3F814E06482DC7021CD473E1 /* Pods_LemonadeUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45523641D9E00BAFC97E7AA6 /* Pods_LemonadeUI_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8537B3140C9325DCDF721964 /* Pods_LemonadeUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A5683C63715C1B10454CFA /* Pods_LemonadeUI_Example.framework */; };
+		EE65781D279F2A2E00F12261 /* StarterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65781C279F2A2E00F12261 /* StarterVC.swift */; };
+		EE657820279F2D4200F12261 /* PlaygroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65781F279F2D4200F12261 /* PlaygroundVC.swift */; };
+		EE657825279FEB6F00F12261 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */; };
+		EE657828279FEBD300F12261 /* PlaygroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */; };
+		EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */; };
+		EEE12BBA27A1DEC400F66648 /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BB927A1DEC400F66648 /* ChartVC.swift */; };
+		EEE12BBF27A1E8C900F66648 /* LotusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BBE27A1E8C900F66648 /* LotusVC.swift */; };
+		EEE12BC127A1ED1300F66648 /* FlowerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC027A1ED1300F66648 /* FlowerVC.swift */; };
+		EEE12BC327A1F31300F66648 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC227A1F31300F66648 /* SliderCell.swift */; };
+		EEE12BC627A1FB4D00F66648 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC527A1FB4D00F66648 /* SearchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +45,6 @@
 		607FACD01AFB9204008FA782 /* LemonadeUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* LemonadeUI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeUI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +53,16 @@
 		8C63813BE8CC48C53DE1FF49 /* Pods-LemonadeUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeUI_Example/Pods-LemonadeUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C86B16500D51528C04624E9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D3ED7A8B1D41761F5B3F1C09 /* Pods-LemonadeUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeUI_Example.release.xcconfig"; path = "Target Support Files/Pods-LemonadeUI_Example/Pods-LemonadeUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EE65781C279F2A2E00F12261 /* StarterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterVC.swift; sourceTree = "<group>"; };
+		EE65781F279F2D4200F12261 /* PlaygroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundVC.swift; sourceTree = "<group>"; };
+		EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewModel.swift; sourceTree = "<group>"; };
+		EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundHeaderView.swift; sourceTree = "<group>"; };
+		EEE12BB927A1DEC400F66648 /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
+		EEE12BBE27A1E8C900F66648 /* LotusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusVC.swift; sourceTree = "<group>"; };
+		EEE12BC027A1ED1300F66648 /* FlowerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerVC.swift; sourceTree = "<group>"; };
+		EEE12BC227A1F31300F66648 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		EEE12BC527A1FB4D00F66648 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +109,12 @@
 		607FACD21AFB9204008FA782 /* Example for LemonadeUI */ = {
 			isa = PBXGroup;
 			children = (
+				EE657822279FEB4200F12261 /* Playground */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				EE65781C279F2A2E00F12261 /* StarterVC.swift */,
 			);
 			name = "Example for LemonadeUI";
 			path = LemonadeUI;
@@ -146,6 +162,70 @@
 				45523641D9E00BAFC97E7AA6 /* Pods_LemonadeUI_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE657822279FEB4200F12261 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				EEE12BB727A1DEAD00F66648 /* Features */,
+				EE657826279FEBC500F12261 /* ViewModels */,
+				EE657823279FEB6700F12261 /* Cells */,
+				EE65781F279F2D4200F12261 /* PlaygroundVC.swift */,
+				EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */,
+			);
+			name = Playground;
+			sourceTree = "<group>";
+		};
+		EE657823279FEB6700F12261 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */,
+				EEE12BC227A1F31300F66648 /* SliderCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		EE657826279FEBC500F12261 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		EEE12BB727A1DEAD00F66648 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EEE12BC427A1FB3D00F66648 /* Inputs */,
+				EEE12BBB27A1E88200F66648 /* CustomShapes */,
+				EEE12BB827A1DEB200F66648 /* Charts */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		EEE12BB827A1DEB200F66648 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				EEE12BB927A1DEC400F66648 /* ChartVC.swift */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		EEE12BBB27A1E88200F66648 /* CustomShapes */ = {
+			isa = PBXGroup;
+			children = (
+				EEE12BBE27A1E8C900F66648 /* LotusVC.swift */,
+				EEE12BC027A1ED1300F66648 /* FlowerVC.swift */,
+			);
+			name = CustomShapes;
+			sourceTree = "<group>";
+		};
+		EEE12BC427A1FB3D00F66648 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				EEE12BC527A1FB4D00F66648 /* SearchVC.swift */,
+			);
+			name = Inputs;
 			sourceTree = "<group>";
 		};
 		FD02D70953C8E9AD9C07D38A /* Pods */ = {
@@ -247,7 +327,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -332,8 +411,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				EEE12BBF27A1E8C900F66648 /* LotusVC.swift in Sources */,
+				EEE12BC627A1FB4D00F66648 /* SearchVC.swift in Sources */,
+				EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */,
+				EE65781D279F2A2E00F12261 /* StarterVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				EEE12BBA27A1DEC400F66648 /* ChartVC.swift in Sources */,
+				EEE12BC127A1ED1300F66648 /* FlowerVC.swift in Sources */,
+				EEE12BC327A1F31300F66648 /* SliderCell.swift in Sources */,
+				EE657820279F2D4200F12261 /* PlaygroundVC.swift in Sources */,
+				EE657825279FEB6F00F12261 /* ButtonTableViewCell.swift in Sources */,
+				EE657828279FEBD300F12261 /* PlaygroundViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,14 +444,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
