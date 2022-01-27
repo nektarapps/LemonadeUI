@@ -20,7 +20,6 @@ class PlaygroundVC: UIViewController {
         tableView.register(ButtonTableViewCell.self, forCellReuseIdentifier: viewModel.buttonCellIdentifier)
         tableView.register(SliderTableViewCell.self, forCellReuseIdentifier: viewModel.sliderCellIdentifier)
         tableView.estimatedRowHeight = UITableView.automaticDimension
-        tableView.rowHeight = 70
         return tableView
     }()
     

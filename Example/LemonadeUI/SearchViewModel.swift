@@ -23,12 +23,12 @@ struct Film {
     }
 }
 
-protocol SearchViewModelProtocol: AnyObject {
+protocol TableViewActionDelegate: AnyObject {
     func needToReload()
 }
 
 class SearchViewModel {
-    weak var delegate: SearchViewModelProtocol?
+    weak var delegate: TableViewActionDelegate?
     
     deinit {
         delegate = nil

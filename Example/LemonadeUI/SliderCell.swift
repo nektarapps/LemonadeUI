@@ -19,7 +19,11 @@ class SliderTableViewCell : UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(slider)
-        slider.fill2SuperView(.init(right: 24, left: 24, top: 5, bottom: 5))
+        slider.top(self, equalTo: .top , constant: 15)
+        slider.width(constant: .screenWidth(36))
+        slider.centerX(self, equalTo: .centerX)
+        slider.height(constant: 50)
+        slider.bottom(self, equalTo: .bottom , constant: -24)
     }
     func configureUI(thumbCount: Int) {
         let config: LemonadeSliderConfig

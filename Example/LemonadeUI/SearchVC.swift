@@ -69,10 +69,9 @@ class SearchVC: UIViewController {
         tableView.leftAndRight(view)
         tableView.top(searchBar, equalTo: .bottom , constant: 10)
         tableView.bottom(view, equalTo: .bottom , safeArea: true)
-        
     }
 }
-extension SearchVC: SearchViewModelProtocol {
+extension SearchVC: TableViewActionDelegate {
     func needToReload() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()

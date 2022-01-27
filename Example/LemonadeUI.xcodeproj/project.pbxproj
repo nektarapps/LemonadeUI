@@ -25,6 +25,7 @@
 		EEE12BC627A1FB4D00F66648 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC527A1FB4D00F66648 /* SearchVC.swift */; };
 		EEE12BC927A3479E00F66648 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC827A3479E00F66648 /* SearchViewModel.swift */; };
 		EEE12BCB27A347CF00F66648 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BCA27A347CF00F66648 /* SearchCell.swift */; };
+		EEE12BCD27A34C9700F66648 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BCC27A34C9700F66648 /* CustomSegmentControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		EEE12BC527A1FB4D00F66648 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		EEE12BC827A3479E00F66648 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		EEE12BCA27A347CF00F66648 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		EEE12BCC27A34C9700F66648 /* CustomSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			children = (
 				EEE12BBE27A1E8C900F66648 /* LotusVC.swift */,
 				EEE12BC027A1ED1300F66648 /* FlowerVC.swift */,
+				EEE12BCC27A34C9700F66648 /* CustomSegmentControl.swift */,
 			);
 			name = CustomShapes;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				EEE12BC327A1F31300F66648 /* SliderCell.swift in Sources */,
 				EE657820279F2D4200F12261 /* PlaygroundVC.swift in Sources */,
 				EE657825279FEB6F00F12261 /* ButtonTableViewCell.swift in Sources */,
+				EEE12BCD27A34C9700F66648 /* CustomSegmentControl.swift in Sources */,
 				EE657828279FEBD300F12261 /* PlaygroundViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

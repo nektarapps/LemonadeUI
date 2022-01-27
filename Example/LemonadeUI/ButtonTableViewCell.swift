@@ -17,7 +17,10 @@ class ButtonTableViewCell : UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(button)
-        button.fill2SuperView(.init(right: 24, left: 24, top: 5, bottom: 5))
+        button.top(self, equalTo: .top , constant: 15)
+        button.leftAndRight(self , constant: 15)
+        button.height(constant: 50)
+        button.bottom(self, equalTo: .bottom , constant: -24)
     }
     func configureUI(text: LemonadeText, backgroundColor: UIColor) {
         button.text(text)

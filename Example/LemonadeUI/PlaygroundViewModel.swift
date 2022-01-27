@@ -28,7 +28,7 @@ class PlaygroundViewModel {
             .alert(alert: .custom)
         ])
         let chartSection: SectionModel = .init(section: .chart, rows: [.chart])
-        let customShapesSection: SectionModel = .init(section: .custom, rows: [ .customShapes(shape: .flower) , .customShapes(shape: .lotus) ])
+        let customShapesSection: SectionModel = .init(section: .custom, rows: [ .customShapes(shape: .flower) , .customShapes(shape: .lotus) , .customShapes(shape: .customSegmentControl)])
         let sliderSection: SectionModel = .init(section: .sliders, rows: [
             .slider(thumbCount: 1),
             .slider(thumbCount: 2)
@@ -83,7 +83,7 @@ extension PlaygroundViewModel {
                                           , alignment: .center)
         switch selectedRow {
         case .customShapes(let shape):
-            let vc = shape == .lotus ? LotusVC() : FlowerVC()
+            let vc = shape == .lotus ? LotusVC() : shape == .flower ? FlowerVC() : CustomSegmentControl(viewModel: .init())
             presenter.navigationController?.pushViewController(vc, animated: true)
         case .chart:
             presenter.navigationController?.pushViewController(ChartVC(), animated: true)
@@ -174,6 +174,7 @@ extension PlaygroundViewModel {
     enum CustomShapeRow {
         case flower
         case lotus
+        case customSegmentControl
         
         var title: String {
             switch self {
@@ -181,6 +182,8 @@ extension PlaygroundViewModel {
                 return "Flower"
             case .lotus:
                 return "Lotus"
+            case .customSegmentControl:
+                return "Custom Segmet Control"
             }
         }
         
@@ -190,6 +193,8 @@ extension PlaygroundViewModel {
                 return .systemTeal
             case .lotus:
                 return .systemGray
+            case .customSegmentControl:
+                return .purple
             }
         }
     }
