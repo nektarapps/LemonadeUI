@@ -111,7 +111,7 @@ extension PlaygroundViewModel {
             break
         case .inputs(let type):
             // If check for types
-            presenter.navigationController?.pushViewController(SearchVC(), animated: true)
+            presenter.navigationController?.pushViewController(SearchVC(viewModel: .init()), animated: true)
             break
         }
     }

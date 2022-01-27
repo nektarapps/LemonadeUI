@@ -23,6 +23,8 @@
 		EEE12BC127A1ED1300F66648 /* FlowerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC027A1ED1300F66648 /* FlowerVC.swift */; };
 		EEE12BC327A1F31300F66648 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC227A1F31300F66648 /* SliderCell.swift */; };
 		EEE12BC627A1FB4D00F66648 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC527A1FB4D00F66648 /* SearchVC.swift */; };
+		EEE12BC927A3479E00F66648 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC827A3479E00F66648 /* SearchViewModel.swift */; };
+		EEE12BCB27A347CF00F66648 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BCA27A347CF00F66648 /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		EEE12BC027A1ED1300F66648 /* FlowerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerVC.swift; sourceTree = "<group>"; };
 		EEE12BC227A1F31300F66648 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		EEE12BC527A1FB4D00F66648 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		EEE12BC827A3479E00F66648 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EEE12BCA27A347CF00F66648 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 			children = (
 				EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */,
 				EEE12BC227A1F31300F66648 /* SliderCell.swift */,
+				EEE12BCA27A347CF00F66648 /* SearchCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -223,9 +228,18 @@
 		EEE12BC427A1FB3D00F66648 /* Inputs */ = {
 			isa = PBXGroup;
 			children = (
-				EEE12BC527A1FB4D00F66648 /* SearchVC.swift */,
+				EEE12BC727A3478500F66648 /* Search */,
 			);
 			name = Inputs;
+			sourceTree = "<group>";
+		};
+		EEE12BC727A3478500F66648 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EEE12BC527A1FB4D00F66648 /* SearchVC.swift */,
+				EEE12BC827A3479E00F66648 /* SearchViewModel.swift */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 		FD02D70953C8E9AD9C07D38A /* Pods */ = {
@@ -411,12 +425,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE12BCB27A347CF00F66648 /* SearchCell.swift in Sources */,
 				EEE12BBF27A1E8C900F66648 /* LotusVC.swift in Sources */,
 				EEE12BC627A1FB4D00F66648 /* SearchVC.swift in Sources */,
 				EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */,
 				EE65781D279F2A2E00F12261 /* StarterVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				EEE12BBA27A1DEC400F66648 /* ChartVC.swift in Sources */,
+				EEE12BC927A3479E00F66648 /* SearchViewModel.swift in Sources */,
 				EEE12BC127A1ED1300F66648 /* FlowerVC.swift in Sources */,
 				EEE12BC327A1F31300F66648 /* SliderCell.swift in Sources */,
 				EE657820279F2D4200F12261 /* PlaygroundVC.swift in Sources */,
