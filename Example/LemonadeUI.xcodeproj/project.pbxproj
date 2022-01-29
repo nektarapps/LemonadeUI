@@ -18,6 +18,7 @@
 		EE657825279FEB6F00F12261 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */; };
 		EE657828279FEBD300F12261 /* PlaygroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */; };
 		EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */; };
+		EE7D5FC327A5EF01006E5756 /* ProgressBarsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */; };
 		EEE12BBA27A1DEC400F66648 /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BB927A1DEC400F66648 /* ChartVC.swift */; };
 		EEE12BBF27A1E8C900F66648 /* LotusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BBE27A1E8C900F66648 /* LotusVC.swift */; };
 		EEE12BC127A1ED1300F66648 /* FlowerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC027A1ED1300F66648 /* FlowerVC.swift */; };
@@ -61,6 +62,7 @@
 		EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewModel.swift; sourceTree = "<group>"; };
 		EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundHeaderView.swift; sourceTree = "<group>"; };
+		EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarsVC.swift; sourceTree = "<group>"; };
 		EEE12BB927A1DEC400F66648 /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
 		EEE12BBE27A1E8C900F66648 /* LotusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusVC.swift; sourceTree = "<group>"; };
 		EEE12BC027A1ED1300F66648 /* FlowerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerVC.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				EEE12BBE27A1E8C900F66648 /* LotusVC.swift */,
 				EEE12BC027A1ED1300F66648 /* FlowerVC.swift */,
 				EEE12BCC27A34C9700F66648 /* CustomSegmentControl.swift */,
+				EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */,
 			);
 			name = CustomShapes;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				EEE12BBF27A1E8C900F66648 /* LotusVC.swift in Sources */,
 				EEE12BC627A1FB4D00F66648 /* SearchVC.swift in Sources */,
 				EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */,
+				EE7D5FC327A5EF01006E5756 /* ProgressBarsVC.swift in Sources */,
 				EE65781D279F2A2E00F12261 /* StarterVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				EEE12BBA27A1DEC400F66648 /* ChartVC.swift in Sources */,

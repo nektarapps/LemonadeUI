@@ -28,7 +28,12 @@ class PlaygroundViewModel {
             .alert(alert: .custom)
         ])
         let chartSection: SectionModel = .init(section: .chart, rows: [.chart])
-        let customShapesSection: SectionModel = .init(section: .custom, rows: [ .customShapes(shape: .flower) , .customShapes(shape: .lotus) , .customShapes(shape: .customSegmentControl)])
+        let customShapesSection: SectionModel = .init(section: .custom, rows: [
+            .customShapes(shape: .flower)
+            , .customShapes(shape: .lotus)
+            , .customShapes(shape: .customSegmentControl)
+            , .customShapes(shape: .progressBars)
+        ])
         let sliderSection: SectionModel = .init(section: .sliders, rows: [
             .slider(thumbCount: 1),
             .slider(thumbCount: 2)
@@ -83,7 +88,13 @@ extension PlaygroundViewModel {
                                           , alignment: .center)
         switch selectedRow {
         case .customShapes(let shape):
-            let vc = shape == .lotus ? LotusVC() : shape == .flower ? FlowerVC() : CustomSegmentControl(viewModel: .init())
+            let vc = shape == .lotus
+            ? LotusVC()
+            : shape == .flower
+            ? FlowerVC()
+            : shape == .customSegmentControl
+            ? CustomSegmentControl(viewModel: .init())
+            : ProgressBarsVC()
             presenter.navigationController?.pushViewController(vc, animated: true)
         case .chart:
             presenter.navigationController?.pushViewController(ChartVC(), animated: true)
@@ -175,6 +186,7 @@ extension PlaygroundViewModel {
         case flower
         case lotus
         case customSegmentControl
+        case progressBars
         
         var title: String {
             switch self {
@@ -184,6 +196,8 @@ extension PlaygroundViewModel {
                 return "Lotus"
             case .customSegmentControl:
                 return "Custom Segmet Control"
+            case .progressBars:
+                return "Progress Bars"
             }
         }
         
@@ -195,6 +209,8 @@ extension PlaygroundViewModel {
                 return .systemGray
             case .customSegmentControl:
                 return .purple
+            case .progressBars:
+                return .systemPink
             }
         }
     }
