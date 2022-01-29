@@ -32,6 +32,7 @@ class ProgressBarsVC: UIViewController {
         let progressBar = LemonadeProgressBar(frame: .zero, config)
         progressBar.backgroundColor = .red.withAlphaComponent(0.1)
         progressBar.radius(.init(radius: 12))
+        progressBar.delegate = self
         return progressBar
     }()
     
@@ -43,6 +44,7 @@ class ProgressBarsVC: UIViewController {
         let progressBar = LemonadeProgressBar(frame: .zero, config)
         progressBar.backgroundColor = .red.withAlphaComponent(0.1)
         progressBar.radius(.init(radius: 12))
+        progressBar.delegate = self
         return progressBar
     }()
 
@@ -66,4 +68,25 @@ class ProgressBarsVC: UIViewController {
         defaultProgressBarVertical.centerX(view, equalTo: .centerX)
         defaultProgressBarVertical.bottom(view, equalTo: .bottom ,safeArea: true)
     }
+}
+extension ProgressBarsVC: LemonadeProgressBarDelegate {
+    func percantageChanged(_ bar: LemonadeProgressBar, value: CGFloat) {
+        if bar.alignment == .vertical {
+            print("Vertical \(value)")
+        }
+        if bar.alignment == .horizontal {
+            print("Horizontal \(value)")
+        }
+    }
+    
+    func progressFinished(_ bar: LemonadeProgressBar) {
+        if bar.alignment == .vertical {
+            print("Vertical Finished")
+        }
+        if bar.alignment == .horizontal {
+            print("Horizontal Finished")
+        }
+    }
+    
+    
 }

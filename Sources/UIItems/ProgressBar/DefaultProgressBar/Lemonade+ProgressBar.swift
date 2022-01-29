@@ -18,6 +18,10 @@ public class LemonadeProgressBar : UIView {
     
     public weak var delegate : LemonadeProgressBarDelegate?
     
+    public var alignment: LemonadeAlignment {
+        return config?.alignment ?? .horizontal
+    }
+    
     /// Active percentage value (GET)
     private(set) var currentPercentage : CGFloat = 0.0 {
         didSet {
