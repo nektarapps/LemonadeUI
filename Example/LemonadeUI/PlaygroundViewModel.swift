@@ -40,7 +40,8 @@ class PlaygroundViewModel {
         ])
         let inputSection: SectionModel = .init(section: .inputTypes, rows: [
             .inputs(type: .searchBar),
-            .inputs(type: .inputs)
+            .inputs(type: .inputs),
+            .inputs(type: .form)
         ])
         data.append(alertSection)
         data.append(chartSection)
@@ -121,8 +122,16 @@ extension PlaygroundViewModel {
         case .slider:
             break
         case .inputs(let type):
-            // If check for types
-            presenter.navigationController?.pushViewController(SearchVC(viewModel: .init()), animated: true)
+            switch type {
+            case .inputs:
+                break
+            case .form:
+                let viewModel: ExampleFormViewModel = .init()
+                presenter.navigationController?.pushViewController(LemonadeForm(viewModel: viewModel), animated: true)
+            case .searchBar:
+                presenter.navigationController?.pushViewController(SearchVC(viewModel: .init()), animated: true)
+            }
+            
             break
         }
     }
@@ -218,6 +227,7 @@ extension PlaygroundViewModel {
     enum InputTypeRow {
         case searchBar
         case inputs
+        case form
         
         var title: String {
             switch self {
@@ -225,6 +235,8 @@ extension PlaygroundViewModel {
                 return "Search Bar"
             case .inputs:
                 return "Inputs"
+            case .form:
+                return "Form"
             }
         }
         
@@ -234,6 +246,8 @@ extension PlaygroundViewModel {
                 return .red
             case .inputs:
                 return .orange
+            case .form:
+                return .systemGreen
             }
         }
     }

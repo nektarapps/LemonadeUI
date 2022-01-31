@@ -7,68 +7,17 @@
 
 import UIKit
 
-
-public protocol LemonadeTextFieldDelegate : AnyObject {
-    
-    /**
-     Sending valid state depends on regex
-     
-     - parameter textfield: Current textfield.
-     - parameter value: Valid state depends on regex.
-     */
-    func isTextValid( _ textfield : LemonadeTextfield ,  _ value : Bool)
-    
-    /**
-     
-     Send valid state depends on minumum char count
-     
-     - parameter textfield: Current textfield.
-     - parameter value: Valid state depends on minumum char count.
-     */
-    func isMinimumLimitValid( _ textfield : LemonadeTextfield ,  _ value : Bool )
-    /**
-     
-     Send valid state depends on maximum char count
-     
-     - parameter textfield: Current textfield.
-     - parameter value: Valid state depends on maximum char count.
-     */
-    func isMaximumLimitValid( _ textfield : LemonadeTextfield ,  _ value : Bool )
-    
-    /// Trigger when user tap something on textfield
-    func didTextChange( _ textfield : LemonadeTextfield)
-    
-    
-}
-extension LemonadeTextFieldDelegate {
-    func isTextValid( _ textfield : LemonadeTextfield ,  _ value : Bool) {}
-    func isMinimumLimitValid( _ textfield : LemonadeTextfield ,  _ value : Bool ) {}
-    func isMaximumLimitValid( _ textfield : LemonadeTextfield ,  _ value : Bool ) {}
-    func didTextChange( _ textfield : LemonadeTextfield) {}
-}
-
-
-
-
 public class LemonadeTextfield : UITextField {
     
     /// Lemonade delegate
     public weak var lemonadeDelegate : LemonadeTextFieldDelegate?
+    public var isAutoStateChangeAfterValdidation: Bool = true
     
-    /// Validation regex getter
-    private(set) var validationRegex : String? = nil
+    /// Regex getter
+    private(set) var regexType: RegexType = .none
     
-    /// Validation state
-    private(set) var isValidationEnabled : Bool = false
-    
-    /// Empty char state
-    public var isEmptyCharAllowed : Bool = false
-    
-    /// Maximum char limit. If you set , use delegate isMaximumLimitValid function
-    public var maximumCharLimit : Int? = nil
-    
-    /// Maximum char limit. If you set , use delegate isMinimumLimitValid function
-    public var minimumCharLimit : Int? = nil
+    /// Validations
+    private(set) var textLimitTypes: [TextLimitType] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -156,57 +105,73 @@ extension LemonadeTextfield {
 extension LemonadeTextfield {
     
     /// Delete validation if exists
-    public func removeValidation(){
-        self.validationRegex = nil
-        self.isValidationEnabled = false
+    public func removeValidationAndRegex(){
+        textLimitTypes.removeAll(keepingCapacity: false)
+        regexType = .none
     }
-    
+    public func addRegex(type: RegexType) {
+        regexType = type 
+    }
+    public func addTextLimits(types: [TextLimitType]) {
+        self.textLimitTypes = types
+    }
     /// Add custom rule. If you set new rule , use delegate's isTextValid function
-    public func addValidation( _ rule : String) {
-        self.validationRegex = rule
-        self.isValidationEnabled = true
+    public func addCustomRegex(rule : String) {
+        regexType = .custom(string: rule)
     }
     /// Add password rule. If you set , use delegate's isTextValid function
     public func addPasswordValidation(minimumChar : Int , maximumChar : Int) {
-        self.validationRegex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*()\\-_=+{}|?>.<,:;~`’]{\(String.init(describing: minimumChar)),\(String.init(describing: maximumChar))}$"
-        self.isValidationEnabled = true
+        regexType = .passwordValidate(min: minimumChar, max: maximumChar)
     }
     /// Add email rule. If you set , use delegate's isTextValid function
     public func addEmailValidation(){
-        self.validationRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        self.isValidationEnabled = true
+        regexType = .emailValidate
     }
 }
 
 
 extension LemonadeTextfield : UITextFieldDelegate {
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if !isEmptyCharAllowed {
+        if !textLimitTypes.contains(where: { $0.isEmptyCharAllowed }) {
             if string == " " && textField.text!.count == 0 { return false }
         }
         guard let textFieldText = textField.text
               , let rangeOfTextToReplace = Range(range, in: textFieldText) else {
             return false
         }
-        if maximumCharLimit == nil { return true}
+        guard let maximumCharLimit = textLimitTypes.first(where: {$0.maximumCharValue != nil})?.maximumCharValue else {
+             return true
+        }
         let substringToReplace = textFieldText[rangeOfTextToReplace]
         let count = textFieldText.count - substringToReplace.count + string.count
-        return count <= maximumCharLimit!
+        return count <= maximumCharLimit
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
         guard let text = textField.text else { return }
         lemonadeDelegate?.didTextChange(self)
-        if isValidationEnabled {
-            let status = NSPredicate(format: "SELF MATCHES %@", self.validationRegex!).evaluate(with: text)
+        switch regexType {
+        case .none:
+            break
+        default:
+            let status = NSPredicate(format: "SELF MATCHES %@", regexType.validationString).evaluate(with: text)
+            if isAutoStateChangeAfterValdidation {
+                status == false ? openState(.warning) : closeState(.warning)
+            }
             lemonadeDelegate?.isTextValid(self, status)
         }
-        if minimumCharLimit != nil {
-            let condition = text.count >= minimumCharLimit!
+        if let minimumCharLimit = textLimitTypes.first(where: {$0.maximumCharValue != nil})?.minimumCharValue {
+            let condition = text.count >= minimumCharLimit
+            if isAutoStateChangeAfterValdidation && condition == false {
+                 condition == false ? openState(.warning) : closeState(.warning)
+            }
             lemonadeDelegate?.isMinimumLimitValid(self, condition)
         }
-        if maximumCharLimit != nil {
-            let condition = text.count <= maximumCharLimit!
+        if let maximumCharLimit = textLimitTypes.first(where: {$0.maximumCharValue != nil})?.maximumCharValue {
+            let condition = text.count <= maximumCharLimit
+            if isAutoStateChangeAfterValdidation && condition == false {
+                 condition == false ? openState(.warning) : closeState(.warning)
+            }
             lemonadeDelegate?.isMaximumLimitValid(self, condition)
         }
         

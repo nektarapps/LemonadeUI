@@ -19,6 +19,7 @@
 		EE657828279FEBD300F12261 /* PlaygroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */; };
 		EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */; };
 		EE7D5FC327A5EF01006E5756 /* ProgressBarsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */; };
+		EECF70A127A6A0B900BBEA02 /* ExampleFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF70A027A6A0B900BBEA02 /* ExampleFormViewModel.swift */; };
 		EEE12BBA27A1DEC400F66648 /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BB927A1DEC400F66648 /* ChartVC.swift */; };
 		EEE12BBF27A1E8C900F66648 /* LotusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BBE27A1E8C900F66648 /* LotusVC.swift */; };
 		EEE12BC127A1ED1300F66648 /* FlowerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE12BC027A1ED1300F66648 /* FlowerVC.swift */; };
@@ -63,6 +64,7 @@
 		EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewModel.swift; sourceTree = "<group>"; };
 		EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundHeaderView.swift; sourceTree = "<group>"; };
 		EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarsVC.swift; sourceTree = "<group>"; };
+		EECF70A027A6A0B900BBEA02 /* ExampleFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleFormViewModel.swift; sourceTree = "<group>"; };
 		EEE12BB927A1DEC400F66648 /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
 		EEE12BBE27A1E8C900F66648 /* LotusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusVC.swift; sourceTree = "<group>"; };
 		EEE12BC027A1ED1300F66648 /* FlowerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerVC.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */,
+				EECF70A027A6A0B900BBEA02 /* ExampleFormViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE12BCB27A347CF00F66648 /* SearchCell.swift in Sources */,
+				EECF70A127A6A0B900BBEA02 /* ExampleFormViewModel.swift in Sources */,
 				EEE12BBF27A1E8C900F66648 /* LotusVC.swift in Sources */,
 				EEE12BC627A1FB4D00F66648 /* SearchVC.swift in Sources */,
 				EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */,

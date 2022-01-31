@@ -35,12 +35,17 @@ extension UIView {
     }
     
     var identifier : String {
-        if self.accessibilityIdentifier == nil {
-            let uuid = UUID().uuidString
-            self.accessibilityIdentifier = uuid
-            return uuid
+        get {
+            if self.accessibilityIdentifier == nil {
+                let uuid = UUID().uuidString
+                self.accessibilityIdentifier = uuid
+                return uuid
+            }
+            return self.accessibilityIdentifier!
         }
-        return self.accessibilityIdentifier!
+        set {
+            self.accessibilityIdentifier = newValue
+        }
     }
 }
 
