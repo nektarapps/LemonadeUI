@@ -1,1405 +1,1979 @@
 {
   "warnings": [
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Animations/Config+Animation.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Animations/Config+Animation.swift",
       "line": 9,
       "symbol": "LemonadeAnimationConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Animations/Custom+Animations.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Animations/Custom+Animations.swift",
       "line": 12,
       "symbol": "LemonadeAnimation",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Animations/Custom+Basic+Animations.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Animations/Custom+Basic+Animations.swift",
       "line": 9,
       "symbol": "LemonadeBasicAnimation",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
       "line": 12,
       "symbol": "CGFloat.screenWidth(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/CGFloat+Constraint+Extensions.swift",
       "line": 15,
       "symbol": "CGFloat.screenHeight(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
       "line": 28,
       "symbol": "UIView.center(to:width:height:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
       "line": 35,
       "symbol": "UIView.center(to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint+View.swift",
       "line": 70,
       "symbol": "UIView.leftAndRight(_:constant:safeArea:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 13,
       "symbol": "LemonadePosition.top",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 14,
       "symbol": "LemonadePosition.bottom",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 15,
       "symbol": "LemonadePosition.left",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 16,
       "symbol": "LemonadePosition.right",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 19,
       "symbol": "LemonadeAlignment",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 20,
       "symbol": "LemonadeAlignment.horizontal",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 21,
       "symbol": "LemonadeAlignment.vertical",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 27,
       "symbol": "LemonadeConstraint",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 28,
       "symbol": "LemonadeConstraint.top",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 29,
       "symbol": "LemonadeConstraint.bottom",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 30,
       "symbol": "LemonadeConstraint.left",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 31,
       "symbol": "LemonadeConstraint.right",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 33,
       "symbol": "LemonadeConstraint.centerX",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 34,
       "symbol": "LemonadeConstraint.centerY",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 83,
       "symbol": "LemonadeConstraintBounds",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 84,
       "symbol": "LemonadeConstraintBounds.width",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/Constaints/LemonadeConstraint.swift",
       "line": 85,
       "symbol": "LemonadeConstraintBounds.height",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Alerts/Lemonade+Alert+Diolog.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Alerts/Lemonade+Alert+Diolog.swift",
       "line": 8,
       "symbol": "LemonadeAlertDialog",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Alerts/Lemonade+Bar+Alert.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Alerts/Lemonade+Bar+Alert.swift",
       "line": 8,
       "symbol": "LemonadeBarAlert",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
       "line": 62,
       "symbol": "LemonadeAlertState",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
       "line": 63,
       "symbol": "LemonadeAlertState.Warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
       "line": 64,
       "symbol": "LemonadeAlertState.Error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
       "line": 65,
       "symbol": "LemonadeAlertState.Success",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert+Configs.swift",
       "line": 66,
       "symbol": "LemonadeAlertState.Custom(color:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
       "line": 9,
       "symbol": "LemonadeAlertDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
       "line": 22,
       "symbol": "LemonadeAlert",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Alert/Lemonade+Alert.swift",
       "line": 117,
       "symbol": "LemonadeAlert.onButtonTapped(button:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
       "line": 9,
       "symbol": "LemonadeSwitchButtonDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
       "line": 19,
       "symbol": "LemonadeSwitchButtonConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
       "line": 30,
       "symbol": "LemonadeSwitchButtonConfig.init(activeColor:deActiveColor:duration:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
       "line": 39,
       "symbol": "LemonadeSwitchToggleConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/Config+Lemonade+Button.swift",
       "line": 61,
       "symbol": "LemonadeSwitchToggleConfig.init(isOn:activeColor:deActiveColor:border:padding:width:height:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
-      "line": 11,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 22,
+      "symbol": "UIControl.addAction(for:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 30,
       "symbol": "LemonadeButton",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
-      "line": 25,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 44,
       "symbol": "LemonadeButton.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
-      "line": 32,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 51,
       "symbol": "LemonadeButton.init(frame:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
-      "line": 39,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 56,
+      "symbol": "LemonadeButton.init(frame:_:handler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 64,
       "symbol": "LemonadeButton",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
-      "line": 99,
-      "symbol": "LemonadeButton",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
-      "line": 124,
-      "symbol": "LemonadeButton",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
       "line": 125,
+      "symbol": "LemonadeButton",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 146,
+      "symbol": "LemonadeButton.onClick(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 154,
+      "symbol": "LemonadeButton",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Button/LemonadeButton.swift",
+      "line": 155,
       "symbol": "LemonadeButton.touchesBegan(_:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart+Config.swift",
+      "line": 9,
+      "symbol": "LemonadeLineChartConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart+Config.swift",
+      "line": 15,
+      "symbol": "LemonadeLineChartConfig.init(items:color:animate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart+Config.swift",
+      "line": 22,
+      "symbol": "LemonadeChartItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart+Config.swift",
+      "line": 29,
+      "symbol": "LemonadeChartItem.init(xAxisText:yAxisText:value:color:lineWidth:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart.swift",
+      "line": 12,
+      "symbol": "LemonadeLineChart",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart.swift",
+      "line": 18,
+      "symbol": "LemonadeLineChart.init(frame:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart.swift",
+      "line": 22,
+      "symbol": "LemonadeLineChart.draw(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
       "line": 10,
       "symbol": "LemonadePieChartConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
       "line": 16,
       "symbol": "LemonadePieChartConfig.init(items:isAnimate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
       "line": 34,
       "symbol": "LemonadePieChartItem",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift",
       "line": 44,
       "symbol": "LemonadePieChartItem.init(text:value:color:border:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
       "line": 10,
       "symbol": "LemonadePieChartDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
       "line": 17,
       "symbol": "LemonadePieChart",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
       "line": 32,
       "symbol": "LemonadePieChart.init(frame:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
       "line": 36,
       "symbol": "LemonadePieChart.draw(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift",
       "line": 75,
       "symbol": "LemonadePieChart",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
       "line": 9,
       "symbol": "LemonadeProgressChartConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
       "line": 26,
       "symbol": "LemonadeProgressChartConfig.init(alignment:borderColor:titleText:isLinePercentageShow:elements:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
       "line": 39,
       "symbol": "LemonadeProgressChartElement",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift",
       "line": 49,
       "symbol": "LemonadeProgressChartElement.init(percentage:barColor:text:progressView:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
       "line": 9,
       "symbol": "LemonadeProgressChart",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
       "line": 26,
       "symbol": "LemonadeProgressChart.init(frame:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
       "line": 57,
       "symbol": "LemonadeProgressChart.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift",
       "line": 65,
       "symbol": "LemonadeProgressChart",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/CustomCells/Default+Lemonade+Cell.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/CustomCells/Default+Lemonade+Cell.swift",
       "line": 9,
       "symbol": "DefaultLemonadeCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/CustomCells/Default+Lemonade+Cell.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/CustomCells/Default+Lemonade+Cell.swift",
       "line": 19,
       "symbol": "DefaultLemonadeCell.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/Lemonade+Cell.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+Cells/Lemonade+Cell.swift",
       "line": 8,
       "symbol": "LemonadeCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
       "line": 10,
       "symbol": "LemonadeCollectionView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
       "line": 14,
       "symbol": "LemonadeCollectionView.dynamicHeightMode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
       "line": 16,
       "symbol": "LemonadeCollectionView.dynamicReload(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
       "line": 38,
       "symbol": "LemonadeCollectionView",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
       "line": 48,
       "symbol": "LemonadeCollectionViewDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
       "line": 49,
       "symbol": "LemonadeCollectionViewDelegate.cell(_:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/Lemonade+CollectionView.swift",
       "line": 50,
       "symbol": "LemonadeCollectionViewDelegate.maximumCellHeight(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
       "line": 8,
       "symbol": "LemonadeWrapContent",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
       "line": 9,
       "symbol": "LemonadeWrapContent.calcualation()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
       "line": 13,
       "symbol": "Test",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/CollectionView/WrapContent.swift",
       "line": 14,
       "symbol": "Test.calcualation()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower+Config.swift",
       "line": 11,
       "symbol": "LemonadeFlowerConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower+Config.swift",
       "line": 17,
       "symbol": "LemonadeFlowerConfig.init(items:spacing:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower+Config.swift",
       "line": 27,
       "symbol": "LemonadeFlowerItem",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
       "line": 10,
       "symbol": "LemonadeFlowerDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
       "line": 15,
       "symbol": "LemonadeFlower",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
       "line": 25,
       "symbol": "LemonadeFlower.init(frame:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Flower/Lemonade+Flower.swift",
       "line": 66,
       "symbol": "LemonadeFlower.draw(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Components.swift",
+      "line": 8,
+      "symbol": "LemonaedFormComponents",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Components.swift",
+      "line": 9,
+      "symbol": "LemonaedFormComponents.textfield(id:title:placeholder:text:backgroundColor:radius:border:regex:limitTypes:isSecureText:height:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Components.swift",
+      "line": 20,
+      "symbol": "LemonaedFormComponents.textView(id:title:placeholder:text:backgroundColor:radius:border:height:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Components.swift",
+      "line": 28,
+      "symbol": "LemonaedFormComponents.spacer(height:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Components.swift",
+      "line": 29,
+      "symbol": "LemonaedFormComponents.custom(view:height:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Configuration.swift",
+      "line": 10,
+      "symbol": "LemonadeFormConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Configuration.swift",
+      "line": 20,
+      "symbol": "LemonadeFormConfiguration.init(components:titleText:formButton:spacingBetweenItems:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Controller.swift",
+      "line": 10,
+      "symbol": "FormResultItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Controller.swift",
+      "line": 17,
+      "symbol": "FormViewModelType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Controller.swift",
+      "line": 23,
+      "symbol": "LemonadeForm",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Controller.swift",
+      "line": 38,
+      "symbol": "LemonadeForm.init(viewModel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Controller.swift",
+      "line": 43,
+      "symbol": "LemonadeForm.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Form/Form+Controller.swift",
+      "line": 47,
+      "symbol": "LemonadeForm.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
       "line": 11,
       "symbol": "LemonadeLabelledInput",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
       "line": 13,
       "symbol": "LemonadeLabelledInput.lemonadeLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
       "line": 14,
       "symbol": "LemonadeLabelledInput.lemonadeTextfield",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
       "line": 15,
       "symbol": "LemonadeLabelledInput.lemonadeTextView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift",
       "line": 71,
       "symbol": "LemonadeLabelledInput",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 10,
       "symbol": "LemonadeTextViewDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 33,
       "symbol": "LemonadeTextView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 59,
       "symbol": "LemonadeTextView.init(frame:textContainer:text:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 63,
       "symbol": "LemonadeTextView.init(frame:textContainer:text:placeholder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 70,
       "symbol": "LemonadeTextView",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 71,
       "symbol": "LemonadeTextView.text(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 78,
       "symbol": "LemonadeTextView.placeholder(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 83,
       "symbol": "LemonadeTextView",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 84,
       "symbol": "LemonadeTextView.textViewDidEndEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 89,
       "symbol": "LemonadeTextView.textViewDidBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 94,
       "symbol": "LemonadeTextView.textView(_:shouldChangeTextIn:replacementText:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/TextView/LemonadeTextView.swift",
       "line": 106,
       "symbol": "LemonadeTextView.textViewDidChange(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Regex+Type.swift",
+      "line": 9,
+      "symbol": "RegexType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Regex+Type.swift",
+      "line": 10,
+      "symbol": "RegexType.emailValidate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Regex+Type.swift",
+      "line": 11,
+      "symbol": "RegexType.passwordValidate(min:max:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Regex+Type.swift",
+      "line": 12,
+      "symbol": "RegexType.custom(string:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Regex+Type.swift",
+      "line": 13,
+      "symbol": "RegexType.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Text+Limit+Type.swift",
+      "line": 9,
+      "symbol": "TextLimitType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Text+Limit+Type.swift",
+      "line": 10,
+      "symbol": "TextLimitType.charLimit(min:max:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+Text+Limit+Type.swift",
+      "line": 11,
+      "symbol": "TextLimitType.emptyCharAllowed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/Lemonade+TextField+Delegate.swift",
       "line": 11,
       "symbol": "LemonadeTextFieldDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
-      "line": 53,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 10,
       "symbol": "LemonadeTextfield",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
-      "line": 106,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 14,
+      "symbol": "LemonadeTextfield.isAutoStateChangeAfterValdidation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 55,
       "symbol": "LemonadeTextfield",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
-      "line": 107,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 56,
       "symbol": "LemonadeTextfield.text(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
-      "line": 115,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 64,
       "symbol": "LemonadeTextfield.placeholder(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
-      "line": 156,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 105,
       "symbol": "LemonadeTextfield",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
-      "line": 182,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 112,
+      "symbol": "LemonadeTextfield.addRegex(type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 115,
+      "symbol": "LemonadeTextfield.addTextLimits(types:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 133,
       "symbol": "LemonadeTextfield",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
-      "line": 183,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Input/Textfield/LemonadeTextfield.swift",
+      "line": 134,
       "symbol": "LemonadeTextfield.textField(_:shouldChangeCharactersIn:replacementString:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 9,
       "symbol": "LemonadeText",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 32,
       "symbol": "LemonadeText.init(text:color:font:alignment:kern:underline:breakMode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 49,
       "symbol": "LemonadeText.attributeText()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 62,
       "symbol": "LemonadeText.labelHeight(width:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 68,
       "symbol": "LemonadeText.labelWidth(height:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 77,
       "symbol": "LemonadeUnderLine",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 82,
       "symbol": "LemonadeUnderLine.init(_:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 91,
       "symbol": "LemonadeCollapseText",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 113,
       "symbol": "LemonadeCollapseText.init(max:text:moreText:lessText:isAnimate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 125,
       "symbol": "LemonadeCollapseText.toggleAnimate(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/Config+Lemonade+Label.swift",
       "line": 126,
       "symbol": "LemonadeCollapseText.toggleCollapse(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
       "line": 11,
       "symbol": "LemonadeLabel",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
       "line": 47,
       "symbol": "LemonadeLabel.text",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
       "line": 59,
       "symbol": "LemonadeLabel",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
       "line": 76,
       "symbol": "LemonadeLabel",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Label/LemonadeLabel.swift",
       "line": 116,
       "symbol": "LemonadeLabel",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
       "line": 8,
       "symbol": "LemonadeLotusConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
       "line": 39,
       "symbol": "LemonadeLotusAnimationPosition",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
       "line": 45,
       "symbol": "LemonadeLotusAnimationPatternItem",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift",
       "line": 52,
       "symbol": "LemonadeLotusAnimationPatternItem.init(duration:position:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 8,
       "symbol": "LemonadeLotusDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 17,
       "symbol": "LemonadeLotus",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 35,
       "symbol": "LemonadeLotus.init(frame:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 86,
       "symbol": "LemonadeLotus.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 92,
       "symbol": "LemonadeLotus",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 98,
       "symbol": "LemonadeLotus",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 157,
       "symbol": "LemonadeLotus",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Lotus/Lemonade+Lotus.swift",
       "line": 158,
       "symbol": "LemonadeLotus.animationDidStop(_:finished:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Animation.swift",
+      "line": 8,
+      "symbol": "LemonadePopupAnimation",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Animation.swift",
+      "line": 9,
+      "symbol": "LemonadePopupAnimation.fade(position:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Animation.swift",
+      "line": 10,
+      "symbol": "LemonadePopupAnimation.slideToCenter(from:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 8,
+      "symbol": "LemonadePopupComponents",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 9,
+      "symbol": "LemonadePopupComponents.label(text:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 10,
+      "symbol": "LemonadePopupComponents.singleButton(button:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 11,
+      "symbol": "LemonadePopupComponents.sideButtons(buttons:spacing:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 12,
+      "symbol": "LemonadePopupComponents.textView(placeholder:text:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 13,
+      "symbol": "LemonadePopupComponents.textfield(placeholder:text:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 14,
+      "symbol": "LemonadePopupComponents.spacer(height:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Components.swift",
+      "line": 15,
+      "symbol": "LemonadePopupComponents.custuom(view:height:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Configuration.swift",
+      "line": 12,
+      "symbol": "LemonadePopupConfiguration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Controller.swift",
+      "line": 11,
+      "symbol": "LemonadePopupController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Controller.swift",
+      "line": 32,
+      "symbol": "LemonadePopupController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Controller.swift",
+      "line": 37,
+      "symbol": "LemonadePopupController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Controller.swift",
+      "line": 100,
+      "symbol": "LemonadePopupController.show()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Controller.swift",
+      "line": 118,
+      "symbol": "LemonadePopupController.hide()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 8,
+      "symbol": "LemonadeAlertManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 9,
+      "symbol": "LemonadeAlertManager.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 11,
+      "symbol": "LemonadeAlertManager",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 13,
+      "symbol": "LemonadeAlertManager.showDefaultAlert(title:message:closeButtonText:presenter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 27,
+      "symbol": "LemonadeAlertManager.showToastMessage(message:position:presenter:dismissDuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 35,
+      "symbol": "LemonadeAlertManager.showCustomPopup(components:backgroundColor:radius:animation:animationDuration:margin:presenter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 48,
+      "symbol": "LemonadeAlertManager.dismiss(presenter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Popup/Popup+Manager.swift",
+      "line": 61,
+      "symbol": "LemonadeAlertManager.show(presenter:popup:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/CircleProgressBar/Lemonade+Circle+Progress+Bar+Config.swift",
+      "line": 8,
+      "symbol": "LemonadeCircleProgessBarItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/CircleProgressBar/Lemonade+Circle+Progress+Bar+Config.swift",
+      "line": 22,
+      "symbol": "LemonadeCircleProgessBarItem.init(positionValue:barTintColor:progressColor:lineWidth:isAnimate:animateDuration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/CircleProgressBar/Lemonade+Circle+Progress+Bar+Config.swift",
+      "line": 45,
+      "symbol": "LemonadeCircleProgessBarConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/CircleProgressBar/Lemonade+Circle+Progress+Bar+Config.swift",
+      "line": 55,
+      "symbol": "LemonadeCircleProgessBarConfig.init(items:spaceBetweenItems:barTitleText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/CircleProgressBar/Lemonade+Circle+Progress+Bar.swift",
+      "line": 8,
+      "symbol": "LemonadeCircleProgressBar",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/CircleProgressBar/Lemonade+Circle+Progress+Bar.swift",
+      "line": 35,
+      "symbol": "LemonadeCircleProgressBar.draw(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar+Config.swift",
       "line": 8,
       "symbol": "LemonadeProgressBarText",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar+Config.swift",
       "line": 27,
       "symbol": "LemonadeProgressBarConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar+Config.swift",
       "line": 44,
       "symbol": "LemonadeProgressBarConfig.init(alignment:textType:starterPercentage:automaticProgressDuration:progressView:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar.swift",
       "line": 8,
       "symbol": "LemonadeProgressBarDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar.swift",
       "line": 17,
       "symbol": "LemonadeProgressBar",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar.swift",
       "line": 19,
       "symbol": "LemonadeProgressBar.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
-      "line": 43,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar.swift",
+      "line": 21,
+      "symbol": "LemonadeProgressBar.alignment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar.swift",
+      "line": 47,
       "symbol": "LemonadeProgressBar.init(frame:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
-      "line": 54,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar.swift",
+      "line": 58,
       "symbol": "LemonadeProgressBar.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift",
-      "line": 60,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ProgressBar/DefaultProgressBar/Lemonade+ProgressBar.swift",
+      "line": 64,
       "symbol": "LemonadeProgressBar",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 13,
       "symbol": "LemonadeScrollView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 15,
       "symbol": "LemonadeScrollView.contentView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 26,
       "symbol": "LemonadeScrollView.init(frame:add:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 34,
       "symbol": "LemonadeScrollView",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 75,
       "symbol": "LemonadeScrollView",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 76,
       "symbol": "LemonadeScrollView.scrollViewDidScroll(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ScrollView/Lemonade+ScrollView.swift",
       "line": 98,
       "symbol": "LemonadeStreching.init(_:topAnchor:heightAnchor:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar+Config.swift",
       "line": 8,
       "symbol": "LemonadeSearchState",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar+Config.swift",
       "line": 18,
       "symbol": "LemonadeSearchBarConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 8,
       "symbol": "LemonadeSearchBarDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 22,
       "symbol": "LemonadeSearchBar",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 45,
       "symbol": "LemonadeSearchBar.searchBarTextfield",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 73,
       "symbol": "LemonadeSearchBar.init(frame:text:placeholder:config:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 86,
       "symbol": "LemonadeSearchBar.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 93,
       "symbol": "LemonadeSearchBar",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 165,
       "symbol": "LemonadeSearchBar",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SearchBar/Lemonade+SearchBar.swift",
       "line": 175,
       "symbol": "LemonadeSearchBar.textFieldDidBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
       "line": 8,
       "symbol": "LemonadeSegmentItemConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
       "line": 14,
       "symbol": "LemonadeSegmentItemConfig.init(segmentText:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift",
       "line": 19,
       "symbol": "LemonadeSegmentItemConfig.init(segmentText:badgeView:badgeText:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control+Protocol.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control+Protocol.swift",
       "line": 11,
       "symbol": "LemonadeSegmentControlDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control+Protocol.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control+Protocol.swift",
       "line": 12,
       "symbol": "LemonadeSegmentControlDelegate.segmentChange(_:_:index:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 8,
       "symbol": "LemonadeSegmentControl",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 10,
       "symbol": "LemonadeSegmentControl.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 24,
       "symbol": "LemonadeSegmentControl.init(frame:items:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 29,
       "symbol": "LemonadeSegmentControl.init(frame:selectorView:items:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 35,
       "symbol": "LemonadeSegmentControl.init(frame:selectorView:firstIndex:items:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 114,
       "symbol": "LemonadeSegmentControl",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 115,
       "symbol": "LemonadeSegmentControl.change(index:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift",
       "line": 119,
       "symbol": "LemonadeSegmentControl.badge(index:text:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
       "line": 12,
       "symbol": "LemonadeSegmentItem",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
       "line": 24,
       "symbol": "LemonadeSegmentItem.init(frame:config:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift",
       "line": 53,
       "symbol": "LemonadeSegmentItem.badgeText(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+ToolTip+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider+Config.swift",
+      "line": 12,
+      "symbol": "LemonadeSliderConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider+Config.swift",
+      "line": 26,
+      "symbol": "LemonadeSliderConfig.init(sliderColor:startValue:endValue:sliderHeight:thumbConfig:thumbLabelText:secondThumbConfig:secondLabelText:minimumDistanceBetweenThumns:maskedViewThumbsBetweenThumbs:isThumbsLabelsTrackProgress:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider+Config.swift",
+      "line": 52,
+      "symbol": "LemonadeThumbConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider+Config.swift",
+      "line": 59,
+      "symbol": "LemonadeThumbConfig.init(color:value:height:border:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 10,
+      "symbol": "LemonadeSliderDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 11,
+      "symbol": "LemonadeSliderDelegate.thumbChanged(_:_:thumbIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 15,
+      "symbol": "LemonadeSlider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 18,
+      "symbol": "LemonadeSlider.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 20,
+      "symbol": "LemonadeSlider.init(frame:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 59,
+      "symbol": "LemonadeSlider.firstThumbLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 63,
+      "symbol": "LemonadeSlider.secondThumbLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 73,
+      "symbol": "LemonadeSlider.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 91,
+      "symbol": "LemonadeSlider",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 92,
+      "symbol": "LemonadeSlider.configure(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 96,
+      "symbol": "LemonadeSlider.moveFirstThumb(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/Slider/Lemonade+Slider.swift",
+      "line": 104,
+      "symbol": "LemonadeSlider.moveSecondThumb(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+ToolTip+Config.swift",
       "line": 11,
       "symbol": "LemonadeToolTipConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+ToolTip+Config.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+ToolTip+Config.swift",
       "line": 18,
       "symbol": "LemonadeToolTipConfig.init(view:isAnimate:duration:text:textBackgroundColor:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+Tooltip+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+Tooltip+View.swift",
       "line": 12,
       "symbol": "LemonadeToolTip",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+Tooltip+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+Tooltip+View.swift",
       "line": 17,
       "symbol": "LemonadeToolTip",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+Tooltip+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/ToolTipView/Lemonade+Tooltip+View.swift",
       "line": 18,
       "symbol": "LemonadeToolTip.configure(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
       "line": 14,
       "symbol": "UIView.init(frame:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
       "line": 18,
       "symbol": "UIView.init(frame:color:radius:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
       "line": 23,
       "symbol": "UIView.init(frame:color:radius:border:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
       "line": 29,
       "symbol": "UIView.init(frame:color:radius:border:shadow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
-      "line": 54,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "line": 59,
       "symbol": "UIView.getConstraint(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
-      "line": 62,
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/Common+View+Extensions.swift",
+      "line": 67,
       "symbol": "UIView.getConstraint(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 13,
       "symbol": "LemonadeBorder.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 33,
       "symbol": "LemonadeRadius.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 88,
       "symbol": "LemonadeEmptyUI",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 108,
       "symbol": "LemonadeShadow",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 130,
       "symbol": "LemonadeStateConfig",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 146,
       "symbol": "LemonadeUIState",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 147,
       "symbol": "LemonadeUIState.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 148,
       "symbol": "LemonadeUIState.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
+      "file": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI/Sources/UIItems/View/ConfigUI+View.swift",
       "line": 149,
       "symbol": "LemonadeUIState.success",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/Ozgur/Repositories/LemonadeUI/LemonadeUI"
+  "source_directory": "/Users/ozgurelmasli/Desktop/Frameworks/LemonadeUI/LemonadeUI"
 }

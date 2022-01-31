@@ -21,6 +21,7 @@ class ExampleFormViewModel: FormViewModelType {
                        , radius: .init(radius: 12), border: .init(borderColor: .white, width: 2.0)
                        , regex: .emailValidate
                        , limitTypes: []
+                       , isSecureText: false
                        , height: 50),
             .spacer(height: 20),
             .textfield(id:"password"
@@ -31,6 +32,7 @@ class ExampleFormViewModel: FormViewModelType {
                        , radius: .init(radius: 12)
                        , regex: .none
                        , limitTypes: [.charLimit(min: 6, max: 20)]
+                       , isSecureText: true
                        , height: 50),
             .spacer(height: 20),
             .textfield(id: "confirm_password"
@@ -41,6 +43,7 @@ class ExampleFormViewModel: FormViewModelType {
                        , radius: .init(radius: 12)
                        , regex: .none
                        , limitTypes: [.charLimit(min: 6, max: 20)]
+                       , isSecureText: false
                        , height: 50),
             .spacer(height: 20),
             .textView(id: "hear_about"

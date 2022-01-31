@@ -8,12 +8,16 @@
 import UIKit
 
 public struct FormResultItem {
+    /// ID (Your item id)
     public var id: String
+    /// Value type
     public var value: String
 }
 
 public protocol FormViewModelType {
+    /// Configuration Type
     var configuration: LemonadeFormConfiguration { get set }
+    /// Action Button tapped function (Default button)
     func actionButtonTapped( _ result: [FormResultItem])
 }
 public class LemonadeForm: UIViewController {
@@ -63,20 +67,21 @@ public class LemonadeForm: UIViewController {
         stackView.layoutSubviews()
         stackView.layoutIfNeeded()
     }
-    
+    /// Get result from stackView
     private func getResults() -> [FormResultItem] {
         if stackView.subviews.isEmpty { return [] }
         var values: [FormResultItem] = [FormResultItem]()
         stackView.subviews.forEach {
-            if let textStackView = $0 as? UIStackView {
-                if textStackView.subviews.isEmpty { return }
-                textStackView.subviews.forEach { item in
-                    if let textField = item as? LemonadeTextfield {
-                        values.append(.init(id: textField.identifier, value: textField.text ?? "" ))
-                    }
-                    if let textView = item as? LemonadeTextView {
-                        values.append(.init(id: textView.identifier, value: textView.text ?? "" ))
-                    }
+            guard
+                let textStackView = $0 as? UIStackView
+                    , !textStackView.subviews.isEmpty
+            else { return }
+            textStackView.subviews.forEach { item in
+                if let textField = item as? LemonadeTextfield {
+                    values.append(FormResultItem(id: textField.identifier, value: textField.text ?? "" ))
+                }
+                if let textView = item as? LemonadeTextView {
+                    values.append(FormResultItem(id: textView.identifier, value: textView.text ?? "" ))
                 }
             }
         }

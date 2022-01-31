@@ -7,14 +7,15 @@
 
 public enum LemonaedFormComponents {
     case textfield(id: String
-                   ,title: LemonadeText
-                   ,placeholder: LemonadeText
+                   , title: LemonadeText
+                   , placeholder: LemonadeText
                    , text: LemonadeText
                    , backgroundColor: UIColor = .white
                    , radius: LemonadeRadius? = nil
                    , border: LemonadeBorder? = nil
-                   , regex: RegexType
-                   , limitTypes: [TextLimitType]
+                   , regex: RegexType /// Regex types
+                   , limitTypes: [TextLimitType] /// Limit types
+                   , isSecureText: Bool /// Secure text
                    , height: CGFloat?)
     case textView(id:String
                   ,title:LemonadeText
@@ -30,7 +31,7 @@ public enum LemonaedFormComponents {
     
     var view: UIView {
         switch self {
-        case .textfield(let id, let title, let placeholder , let text, let backgroundColor , let radius, let border, let regex, let validations , let height):
+        case .textfield(let id, let title, let placeholder , let text, let backgroundColor , let radius, let border, let regex, let validations , let isSecure , let height):
             let titleLabel = LemonadeLabel(frame: .zero, title)
             let input      = LemonadeTextfield(frame: .zero
                                                , text: text
@@ -39,6 +40,7 @@ public enum LemonaedFormComponents {
             input.addRegex(type: regex)
             input.addTextLimits(types: validations)
             input.identifier = id
+            input.isSecureTextEntry = isSecure
             input.backgroundColor = backgroundColor
             if let radius = radius { input.radius(radius) }
             if let border = border { input.border(border) }
