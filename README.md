@@ -112,8 +112,8 @@ someView.gradient(...//LemonadeRadius)
 
 ```swift
 public struct LemonadeColor {
-    var backgroundColor : UIColor? = nil
-    var gradient        : LemonadeGradient? = nil
+    var backgroundColor : UIColor?
+    var gradient        : LemonadeGradient?
 ...
 }
 someView.color(...//LemonadeColor)
