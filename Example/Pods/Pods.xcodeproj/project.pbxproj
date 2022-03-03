@@ -67,6 +67,12 @@
 		87DA8EDA6449792D610EF912F10A1E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		89E371B2047FA56FBB895953774F733A /* LemonadeUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B54BB4412AD81C41730050C6F064997 /* LemonadeUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97764F11A30CF657204CF16A0A38419B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EE77D40E27CBED750088CA5D /* Lemonade+Story+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D40D27CBED750088CA5D /* Lemonade+Story+Item.swift */; };
+		EE77D41027CBEDB20088CA5D /* Lemonade+Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D40F27CBEDB20088CA5D /* Lemonade+Story.swift */; };
+		EE77D41227CBEDBC0088CA5D /* Lemonade+Story+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D41127CBEDBC0088CA5D /* Lemonade+Story+List.swift */; };
+		EE77D41527CFFAEA0088CA5D /* Lemonade+Verification+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D41427CFFAEA0088CA5D /* Lemonade+Verification+ProgressBar.swift */; };
+		EE77D41727D12E620088CA5D /* Lemonade+Verification+ProgressBar+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D41627D12E620088CA5D /* Lemonade+Verification+ProgressBar+Config.swift */; };
+		EE77D41927D12E960088CA5D /* Lemonade+Verification+ProgressBar+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D41827D12E960088CA5D /* Lemonade+Verification+ProgressBar+Item.swift */; };
 		EE7D5FBF27A5E68C006E5756 /* Lemonade+Circle+Progress+Bar+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D5FBE27A5E68C006E5756 /* Lemonade+Circle+Progress+Bar+Config.swift */; };
 		EE7D5FC127A5E82F006E5756 /* Lemonade+Circle+Progress+Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D5FC027A5E82F006E5756 /* Lemonade+Circle+Progress+Bar.swift */; };
 		EE7D5FC527A6017A006E5756 /* Form+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D5FC427A6017A006E5756 /* Form+Controller.swift */; };
@@ -183,6 +189,12 @@
 		E0DDCF3A7CB8AF8ECF8567E14595E870 /* Pods-LemonadeUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LemonadeUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E28ACBC1982FA13B81CB96FB89E1FD35 /* Pods-LemonadeUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E9E3123639BDB64403E1BE4108A06999 /* Pods-LemonadeUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE77D40D27CBED750088CA5D /* Lemonade+Story+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Story+Item.swift"; sourceTree = "<group>"; };
+		EE77D40F27CBEDB20088CA5D /* Lemonade+Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Story.swift"; sourceTree = "<group>"; };
+		EE77D41127CBEDBC0088CA5D /* Lemonade+Story+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Story+List.swift"; sourceTree = "<group>"; };
+		EE77D41427CFFAEA0088CA5D /* Lemonade+Verification+ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Verification+ProgressBar.swift"; sourceTree = "<group>"; };
+		EE77D41627D12E620088CA5D /* Lemonade+Verification+ProgressBar+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Verification+ProgressBar+Config.swift"; sourceTree = "<group>"; };
+		EE77D41827D12E960088CA5D /* Lemonade+Verification+ProgressBar+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Verification+ProgressBar+Item.swift"; sourceTree = "<group>"; };
 		EE7D5FBE27A5E68C006E5756 /* Lemonade+Circle+Progress+Bar+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Circle+Progress+Bar+Config.swift"; sourceTree = "<group>"; };
 		EE7D5FC027A5E82F006E5756 /* Lemonade+Circle+Progress+Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lemonade+Circle+Progress+Bar.swift"; sourceTree = "<group>"; };
 		EE7D5FC427A6017A006E5756 /* Form+Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Form+Controller.swift"; sourceTree = "<group>"; };
@@ -269,6 +281,7 @@
 		04C325FD26F3682300E8AE6D /* ProgressBar */ = {
 			isa = PBXGroup;
 			children = (
+				EE77D41327CFFAC90088CA5D /* VerifcationProgressBar */,
 				EE7D5FBC27A5E64F006E5756 /* DefaultProgressBar */,
 				EE7D5FBB27A5E63C006E5756 /* CircleProgressBar */,
 			);
@@ -335,6 +348,7 @@
 		2E1D68DC26C422D3001F0F47 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				EEDEE8A527C5A5DD000D56EC /* Story */,
 				EE657821279F2DB400F12261 /* Form */,
 				EEB75417277DBC1200656B8A /* Popup */,
 				2EB869EE2705F8FC0043B2DC /* Slider */,
@@ -633,6 +647,16 @@
 			path = Form;
 			sourceTree = "<group>";
 		};
+		EE77D41327CFFAC90088CA5D /* VerifcationProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				EE77D41427CFFAEA0088CA5D /* Lemonade+Verification+ProgressBar.swift */,
+				EE77D41627D12E620088CA5D /* Lemonade+Verification+ProgressBar+Config.swift */,
+				EE77D41827D12E960088CA5D /* Lemonade+Verification+ProgressBar+Item.swift */,
+			);
+			path = VerifcationProgressBar;
+			sourceTree = "<group>";
+		};
 		EE7D5FBB27A5E63C006E5756 /* CircleProgressBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,6 +685,16 @@
 				EEB754202781EFD600656B8A /* Popup+Configuration.swift */,
 			);
 			path = Popup;
+			sourceTree = "<group>";
+		};
+		EEDEE8A527C5A5DD000D56EC /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				EE77D40D27CBED750088CA5D /* Lemonade+Story+Item.swift */,
+				EE77D40F27CBEDB20088CA5D /* Lemonade+Story.swift */,
+				EE77D41127CBEDBC0088CA5D /* Lemonade+Story+List.swift */,
+			);
+			path = Story;
 			sourceTree = "<group>";
 		};
 		FFA57BDB6660A0F6C51196324139DEAE /* Development Pods */ = {
@@ -820,6 +854,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE77D41727D12E620088CA5D /* Lemonade+Verification+ProgressBar+Config.swift in Sources */,
 				2EA9B44A26C5121900CC2698 /* Custom+View+Extensions.swift in Sources */,
 				2EDB04CF26D7C7D40027C318 /* Lemonade+ToolTip+Config.swift in Sources */,
 				2E09F45026C66BC30062C61E /* Config+Lemonade+Label.swift in Sources */,
@@ -852,6 +887,7 @@
 				2E1D68D226C3C7C1001F0F47 /* ConstraintErrors.swift in Sources */,
 				2E387B2D26CBC90A00C4234E /* LemonadeButton.swift in Sources */,
 				0460CE6D26E8D92A00B7B478 /* Lemonade+Segment+Control+Protocol.swift in Sources */,
+				EE77D40E27CBED750088CA5D /* Lemonade+Story+Item.swift in Sources */,
 				04C325FC26F349BD00E8AE6D /* Lemonade+Alert+Diolog.swift in Sources */,
 				04C325FA26F3266F00E8AE6D /* Lemonade+Alert.swift in Sources */,
 				2E1D68D426C3D864001F0F47 /* LemonadeConstraint.swift in Sources */,
@@ -859,6 +895,7 @@
 				2ED662BF26FDB094002B9E5C /* Lemonade+Flower.swift in Sources */,
 				2EEAAB0C2704AE3B008196F3 /* Lemonade+Line+Chart.swift in Sources */,
 				2EA25E8126FC741900B6E783 /* Lemonade+Lotus.swift in Sources */,
+				EE77D41027CBEDB20088CA5D /* Lemonade+Story.swift in Sources */,
 				0442D36226F4852400F44DD7 /* Lemonade+Progress+Chart.swift in Sources */,
 				2EA25E8326FC742800B6E783 /* Lemonade+Lotus+Config.swift in Sources */,
 				EEB7541F2781EFB400656B8A /* Popup+Components.swift in Sources */,
@@ -866,10 +903,12 @@
 				2EB869F02705F9120043B2DC /* Lemonade+Slider+Config.swift in Sources */,
 				2EE69A5826E22DBF00648012 /* WrapContent.swift in Sources */,
 				EE7D5FC527A6017A006E5756 /* Form+Controller.swift in Sources */,
+				EE77D41927D12E960088CA5D /* Lemonade+Verification+ProgressBar+Item.swift in Sources */,
 				04C325FF26F3687F00E8AE6D /* Lemonade+ProgressBar+Config.swift in Sources */,
 				2E8FAFF726E60A0100F3F909 /* Lemonade+Segment+Config.swift in Sources */,
 				2E1D68DA26C3FABC001F0F47 /* CGFloat+Constraint+Extensions.swift in Sources */,
 				EECF709D27A69AF900BBEA02 /* Form+Components.swift in Sources */,
+				EE77D41527CFFAEA0088CA5D /* Lemonade+Verification+ProgressBar.swift in Sources */,
 				2EDB04CA26D7A6BD0027C318 /* Lemonade+Labelled+Input.swift in Sources */,
 				2E09F45426C689590062C61E /* Custom+Basic+Animations.swift in Sources */,
 				2ED662C326FDE3B7002B9E5C /* Lemonade+Pie+Chart+Config.swift in Sources */,
@@ -878,6 +917,7 @@
 				EE7D5FC127A5E82F006E5756 /* Lemonade+Circle+Progress+Bar.swift in Sources */,
 				2EA9B44326C5028D00CC2698 /* Common+View+Extensions.swift in Sources */,
 				2EDB04C626D790480027C318 /* LemonadeTextView.swift in Sources */,
+				EE77D41227CBEDBC0088CA5D /* Lemonade+Story+List.swift in Sources */,
 				EECF70A527A6BBFC00BBEA02 /* Lemonade+Text+Limit+Type.swift in Sources */,
 				EECF70A727A6BC1E00BBEA02 /* Lemonade+TextField+Delegate.swift in Sources */,
 				2E77ED0A26CE947E004552EE /* LemonadeTextfield.swift in Sources */,

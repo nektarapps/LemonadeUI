@@ -33,6 +33,7 @@ class PlaygroundViewModel {
             , .customShapes(shape: .lotus)
             , .customShapes(shape: .customSegmentControl)
             , .customShapes(shape: .progressBars)
+            , .customShapes(shape: .story)
         ])
         let sliderSection: SectionModel = .init(section: .sliders, rows: [
             .slider(thumbCount: 1),
@@ -95,6 +96,8 @@ extension PlaygroundViewModel {
             ? FlowerVC()
             : shape == .customSegmentControl
             ? CustomSegmentControl(viewModel: .init())
+            : shape == .story
+            ? StoryVC()
             : ProgressBarsVC()
             presenter.navigationController?.pushViewController(vc, animated: true)
         case .chart:
@@ -196,6 +199,7 @@ extension PlaygroundViewModel {
         case lotus
         case customSegmentControl
         case progressBars
+        case story
         
         var title: String {
             switch self {
@@ -207,6 +211,8 @@ extension PlaygroundViewModel {
                 return "Custom Segmet Control"
             case .progressBars:
                 return "Progress Bars"
+            case .story:
+                return "Stories"
             }
         }
         
@@ -220,6 +226,8 @@ extension PlaygroundViewModel {
                 return .purple
             case .progressBars:
                 return .systemPink
+            case .story:
+                return .systemRed
             }
         }
     }

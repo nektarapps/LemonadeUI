@@ -35,7 +35,7 @@ class ProgressBarsVC: UIViewController {
         progressBar.delegate = self
         return progressBar
     }()
-    
+    /*
     private lazy var defaultProgressBarVertical: LemonadeProgressBar = {
         let config = LemonadeProgressBarConfig(alignment: .vertical
                                                , textType: .auto(initialText: .init(text: "Starter Text" , font: .systemFont(ofSize: 20)))
@@ -47,7 +47,18 @@ class ProgressBarsVC: UIViewController {
         progressBar.delegate = self
         return progressBar
     }()
-
+     */
+    
+    private lazy var lemonadeVerificationProgressBar: LemonadeVerificationProgressBar = {
+        let config = LemonadeVerificationProgressBarConfig(items: [
+            .init(iconName: "pencil", text: .init(text: "Doğum Tarhiiniz" , color: .black)),
+            .init(iconName: "pencil", text: .init(text: "IBAN numaranız" , color: .black)),
+            .init(iconName: "pencil", text: .init(text: "Adres" , color: .black)),
+            .init(iconName: "pencil", text: .init(text: "Fotoğraf" , color: .black)),
+            .init(iconName: "pencil", text: .init(text: "Daha fazlası" , color: .black))
+        ] , startStep: 0)
+        return LemonadeVerificationProgressBar(frame: .zero, config)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +73,34 @@ class ProgressBarsVC: UIViewController {
         defaultProgressBarHorizontal.leftAndRight(view, constant: 24)
         defaultProgressBarHorizontal.height(constant: 70)
         
+        view.addSubview(lemonadeVerificationProgressBar)
+        lemonadeVerificationProgressBar.top(defaultProgressBarHorizontal
+                                            , equalTo: .bottom , constant: 20)
+        lemonadeVerificationProgressBar.leftAndRight(view ,constant: 24)
+        lemonadeVerificationProgressBar.height(constant: 120)
+        
+        lemonadeVerificationProgressBar.delegate = self
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.lemonadeVerificationProgressBar.step(to: 4)
+        }
+        /*
         view.addSubview(defaultProgressBarVertical)
         defaultProgressBarVertical.top(defaultProgressBarHorizontal, equalTo: .bottom, constant: 20)
         defaultProgressBarVertical.width(constant: 70)
         defaultProgressBarVertical.centerX(view, equalTo: .centerX)
         defaultProgressBarVertical.bottom(view, equalTo: .bottom ,safeArea: true)
+        */
+        
+    }
+}
+extension ProgressBarsVC: LemonadeVerificationDelegate {
+    func stepChanged(_ progressBar: LemonadeVerificationProgressBar, step: Int) {
+        print(step)
+    }
+    
+    func progressFinished(_ progressBar: LemonadeVerificationProgressBar) {
+        print("Finished")
     }
 }
 extension ProgressBarsVC: LemonadeProgressBarDelegate {

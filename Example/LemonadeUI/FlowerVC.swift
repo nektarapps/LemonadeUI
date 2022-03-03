@@ -16,11 +16,6 @@ class FlowerVC: UIViewController {
         let config: LemonadeFlowerConfig = .init(items: [
             .init(sliceColor: .init(backgroundColor: .systemBlue.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .black, width: 2.0)),
             .init(sliceColor: .init(backgroundColor: .systemPink.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .black, width: 1.0)),
-            .init(sliceColor: .init(backgroundColor: .systemGreen.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .black, width: 4.0)),
-            .init(sliceColor: .init(backgroundColor: .red.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .black, width: 2.0)),
-            .init(sliceColor: .init(backgroundColor: .brown.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .black, width: 2.0)),
-            .init(sliceColor: .init(backgroundColor: .systemYellow.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .black, width: 1.0)),
-            .init(sliceColor: .init(backgroundColor: .gray.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .black, width: 3.0)),
             .init(sliceColor: .init(backgroundColor: .black.withAlphaComponent(0.7)), sliceBorder: .init(borderColor: .white, width: 2.0), customView: .init(frame: .zero, color: .init(backgroundColor: .orange), radius: .init(radius: 20), border: .init(borderColor: .white, width: 2.0)))
         ], spacing: 3)
         let flower: LemonadeFlower = .init(frame: .zero, config)
