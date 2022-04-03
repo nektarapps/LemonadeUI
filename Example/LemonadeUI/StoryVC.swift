@@ -9,28 +9,23 @@
 import UIKit
 import LemonadeUI
 
+private let DUMMY_IMAGE_PATH : ImageSourceType = .fromUrl(path: "https://media.istockphoto.com/photos/professional-woman-working-from-home-picture-id1319189527")
+
+private let currentUser   : LemonadeStoryUser = .init(userId: "username_1", username: "username", imagePath: DUMMY_IMAGE_PATH)
+private let random_user_1 : LemonadeStoryUser = .init(userId: "username_2", username: "username_2", imagePath: DUMMY_IMAGE_PATH)
+private let random_user_2 : LemonadeStoryUser = .init(userId: "username_3", username: "username_3", imagePath: DUMMY_IMAGE_PATH)
+private let random_user_3 : LemonadeStoryUser = .init(userId: "username_4", username: "username_4", imagePath: DUMMY_IMAGE_PATH)
+
+
 class StoryVC: UIViewController {
-    private var dummy_stories: [LemonadeStoryItem] = [
-        .init(storySource: .fromUrl(url: "https://dummyimage.com/600x400/000/fff"), user: .init(username: "ozgurelmasli", imagePath: .fromUrl(url: "http://placeimg.com/640/360/any")), isMessageActive: true, postDate: Date()),
-        .init(storySource: .fromUrl(url: "http://placeimg.com/640/360/any"), user: .init(username: "hasanOzgurElmasli", imagePath: .fromUrl(url: "http://placeimg.com/640/360/any")), isMessageActive: true, postDate: Date()),
-        .init(storySource: .fromUrl(url: "http://placeimg.com/640/360/any"), user: .init(username: "ozgurelmasli123", imagePath: .fromUrl(url: "http://placeimg.com/640/360/any")), isMessageActive: true, postDate: Date()),
-        .init(storySource: .fromUrl(url: "http://placeimg.com/640/360/any"), user: .init(username: "ozgurelmasli134", imagePath: .fromUrl(url: "http://placeimg.com/640/360/any")), isMessageActive: true, postDate: Date()),
-        .init(storySource: .fromUrl(url: "http://placeimg.com/640/360/any"), user: .init(username: "ozgurelmasli12", imagePath: .fromUrl(url: "http://placeimg.com/640/360/any")), isMessageActive: true, postDate: Date())
+    
+    private let stories: [LemonadeStoryData] = [
+        .init(user: currentUser, source: DUMMY_IMAGE_PATH, isMessagesActive: true, postDate: Date())
     ]
-    private lazy var flowLayout : UICollectionViewFlowLayout = {
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .horizontal
-        flowLayout.itemSize = .init(width: 100, height: 120)
-        flowLayout.estimatedItemSize = .init(width: 100, height: 120)
-        return flowLayout
-    }()
     
-    
-    private lazy var storyList : LemonadeStoryList = {
-        let list = LemonadeStoryList(frame: .zero
-                                     , collectionViewLayout: flowLayout
-                                     , stories: dummy_stories
-                                     , currentUser: .init(username: "ozgurelmasli", imagePath: .fromUrl(url: "http://placeimg.com/640/360/any")))
+    private lazy var storyList: LemonadeStory = {
+        let list = LemonadeStory.init(frame: .zero, collectionViewLayout: .init()
+                                      , config: .init(currentUser: currentUser, storyBorderColor: .init(backgroundColor: .red)), stories: stories)
         return list
     }()
     

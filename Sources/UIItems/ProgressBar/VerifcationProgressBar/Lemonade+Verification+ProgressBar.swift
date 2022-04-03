@@ -58,6 +58,7 @@ public class LemonadeVerificationProgressBar: UIView {
     
     deinit {
         config = nil
+        delegate = nil
     }
     
     public func configure( _ config: LemonadeVerificationProgressBarConfig) {
