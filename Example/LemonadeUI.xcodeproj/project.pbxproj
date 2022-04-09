@@ -18,6 +18,7 @@
 		EE657825279FEB6F00F12261 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */; };
 		EE657828279FEBD300F12261 /* PlaygroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */; };
 		EE65782A279FEC0C00F12261 /* PlaygroundHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */; };
+		EE6BFF3427FCF48000EC033B /* GeneratedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6BFF3327FCF48000EC033B /* GeneratedVC.swift */; };
 		EE7D5FC327A5EF01006E5756 /* ProgressBarsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */; };
 		EECF70A127A6A0B900BBEA02 /* ExampleFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF70A027A6A0B900BBEA02 /* ExampleFormViewModel.swift */; };
 		EEDEE8A427C5A594000D56EC /* StoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEE8A327C5A594000D56EC /* StoryVC.swift */; };
@@ -64,6 +65,7 @@
 		EE657824279FEB6F00F12261 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		EE657827279FEBD300F12261 /* PlaygroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewModel.swift; sourceTree = "<group>"; };
 		EE657829279FEC0C00F12261 /* PlaygroundHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundHeaderView.swift; sourceTree = "<group>"; };
+		EE6BFF3327FCF48000EC033B /* GeneratedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedVC.swift; sourceTree = "<group>"; };
 		EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarsVC.swift; sourceTree = "<group>"; };
 		EECF70A027A6A0B900BBEA02 /* ExampleFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleFormViewModel.swift; sourceTree = "<group>"; };
 		EEDEE8A327C5A594000D56EC /* StoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVC.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				EEE12BCC27A34C9700F66648 /* CustomSegmentControl.swift */,
 				EE7D5FC227A5EF01006E5756 /* ProgressBarsVC.swift */,
 				EEDEE8A327C5A594000D56EC /* StoryVC.swift */,
+				EE6BFF3327FCF48000EC033B /* GeneratedVC.swift */,
 			);
 			name = CustomShapes;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				EEE12BBA27A1DEC400F66648 /* ChartVC.swift in Sources */,
 				EEE12BC927A3479E00F66648 /* SearchViewModel.swift in Sources */,
+				EE6BFF3427FCF48000EC033B /* GeneratedVC.swift in Sources */,
 				EEE12BC127A1ED1300F66648 /* FlowerVC.swift in Sources */,
 				EEE12BC327A1F31300F66648 /* SliderCell.swift in Sources */,
 				EE657820279F2D4200F12261 /* PlaygroundVC.swift in Sources */,

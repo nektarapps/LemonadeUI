@@ -34,6 +34,7 @@ class PlaygroundViewModel {
             , .customShapes(shape: .customSegmentControl)
             , .customShapes(shape: .progressBars)
             , .customShapes(shape: .story)
+            , .generated
         ])
         let sliderSection: SectionModel = .init(section: .sliders, rows: [
             .slider(thumbCount: 1),
@@ -136,6 +137,8 @@ extension PlaygroundViewModel {
             }
             
             break
+        case .generated:
+            presenter.navigationController?.pushViewController(GeneratedVC.init(), animated: true)
         }
     }
     private func cellForButtonCell(tableView:UITableView, indexPath:IndexPath) -> ButtonTableViewCell? {
@@ -150,6 +153,8 @@ extension PlaygroundViewModel {
             cell.configureUI(text: .init(text: shape.title , color: .white , font: .systemFont(ofSize: 16)) , backgroundColor: shape.backgrouncColor)
         case .inputs(let type):
             cell.configureUI(text: .init(text: type.title , color: .white , font: .systemFont(ofSize: 16)), backgroundColor: type.backgrouncColor)
+        case .generated:
+            cell.configureUI(text: .init(text: "Auto Generate"), backgroundColor: .brown)
         default: break
         }
         return cell
@@ -286,6 +291,7 @@ extension PlaygroundViewModel {
         case alert(alert: AlertRow)
         case chart
         case customShapes(shape: CustomShapeRow)
+        case generated
         case slider(thumbCount:Int)
         case inputs(type : InputTypeRow)
     }
