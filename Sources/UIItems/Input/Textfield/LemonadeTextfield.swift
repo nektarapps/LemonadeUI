@@ -55,7 +55,7 @@ public class LemonadeTextfield : UITextField {
 extension LemonadeTextfield {
     
     public func leftMargin( _ size: CGFloat) {
-        self.leftView = .init(frame: .init(x: 0, y: 0, width: 40, height: bounds.height))
+        self.leftView = .init(frame: .init(x: 0, y: 0, width: size, height: bounds.height))
         self.leftViewMode = .always
     }
 
