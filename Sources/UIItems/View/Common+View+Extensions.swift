@@ -85,6 +85,22 @@ extension UIView {
     }
     
     
+    public func gradientBorder( _ gradient: LemonadeGradient, lineWidth: CGFloat = 2, radius: CGFloat = 12) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame =  CGRect(origin: CGPoint.zero, size: self.frame.size)
+        gradientLayer.startPoint = gradient.from
+        gradientLayer.endPoint = gradient.to
+        gradientLayer.colors = gradient.colors
+        
+        let shape = CAShapeLayer()
+        shape.lineWidth = lineWidth
+        shape.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: radius).cgPath
+        shape.strokeColor = UIColor.black.cgColor
+        shape.fillColor = UIColor.clear.cgColor
+        gradientLayer.mask = shape
+        
+        layer.addSublayer(gradientLayer)
+    }
     
     /**
      Gradient painting.

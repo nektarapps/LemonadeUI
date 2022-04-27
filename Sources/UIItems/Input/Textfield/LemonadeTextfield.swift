@@ -53,6 +53,12 @@ public class LemonadeTextfield : UITextField {
 
 
 extension LemonadeTextfield {
+    
+    public func leftMargin( _ size: CGFloat) {
+        self.leftView = .init(frame: .init(x: 0, y: 0, width: 40, height: bounds.height))
+        self.leftViewMode = .always
+    }
+
     public func text( _ text : LemonadeText) {
         self.text = text.text
         self.textColor = text.color
