@@ -16,7 +16,7 @@ class GeneratedVC: UIViewController {
         view.backgroundColor = .white
         
         ViewCreator.init(parentView: view , insets: .init(top: 20, left: 24, bottom: 20, right: 24))
-            .generate(axis: .vertical(spacing: 10, components: [
+            .create(axis: .vertical(spacing: 10, components: [
                 
                 .imageView(provider: .init(radius: .init(radius: 12)
                                            , shadow: .init(shadowColor: .black, offset: .init(width: 3, height: 6), radius: 12)
@@ -60,7 +60,19 @@ class GeneratedVC: UIViewController {
                                                       , action: {
                                                           print("Tapped")
                                                       }), height: 48),
-                .spacer(height: 150)
+                .spacer(height: 150),
+                .axis(axis: .horizontal(spacing: 10, components: [
+                    .button(provider: .init(backgroundColor: LemonadeColor.init(backgroundColor: .blue)
+                                            , radius: .init(radius: 12), border: .init(borderColor: .white, width: 2.0)
+                                            , text: .init(text: "Submit"), action: {
+                                                print("Submit")
+                                            }), height: 50),
+                    .button(provider: .init(backgroundColor: LemonadeColor.init(backgroundColor: .red)
+                                            , radius: .init(radius: 12), border: .init(borderColor: .white, width: 2.0)
+                                            , text: .init(text: "Declined"), action: {
+                                                print("Declined")
+                                            }), height: 50),
+                ], distributionType: .fillEqually))
             ]))
             
         

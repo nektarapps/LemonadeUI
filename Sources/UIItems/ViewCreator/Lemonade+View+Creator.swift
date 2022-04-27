@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 public class ViewCreator {
@@ -21,7 +22,7 @@ public class ViewCreator {
         self.insets = insets
     }
     
-    public func generate(axis: ViewCreatorAxis) {
+    public func create(axis: ViewCreatorAxis) {
         let stackView = axis.generateStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         parentView.addSubview(stackView)

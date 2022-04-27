@@ -7,8 +7,8 @@
 
 /// Border type
 public struct LemonadeBorder {
-    var borderColor : CGColor = UIColor.white.cgColor
-    var borderWidth : CGFloat = 0.0
+    public var borderColor : CGColor = UIColor.white.cgColor
+    public var borderWidth : CGFloat = 0.0
     
     public init(){}
     
@@ -27,14 +27,14 @@ public struct LemonadeBorder {
 
 /// Radius type
 public struct LemonadeRadius {
-    var radius : CGFloat = 12
-    var maskedCorners : CACornerMask? = nil
+    public var radius : CGFloat = 12
+    public var maskedCorners : CACornerMask? = nil
     
     public init() { }
     
     /**
      Radius type
-    
+     
      - parameter radius: View border radius. Default value 12.
      - parameter maskedCorners: Radius corners. Default value is nil.
      */
@@ -45,9 +45,9 @@ public struct LemonadeRadius {
 }
 /// Color type
 public struct LemonadeColor {
-    var backgroundColor : UIColor? = nil
-    var gradient        : LemonadeGradient? = nil
-
+    public var backgroundColor : UIColor? = nil
+    public var gradient        : LemonadeGradient? = nil
+    
     /**
      Color type
      
@@ -63,11 +63,10 @@ public struct LemonadeColor {
 
 /// Gradient type
 public struct LemonadeGradient {
-    var colors : [CGColor]
-    var from : CGPoint
-    var to   : CGPoint
-    var locations : [NSNumber]?
-    
+    public var colors : [CGColor]
+    public var from : CGPoint
+    public var to   : CGPoint
+    public var locations : [NSNumber]?
     /**
      Gradient Type
      
@@ -86,10 +85,9 @@ public struct LemonadeGradient {
 
 
 public struct LemonadeEmptyUI {
-    var image : UIImage?
-    var text  : String
-    var descriptionText : String?
-    
+    public var image : UIImage?
+    public var text  : String
+    public var descriptionText : String?
     /**
      Empty UI Config
      
@@ -106,10 +104,10 @@ public struct LemonadeEmptyUI {
 
 
 public struct LemonadeShadow {
-    var shadowColor : UIColor
-    var opacity     : Float
-    var offset      : CGSize
-    var radius      : CGFloat
+    public var shadowColor : UIColor
+    public var opacity     : Float
+    public var offset      : CGSize
+    public var radius      : CGFloat
     
     /**
      Shadow config
@@ -128,14 +126,14 @@ public struct LemonadeShadow {
 }
 
 public struct LemonadeStateConfig {
-    var state : LemonadeUIState
-    var view  : UIView
+   public var state : LemonadeUIState
+   public var view  : UIView
     
     /**
      UI State config
      
      - parameter state: State type
-     - parameter view: State view 
+     - parameter view: State view
      */
     public init( state : LemonadeUIState , view : UIView){
         self.state = state
